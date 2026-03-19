@@ -32,6 +32,7 @@ function buildVehicleCollection(vehicles) {
         color: `#${vehicle.color || "4AE3B5"}`,
         routeShortName: vehicle.route_short_name,
         headsign: vehicle.headsign,
+        bearing: vehicle.bearing || 0,
       },
     })),
   };
@@ -209,14 +210,15 @@ export default function TransitMap({
 
     const map = new maplibregl.Map({
       container: containerRef.current,
-      style: "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json",
+      style: "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
       center: INITIAL_VIEW.center,
       zoom: INITIAL_VIEW.zoom,
-      pitch: 40,
+      pitch: 0,
+      bearing: 0,
       attributionControl: true,
     });
 
-    map.addControl(new maplibregl.NavigationControl({ visualizePitch: true }), "top-left");
+    map.addControl(new maplibregl.NavigationControl({ visualizePitch: false }), "top-left");
     map.addControl(new maplibregl.AttributionControl({ compact: true }), "bottom-right");
 
     map.on("load", () => {
@@ -233,9 +235,9 @@ export default function TransitMap({
         source: "route-lines",
         paint: {
           "line-color": ["get", "color"],
-          "line-width": 12,
-          "line-opacity": 0.15,
-          "line-blur": 1.2,
+          "line-width": 10,
+          "line-opacity": 0.16,
+          "line-blur": 1,
         },
       });
       map.addLayer({
@@ -270,8 +272,8 @@ export default function TransitMap({
             "#7BDFF2",
             "#FF8A5B",
           ],
-          "circle-opacity": 0.22,
-          "circle-blur": 0.8,
+          "circle-opacity": 0.18,
+          "circle-blur": 0.7,
         },
       });
       map.addLayer({
@@ -281,7 +283,7 @@ export default function TransitMap({
         paint: {
           "circle-radius": ["interpolate", ["linear"], ["zoom"], 8, 2.5, 14, 6],
           "circle-stroke-width": 1.5,
-          "circle-stroke-color": "#F7FAFC",
+          "circle-stroke-color": "#FFFFFF",
           "circle-color": [
             "match",
             ["get", "kind"],
@@ -308,8 +310,8 @@ export default function TransitMap({
           "text-font": ["Open Sans Regular", "Arial Unicode MS Regular"],
         },
         paint: {
-          "text-color": "#EAF2FF",
-          "text-halo-color": "rgba(5, 10, 20, 0.92)",
+          "text-color": "#24415B",
+          "text-halo-color": "rgba(255, 255, 255, 0.96)",
           "text-halo-width": 1.1,
         },
       });
@@ -319,42 +321,64 @@ export default function TransitMap({
         data: vehicleCollection,
       });
       map.addLayer({
-        id: "vehicles-shadow",
+        id: "vehicles-badge-shadow",
         type: "circle",
         source: "vehicles",
         paint: {
           "circle-color": ["get", "color"],
-          "circle-radius": ["interpolate", ["linear"], ["zoom"], 7, 6, 14, 18],
+          "circle-radius": ["interpolate", ["linear"], ["zoom"], 7, 10, 14, 16],
           "circle-opacity": 0.18,
-          "circle-blur": 1.1,
+          "circle-blur": 0.8,
+          "circle-translate": [0, -20],
         },
       });
       map.addLayer({
-        id: "vehicles-main",
+        id: "vehicles-badge",
         type: "circle",
         source: "vehicles",
         paint: {
           "circle-color": ["get", "color"],
-          "circle-radius": ["interpolate", ["linear"], ["zoom"], 7, 4, 14, 11],
-          "circle-stroke-color": "#F7FAFC",
-          "circle-stroke-width": 1.5,
+          "circle-radius": ["interpolate", ["linear"], ["zoom"], 7, 9, 14, 14],
+          "circle-stroke-color": "#FFFFFF",
+          "circle-stroke-width": 2,
+          "circle-translate": [0, -20],
         },
       });
       map.addLayer({
-        id: "vehicles-labels",
+        id: "vehicles-badge-label",
         type: "symbol",
         source: "vehicles",
         layout: {
           "text-field": ["get", "routeShortName"],
-          "text-size": ["interpolate", ["linear"], ["zoom"], 7, 9, 14, 14],
+          "text-size": ["interpolate", ["linear"], ["zoom"], 7, 11, 14, 16],
           "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+          "text-allow-overlap": true,
+          "text-ignore-placement": true,
+          "text-translate": [0, -20],
         },
         paint: {
-          "text-color": "#07111F",
+          "text-color": "#FFFFFF",
+        },
+      });
+      map.addLayer({
+        id: "vehicles-icon",
+        type: "symbol",
+        source: "vehicles",
+        layout: {
+          "text-field": "🚌",
+          "text-size": ["interpolate", ["linear"], ["zoom"], 7, 20, 14, 28],
+          "text-rotate": ["get", "bearing"],
+          "text-allow-overlap": true,
+          "text-ignore-placement": true,
+        },
+        paint: {
+          "text-color": "#FFFFFF",
+          "text-halo-color": "rgba(255,255,255,0.92)",
+          "text-halo-width": 0.6,
         },
       });
 
-      map.on("click", "vehicles-main", (event) => {
+      map.on("click", "vehicles-icon", (event) => {
         const feature = event.features?.[0];
         if (feature) {
           handleVehicleClick(feature);
@@ -367,7 +391,7 @@ export default function TransitMap({
         }
       });
 
-      for (const layerId of ["vehicles-main", "focus-stops-main"]) {
+      for (const layerId of ["vehicles-icon", "focus-stops-main"]) {
         map.on("mouseenter", layerId, () => {
           map.getCanvas().style.cursor = "pointer";
         });

@@ -127,14 +127,6 @@ export default function CyBusShell() {
     window.localStorage.setItem(FAVORITES_KEY, JSON.stringify(favoriteStopIds));
   }, [favoriteStopIds]);
 
-  useEffect(() => {
-    const media = window.matchMedia("(max-width: 900px)");
-    const sync = () => setPanelOpen(!media.matches);
-    sync();
-    media.addEventListener("change", sync);
-    return () => media.removeEventListener("change", sync);
-  }, []);
-
   const loadBootstrap = useCallback(async () => {
     setLoading(true);
     try {
@@ -452,13 +444,58 @@ export default function CyBusShell() {
 
   return (
     <main className="app-shell">
+      <section className="glass-panel map-stage">
+        <TransitMap
+          vehicles={vehiclesState.vehicles || []}
+          routeDetail={selectedRoute}
+          nearbyStops={nearbyStops}
+          favoriteStops={favoriteStops}
+          selectedStop={selectedStop}
+          userLocation={userLocation}
+          action={mapAction}
+          onVehicleSelect={(vehicle) => handleVehicleSelect(vehicle).catch(console.error)}
+          onStopSelect={(stop) => loadStopTimetable(stop).catch(console.error)}
+          loadingLabel={t.loadingMap}
+        />
+
+        <div className="map-overlay map-overlay-left">
+          <button className="glass-panel menu-trigger" onClick={() => setPanelOpen((current) => !current)}>
+            <Waves size={18} />
+            {panelOpen ? t.panelClose : t.openPanels}
+          </button>
+          <div className="glass-panel map-card">
+            <p className="tiny-label">{t.liveNow}</p>
+            <h3 style={{ margin: "0.2rem 0 0.5rem" }}>{t.liveVehicles}</h3>
+            <p className="muted" style={{ margin: 0 }}>
+              {vehiclesState.vehicles?.length || 0} · {t.updated} {formatUpdatedAt(vehiclesState.updated_at)}
+            </p>
+          </div>
+        </div>
+
+        {selectedRoute && (
+          <div className="map-overlay map-overlay-right">
+            <div className="glass-panel map-card">
+              <div className="route-row">
+                <span className="route-pill" style={buildRouteColors(selectedRoute)}>
+                  {selectedRoute.short_name}
+                </span>
+                <div>
+                  <strong>{selectedRoute.long_name}</strong>
+                  <div className="muted">{selectedRoute.operator_name}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+      </section>
+
       <aside className={`glass-panel app-panel ${panelOpen ? "open" : ""}`}>
-        <div className="mobile-panel-toggle">
+        <div className="panel-topbar">
           <div>
             <p className="eyebrow">{t.appTitle}</p>
             <strong>{t.openPanels}</strong>
           </div>
-          <button className="icon-button" onClick={() => setPanelOpen((current) => !current)} aria-label={t.panelClose}>
+          <button className="icon-button" onClick={() => setPanelOpen(false)} aria-label={t.panelClose}>
             <Waves size={18} />
           </button>
         </div>
@@ -490,9 +527,6 @@ export default function CyBusShell() {
               className="button button-primary"
               onClick={() => {
                 setMapAction({ type: "fitVehicles", token: Date.now() });
-                if (window.matchMedia("(max-width: 900px)").matches) {
-                  setPanelOpen(false);
-                }
               }}
             >
               <MapPinned size={18} />
@@ -854,44 +888,6 @@ export default function CyBusShell() {
           )}
         </div>
       </aside>
-
-      <section className="glass-panel map-stage">
-        <TransitMap
-          vehicles={vehiclesState.vehicles || []}
-          routeDetail={selectedRoute}
-          nearbyStops={nearbyStops}
-          favoriteStops={favoriteStops}
-          selectedStop={selectedStop}
-          userLocation={userLocation}
-          action={mapAction}
-          onVehicleSelect={(vehicle) => handleVehicleSelect(vehicle).catch(console.error)}
-          onStopSelect={(stop) => loadStopTimetable(stop).catch(console.error)}
-          loadingLabel={t.loadingMap}
-        />
-
-        <div className="map-overlay">
-          <div className="glass-panel map-card">
-            <p className="tiny-label">{t.liveNow}</p>
-            <h3 style={{ margin: "0.2rem 0 0.5rem" }}>{t.liveVehicles}</h3>
-            <p className="muted" style={{ margin: 0 }}>
-              {vehiclesState.vehicles?.length || 0} · {t.updated} {formatUpdatedAt(vehiclesState.updated_at)}
-            </p>
-          </div>
-          {selectedRoute && (
-            <div className="glass-panel map-card">
-              <div className="route-row">
-                <span className="route-pill" style={buildRouteColors(selectedRoute)}>
-                  {selectedRoute.short_name}
-                </span>
-                <div>
-                  <strong>{selectedRoute.long_name}</strong>
-                  <div className="muted">{selectedRoute.operator_name}</div>
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
-      </section>
     </main>
   );
 }
