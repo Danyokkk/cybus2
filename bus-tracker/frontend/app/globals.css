@@ -179,6 +179,22 @@ button {
   justify-content: space-between;
 }
 
+.panel-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  padding-bottom: 0.15rem;
+  background: linear-gradient(180deg, rgba(247, 251, 255, 0.98), rgba(247, 251, 255, 0.78));
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.panel-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
 .title-block h1,
 .title-block h2,
 .title-block h3,
@@ -330,6 +346,11 @@ button {
   color: var(--text);
   background: rgba(255, 255, 255, 0.82);
   border: 1px solid rgba(93, 118, 144, 0.14);
+}
+
+.icon-button:disabled {
+  opacity: 0.45;
+  cursor: default;
 }
 
 .tab-bar {

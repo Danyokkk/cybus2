@@ -1,7 +1,9 @@
 "use client";
 
 import {
+  ArrowLeft,
   Heart,
+  House,
   Languages,
   LocateFixed,
   MapPinned,
@@ -12,6 +14,7 @@ import {
   Sparkles,
   Star,
   Waves,
+  X,
 } from "lucide-react";
 import {
   useCallback,
@@ -416,6 +419,44 @@ export default function CyBusShell() {
     setMapAction({ type: "fitVehicles", token: Date.now() });
   }, []);
 
+  const goHome = useCallback(() => {
+    setSelectedRoute(null);
+    setSelectedStop(null);
+    setSelectedStopTimetable(null);
+    setPanel("nearby");
+    setPanelOpen(true);
+    setPlannerResult(null);
+    setMapAction({ type: "fitVehicles", token: Date.now() });
+  }, []);
+
+  const goBack = useCallback(() => {
+    if (selectedStopTimetable || selectedStop) {
+      setSelectedStop(null);
+      setSelectedStopTimetable(null);
+      if (selectedRoute) {
+        setPanel("lines");
+      }
+      return;
+    }
+
+    if (selectedRoute) {
+      setSelectedRoute(null);
+      setMapAction({ type: "fitVehicles", token: Date.now() });
+      return;
+    }
+
+    if (panel !== "nearby") {
+      setPanel("nearby");
+      return;
+    }
+
+    if (!panelOpen) {
+      setPanelOpen(true);
+    }
+  }, [panel, panelOpen, selectedRoute, selectedStop, selectedStopTimetable]);
+
+  const canGoBack = Boolean(selectedStopTimetable || selectedStop || selectedRoute || panel !== "nearby" || !panelOpen);
+
   const openSelectedRoutePanel = useCallback(() => {
     setPanel("lines");
     setPanelOpen(true);
@@ -570,9 +611,23 @@ export default function CyBusShell() {
             <p className="eyebrow">{t.appTitle}</p>
             <strong>{t.openPanels}</strong>
           </div>
-          <button className="icon-button" onClick={() => setPanelOpen(false)} aria-label={t.panelClose}>
-            <Waves size={18} />
-          </button>
+          <div className="panel-actions">
+            <button
+              className="icon-button"
+              onClick={goBack}
+              aria-label={t.back}
+              title={t.back}
+              disabled={!canGoBack}
+            >
+              <ArrowLeft size={18} />
+            </button>
+            <button className="icon-button" onClick={goHome} aria-label={t.home} title={t.home}>
+              <House size={18} />
+            </button>
+            <button className="icon-button" onClick={() => setPanelOpen(false)} aria-label={t.panelClose} title={t.panelClose}>
+              <X size={18} />
+            </button>
+          </div>
         </div>
 
         <section className="hero-card">

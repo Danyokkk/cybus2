@@ -71,6 +71,8 @@ export const translations = {
     filterRoutesByCity: "Filter routes by city",
     selectCities: "Select cities",
     myLocation: "My location",
+    back: "Back",
+    home: "Home",
   },
   el: {
     appTitle: "CyBus",
@@ -138,6 +140,8 @@ export const translations = {
     filterRoutesByCity: "Φιλτράρισμα γραμμών ανά πόλη",
     selectCities: "Επιλογή πόλεων",
     myLocation: "Η τοποθεσία μου",
+    back: "Πίσω",
+    home: "Αρχική",
   },
   ru: {
     appTitle: "CyBus",
@@ -205,5 +209,7 @@ export const translations = {
     filterRoutesByCity: "Фильтр маршрутов по городу",
     selectCities: "Выбрать города",
     myLocation: "Моя локация",
+    back: "Назад",
+    home: "Домой",
   },
 };
