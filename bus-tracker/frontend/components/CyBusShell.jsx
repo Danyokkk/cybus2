@@ -379,6 +379,14 @@ export default function CyBusShell() {
     setMapAction({ type: "vehicle", token: Date.now(), vehicleId: vehicle.id });
   }, [loadRouteDetail]);
 
+  const handleMapVehicleSelect = useCallback((vehicle) => {
+    handleVehicleSelect(vehicle).catch(console.error);
+  }, [handleVehicleSelect]);
+
+  const handleMapStopSelect = useCallback((stop) => {
+    loadStopTimetable(stop).catch(console.error);
+  }, [loadStopTimetable]);
+
   const isFavoriteStop = (stopId) => favoriteStopIds.includes(stopId);
 
   const renderSelectedStop = selectedStopTimetable ? (
@@ -453,8 +461,8 @@ export default function CyBusShell() {
           selectedStop={selectedStop}
           userLocation={userLocation}
           action={mapAction}
-          onVehicleSelect={(vehicle) => handleVehicleSelect(vehicle).catch(console.error)}
-          onStopSelect={(stop) => loadStopTimetable(stop).catch(console.error)}
+          onVehicleSelect={handleMapVehicleSelect}
+          onStopSelect={handleMapStopSelect}
           loadingLabel={t.loadingMap}
         />
 

@@ -8,6 +8,11 @@ const INITIAL_VIEW = {
   zoom: 8.4,
 };
 
+const EMPTY_COLLECTION = {
+  type: "FeatureCollection",
+  features: [],
+};
+
 function escapeHtml(value) {
   return String(value || "")
     .replaceAll("&", "&amp;")
@@ -189,6 +194,8 @@ export default function TransitMap({
   const vehicleIndexRef = useRef(new Map());
   const stopIndexRef = useRef(new Map());
   const userMarkerRef = useRef(null);
+  const onVehicleSelectRef = useRef(onVehicleSelect);
+  const onStopSelectRef = useRef(onStopSelect);
   const [mapReady, setMapReady] = useState(false);
 
   const vehicleCollection = useMemo(() => buildVehicleCollection(vehicles || []), [vehicles]);
@@ -197,6 +204,11 @@ export default function TransitMap({
     [favoriteStops, nearbyStops, routeDetail, selectedStop]
   );
   const routeCollection = useMemo(() => buildRouteCollection(routeDetail), [routeDetail]);
+
+  useEffect(() => {
+    onVehicleSelectRef.current = onVehicleSelect;
+    onStopSelectRef.current = onStopSelect;
+  }, [onStopSelect, onVehicleSelect]);
 
   const openPopup = useCallback((lngLat, html) => {
     if (!mapRef.current) {
@@ -213,24 +225,24 @@ export default function TransitMap({
     if (!vehicle) {
       return;
     }
-    onVehicleSelect?.(vehicle);
+    onVehicleSelectRef.current?.(vehicle);
     openPopup(
       [vehicle.lon, vehicle.lat],
       `<div><strong>${escapeHtml(vehicle.route_short_name)}</strong><br/>${escapeHtml(vehicle.headsign)}</div>`
     );
-  }, [onVehicleSelect, openPopup]);
+  }, [openPopup]);
 
   const handleStopClick = useCallback((feature) => {
     const stop = stopIndexRef.current.get(feature.properties.id);
     if (!stop) {
       return;
     }
-    onStopSelect?.(stop);
+    onStopSelectRef.current?.(stop);
     openPopup(
       [stop.lon, stop.lat],
       `<div><strong>${escapeHtml(stop.name)}</strong><br/>${escapeHtml(stop.operator_name || "")}</div>`
     );
-  }, [onStopSelect, openPopup]);
+  }, [openPopup]);
 
   useEffect(() => {
     if (!containerRef.current || mapRef.current) {
@@ -256,7 +268,7 @@ export default function TransitMap({
 
       map.addSource("route-lines", {
         type: "geojson",
-        data: routeCollection,
+        data: EMPTY_COLLECTION,
       });
       map.addLayer({
         id: "route-lines-glow",
@@ -282,7 +294,7 @@ export default function TransitMap({
 
       map.addSource("focus-stops", {
         type: "geojson",
-        data: stopCollection,
+        data: EMPTY_COLLECTION,
       });
       map.addLayer({
         id: "focus-stops-glow",
@@ -373,12 +385,13 @@ export default function TransitMap({
       vehicleMarkersRef.current.clear();
       map.remove();
       readyRef.current = false;
+      setMapReady(false);
       mapRef.current = null;
     };
-  }, [handleStopClick, routeCollection, stopCollection]);
+  }, [handleStopClick]);
 
   useEffect(() => {
-    if (!readyRef.current || !mapRef.current) {
+    if (!mapReady || !mapRef.current) {
       return;
     }
     vehicleIndexRef.current = new Map((vehicles || []).map((vehicle) => [vehicle.id, vehicle]));
@@ -404,10 +417,10 @@ export default function TransitMap({
 
       vehicleMarkersRef.current.set(vehicle.id, marker);
     }
-  }, [handleVehicleClick, vehicles]);
+  }, [handleVehicleClick, mapReady, vehicles]);
 
   useEffect(() => {
-    if (!readyRef.current || !mapRef.current) {
+    if (!mapReady || !mapRef.current) {
       return;
     }
     stopIndexRef.current = new Map(
@@ -418,17 +431,17 @@ export default function TransitMap({
       ).map((stop) => [stop.stop_id, stop])
     );
     mapRef.current.getSource("focus-stops")?.setData(stopCollection);
-  }, [favoriteStops, nearbyStops, routeDetail, selectedStop, stopCollection]);
+  }, [favoriteStops, mapReady, nearbyStops, routeDetail, selectedStop, stopCollection]);
 
   useEffect(() => {
-    if (!readyRef.current || !mapRef.current) {
+    if (!mapReady || !mapRef.current) {
       return;
     }
     mapRef.current.getSource("route-lines")?.setData(routeCollection);
-  }, [routeCollection]);
+  }, [mapReady, routeCollection]);
 
   useEffect(() => {
-    if (!readyRef.current || !mapRef.current) {
+    if (!mapReady || !mapRef.current) {
       return;
     }
 
@@ -450,10 +463,10 @@ export default function TransitMap({
     userMarkerRef.current = new maplibregl.Marker({ element: markerElement })
       .setLngLat([userLocation.lon, userLocation.lat])
       .addTo(mapRef.current);
-  }, [userLocation]);
+  }, [mapReady, userLocation]);
 
   useEffect(() => {
-    if (!readyRef.current || !mapRef.current || !action) {
+    if (!mapReady || !mapRef.current || !action) {
       return;
     }
 
@@ -502,7 +515,7 @@ export default function TransitMap({
         duration: 800,
       });
     }
-  }, [action, routeCollection, selectedStop, stopCollection, userLocation, vehicleCollection, vehicles]);
+  }, [action, mapReady, routeCollection, selectedStop, stopCollection, userLocation, vehicleCollection, vehicles]);
 
   return (
     <>
