@@ -13,6 +13,31 @@ const EMPTY_COLLECTION = {
   features: [],
 };
 
+const STREET_STYLE = {
+  version: 8,
+  sources: {
+    osm: {
+      type: "raster",
+      tiles: [
+        "https://a.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        "https://b.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        "https://c.tile.openstreetmap.org/{z}/{x}/{y}.png",
+      ],
+      tileSize: 256,
+      maxzoom: 19,
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    },
+  },
+  layers: [
+    {
+      id: "osm",
+      type: "raster",
+      source: "osm",
+    },
+  ],
+};
+
 function escapeHtml(value) {
   return String(value || "")
     .replaceAll("&", "&amp;")
@@ -196,6 +221,7 @@ export default function TransitMap({
   const userMarkerRef = useRef(null);
   const onVehicleSelectRef = useRef(onVehicleSelect);
   const onStopSelectRef = useRef(onStopSelect);
+  const handledActionTokenRef = useRef(null);
   const [mapReady, setMapReady] = useState(false);
 
   const vehicleCollection = useMemo(() => buildVehicleCollection(vehicles || []), [vehicles]);
@@ -251,7 +277,7 @@ export default function TransitMap({
 
     const map = new maplibregl.Map({
       container: containerRef.current,
-      style: "https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json",
+      style: STREET_STYLE,
       center: INITIAL_VIEW.center,
       zoom: INITIAL_VIEW.zoom,
       pitch: 0,
@@ -338,25 +364,6 @@ export default function TransitMap({
           ],
         },
       });
-      map.addLayer({
-        id: "focus-stops-labels",
-        type: "symbol",
-        source: "focus-stops",
-        minzoom: 12,
-        layout: {
-          "text-field": ["coalesce", ["get", "name"], ["get", "code"]],
-          "text-size": 11,
-          "text-offset": [0, 1.2],
-          "text-anchor": "top",
-          "text-font": ["Open Sans Regular", "Arial Unicode MS Regular"],
-        },
-        paint: {
-          "text-color": "#24415B",
-          "text-halo-color": "rgba(255, 255, 255, 0.96)",
-          "text-halo-width": 1.1,
-        },
-      });
-
       map.on("click", "focus-stops-main", (event) => {
         const feature = event.features?.[0];
         if (feature) {
@@ -469,6 +476,12 @@ export default function TransitMap({
     if (!mapReady || !mapRef.current || !action) {
       return;
     }
+
+    if (handledActionTokenRef.current === action.token) {
+      return;
+    }
+
+    handledActionTokenRef.current = action.token;
 
     const map = mapRef.current;
 
