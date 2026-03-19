@@ -26,6 +26,15 @@ import TransitMap from "./TransitMap";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001";
 const FAVORITES_KEY = "cybus-favorite-stops";
+const ROUTE_FILTERS = [
+  { id: "osea", label: "Famagusta", operatorIds: ["osea"] },
+  { id: "intercity", label: "Intercity", operatorIds: ["intercity"] },
+  { id: "lpt", label: "Larnaca", operatorIds: ["lpt"] },
+  { id: "emel", label: "Limassol", operatorIds: ["emel"] },
+  { id: "npt", label: "Nicosia", operatorIds: ["npt"] },
+  { id: "osypa", label: "Pafos", operatorIds: ["osypa"] },
+  { id: "pame", label: "Pame Express", operatorIds: ["pame"] },
+];
 
 const PANELS = [
   { id: "nearby", icon: LocateFixed },
@@ -93,6 +102,7 @@ export default function CyBusShell() {
   const [locationError, setLocationError] = useState(null);
   const [userLocation, setUserLocation] = useState(null);
   const [routeQuery, setRouteQuery] = useState("");
+  const [selectedRouteFilters, setSelectedRouteFilters] = useState([]);
   const [mapAction, setMapAction] = useState({ type: "fitVehicles", token: 1 });
   const [plannerMode, setPlannerMode] = useState("location");
   const [plannerFromQuery, setPlannerFromQuery] = useState("");
@@ -344,14 +354,24 @@ export default function CyBusShell() {
   }, [deferredPlannerToQuery, searchStops]);
 
   const filteredRoutes = useMemo(() => {
-    if (!deferredRouteQuery.trim()) {
-      return bootstrap.routes;
+    let routes = bootstrap.routes;
+
+    if (selectedRouteFilters.length) {
+      const allowedOperators = new Set(
+        ROUTE_FILTERS.filter((filter) => selectedRouteFilters.includes(filter.id)).flatMap((filter) => filter.operatorIds)
+      );
+      routes = routes.filter((route) => allowedOperators.has(route.operator_id));
     }
+
+    if (!deferredRouteQuery.trim()) {
+      return routes;
+    }
+
     const q = deferredRouteQuery.trim().toLowerCase();
-    return bootstrap.routes.filter((route) =>
+    return routes.filter((route) =>
       [route.short_name, route.long_name, route.operator_name].join(" ").toLowerCase().includes(q)
     );
-  }, [bootstrap.routes, deferredRouteQuery]);
+  }, [bootstrap.routes, deferredRouteQuery, selectedRouteFilters]);
 
   const liveStats = useMemo(
     () => [
@@ -376,6 +396,8 @@ export default function CyBusShell() {
       return;
     }
     await loadRouteDetail(vehicle.route_id, false);
+    setPanel("lines");
+    setPanelOpen(false);
     setMapAction({ type: "vehicle", token: Date.now(), vehicleId: vehicle.id });
   }, [loadRouteDetail]);
 
@@ -392,6 +414,17 @@ export default function CyBusShell() {
     setSelectedStop(null);
     setSelectedStopTimetable(null);
     setMapAction({ type: "fitVehicles", token: Date.now() });
+  }, []);
+
+  const openSelectedRoutePanel = useCallback(() => {
+    setPanel("lines");
+    setPanelOpen(true);
+  }, []);
+
+  const toggleRouteFilter = useCallback((filterId) => {
+    setSelectedRouteFilters((current) =>
+      current.includes(filterId) ? current.filter((id) => id !== filterId) : [...current, filterId]
+    );
   }, []);
 
   const isFavoriteStop = (stopId) => favoriteStopIds.includes(stopId);
@@ -500,21 +533,35 @@ export default function CyBusShell() {
                   <div className="muted">{selectedRoute.operator_name}</div>
                 </div>
               </div>
+              <div className="meta-grid">
+                <span className="meta-chip">
+                  {t.activeBuses}: {selectedRoute.active_vehicle_count || 0}
+                </span>
+                <span className="meta-chip">{selectedRoute.operator_name}</span>
+              </div>
               <div className="map-card-actions">
+                <button className="button button-secondary map-card-button" onClick={openSelectedRoutePanel}>
+                  {t.lines}
+                </button>
                 <button className="button button-secondary map-card-button" onClick={showAllBuses}>
                   {t.showAllBuses}
-                </button>
-                <button
-                  className="icon-button"
-                  onClick={showAllBuses}
-                  aria-label={t.panelClose}
-                >
-                  <Waves size={16} />
                 </button>
               </div>
             </div>
           </div>
         )}
+
+        <div className="map-overlay map-overlay-floating-right">
+          <button
+            className={`glass-panel locate-fab ${userLocation ? "active" : ""}`}
+            onClick={() => requestNearbyStops().catch(console.error)}
+            aria-label={t.myLocation}
+            title={t.myLocation}
+          >
+            <span className="locate-fab-pulse" />
+            <LocateFixed size={18} />
+          </button>
+        </div>
       </section>
 
       <aside className={`glass-panel app-panel ${panelOpen ? "open" : ""}`}>
@@ -658,6 +705,22 @@ export default function CyBusShell() {
                 </div>
               </label>
 
+              <div className="filter-section">
+                <span className="tiny-label">{t.filterRoutesByCity}</span>
+                <div className="filter-bar">
+                  <span className="filter-hint">{t.selectCities}</span>
+                  {ROUTE_FILTERS.map((filter) => (
+                    <button
+                      key={filter.id}
+                      className={`filter-chip ${selectedRouteFilters.includes(filter.id) ? "active" : ""}`}
+                      onClick={() => toggleRouteFilter(filter.id)}
+                    >
+                      {filter.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
               {selectedRoute && (
                 <section className="route-card">
                   <div className="route-row" style={{ justifyContent: "space-between" }}>
@@ -723,7 +786,7 @@ export default function CyBusShell() {
               )}
 
               <div className="route-list">
-                {filteredRoutes.slice(0, 60).map((route) => (
+                {filteredRoutes.map((route) => (
                   <button
                     key={route.route_id}
                     className="route-card"

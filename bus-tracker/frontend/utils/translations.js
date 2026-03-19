@@ -68,6 +68,9 @@ export const translations = {
     panelClose: "Close",
     showAllBuses: "Show all buses",
     selectedLine: "Selected line",
+    filterRoutesByCity: "Filter routes by city",
+    selectCities: "Select cities",
+    myLocation: "My location",
   },
   el: {
     appTitle: "CyBus",
@@ -132,6 +135,9 @@ export const translations = {
     panelClose: "Κλείσιμο",
     showAllBuses: "Όλα τα λεωφορεία",
     selectedLine: "Επιλεγμένη γραμμή",
+    filterRoutesByCity: "Φιλτράρισμα γραμμών ανά πόλη",
+    selectCities: "Επιλογή πόλεων",
+    myLocation: "Η τοποθεσία μου",
   },
   ru: {
     appTitle: "CyBus",
@@ -196,5 +202,8 @@ export const translations = {
     panelClose: "Закрыть",
     showAllBuses: "Все автобусы",
     selectedLine: "Выбранная линия",
+    filterRoutesByCity: "Фильтр маршрутов по городу",
+    selectCities: "Выбрать города",
+    myLocation: "Моя локация",
   },
 };

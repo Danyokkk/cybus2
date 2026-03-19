@@ -450,12 +450,7 @@ export default function TransitMap({
     }
 
     const markerElement = document.createElement("div");
-    markerElement.style.width = "18px";
-    markerElement.style.height = "18px";
-    markerElement.style.borderRadius = "999px";
-    markerElement.style.background = "#4AE3B5";
-    markerElement.style.border = "3px solid rgba(255,255,255,0.92)";
-    markerElement.style.boxShadow = "0 0 0 8px rgba(74, 227, 181, 0.15)";
+    markerElement.className = "user-location-marker";
 
     userMarkerRef.current?.remove();
     userMarkerRef.current = new maplibregl.Marker({ element: markerElement })
