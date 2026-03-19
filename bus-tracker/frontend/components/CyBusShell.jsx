@@ -387,6 +387,13 @@ export default function CyBusShell() {
     loadStopTimetable(stop).catch(console.error);
   }, [loadStopTimetable]);
 
+  const showAllBuses = useCallback(() => {
+    setSelectedRoute(null);
+    setSelectedStop(null);
+    setSelectedStopTimetable(null);
+    setMapAction({ type: "fitVehicles", token: Date.now() });
+  }, []);
+
   const isFavoriteStop = (stopId) => favoriteStopIds.includes(stopId);
 
   const renderSelectedStop = selectedStopTimetable ? (
@@ -482,15 +489,28 @@ export default function CyBusShell() {
 
         {selectedRoute && (
           <div className="map-overlay map-overlay-right">
-            <div className="glass-panel map-card">
+            <div className="glass-panel map-card route-summary-card">
+              <p className="tiny-label">{t.selectedLine}</p>
               <div className="route-row">
                 <span className="route-pill" style={buildRouteColors(selectedRoute)}>
                   {selectedRoute.short_name}
                 </span>
-                <div>
+                <div className="route-summary-copy">
                   <strong>{selectedRoute.long_name}</strong>
                   <div className="muted">{selectedRoute.operator_name}</div>
                 </div>
+              </div>
+              <div className="map-card-actions">
+                <button className="button button-secondary map-card-button" onClick={showAllBuses}>
+                  {t.showAllBuses}
+                </button>
+                <button
+                  className="icon-button"
+                  onClick={showAllBuses}
+                  aria-label={t.panelClose}
+                >
+                  <Waves size={16} />
+                </button>
               </div>
             </div>
           </div>
@@ -655,6 +675,9 @@ export default function CyBusShell() {
                       onClick={() => setMapAction({ type: "route", token: Date.now(), routeId: selectedRoute.route_id })}
                     >
                       {t.focusRoute}
+                    </button>
+                    <button className="button button-secondary" onClick={showAllBuses}>
+                      {t.showAllBuses}
                     </button>
                   </div>
 

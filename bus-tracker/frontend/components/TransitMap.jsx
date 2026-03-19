@@ -13,30 +13,7 @@ const EMPTY_COLLECTION = {
   features: [],
 };
 
-const STREET_STYLE = {
-  version: 8,
-  sources: {
-    osm: {
-      type: "raster",
-      tiles: [
-        "https://a.tile.openstreetmap.org/{z}/{x}/{y}.png",
-        "https://b.tile.openstreetmap.org/{z}/{x}/{y}.png",
-        "https://c.tile.openstreetmap.org/{z}/{x}/{y}.png",
-      ],
-      tileSize: 256,
-      maxzoom: 19,
-      attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    },
-  },
-  layers: [
-    {
-      id: "osm",
-      type: "raster",
-      source: "osm",
-    },
-  ],
-};
+const STREET_STYLE = "https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json";
 
 function escapeHtml(value) {
   return String(value || "")
@@ -252,11 +229,7 @@ export default function TransitMap({
       return;
     }
     onVehicleSelectRef.current?.(vehicle);
-    openPopup(
-      [vehicle.lon, vehicle.lat],
-      `<div><strong>${escapeHtml(vehicle.route_short_name)}</strong><br/>${escapeHtml(vehicle.headsign)}</div>`
-    );
-  }, [openPopup]);
+  }, []);
 
   const handleStopClick = useCallback((feature) => {
     const stop = stopIndexRef.current.get(feature.properties.id);
@@ -362,6 +335,24 @@ export default function TransitMap({
             "#7BDFF2",
             "#FF8A5B",
           ],
+        },
+      });
+      map.addLayer({
+        id: "focus-stops-labels",
+        type: "symbol",
+        source: "focus-stops",
+        minzoom: 14,
+        layout: {
+          "text-field": ["coalesce", ["get", "name"], ["get", "code"]],
+          "text-size": 10,
+          "text-offset": [0, 1.1],
+          "text-anchor": "top",
+          "text-font": ["Open Sans Regular", "Arial Unicode MS Regular"],
+        },
+        paint: {
+          "text-color": "#24415B",
+          "text-halo-color": "rgba(255, 255, 255, 0.98)",
+          "text-halo-width": 1,
         },
       });
       map.on("click", "focus-stops-main", (event) => {

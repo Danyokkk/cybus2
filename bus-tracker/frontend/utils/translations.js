@@ -66,6 +66,8 @@ export const translations = {
     stopCode: "Stop code",
     minutesAway: "min",
     panelClose: "Close",
+    showAllBuses: "Show all buses",
+    selectedLine: "Selected line",
   },
   el: {
     appTitle: "CyBus",
@@ -128,6 +130,8 @@ export const translations = {
     stopCode: "Κωδικός στάσης",
     minutesAway: "λεπ",
     panelClose: "Κλείσιμο",
+    showAllBuses: "Όλα τα λεωφορεία",
+    selectedLine: "Επιλεγμένη γραμμή",
   },
   ru: {
     appTitle: "CyBus",
@@ -190,5 +194,7 @@ export const translations = {
     stopCode: "Код остановки",
     minutesAway: "мин",
     panelClose: "Закрыть",
+    showAllBuses: "Все автобусы",
+    selectedLine: "Выбранная линия",
   },
 };
