@@ -474,8 +474,15 @@ button {
 }
 
 .favorite-toggle {
-  min-width: 2.6rem;
-  min-height: 2.6rem;
+  width: 2.7rem;
+  height: 2.7rem;
+  min-width: 2.7rem;
+  min-height: 2.7rem;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  border-radius: 999px;
   border: 1px solid rgba(93, 118, 144, 0.12);
   background: rgba(255, 255, 255, 0.84);
   color: var(--text);
@@ -549,6 +556,10 @@ button {
   max-width: 340px;
   padding: 0.8rem 0.9rem;
   border-radius: 20px;
+}
+
+.map-toggle-button {
+  justify-content: flex-start;
 }
 
 .route-summary-card {

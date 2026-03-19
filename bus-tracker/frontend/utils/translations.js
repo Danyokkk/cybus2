@@ -73,6 +73,8 @@ export const translations = {
     myLocation: "My location",
     back: "Back",
     home: "Home",
+    showAllStops: "Show all stops",
+    hideAllStops: "Hide stops",
   },
   el: {
     appTitle: "CyBus",
@@ -142,6 +144,8 @@ export const translations = {
     myLocation: "Η τοποθεσία μου",
     back: "Πίσω",
     home: "Αρχική",
+    showAllStops: "Όλες οι στάσεις",
+    hideAllStops: "Απόκρυψη στάσεων",
   },
   ru: {
     appTitle: "CyBus",
@@ -211,5 +215,7 @@ export const translations = {
     myLocation: "Моя локация",
     back: "Назад",
     home: "Домой",
+    showAllStops: "Все остановки",
+    hideAllStops: "Скрыть остановки",
   },
 };

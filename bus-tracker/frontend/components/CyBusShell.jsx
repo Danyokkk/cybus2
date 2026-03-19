@@ -101,6 +101,8 @@ export default function CyBusShell() {
   const [selectedStopTimetable, setSelectedStopTimetable] = useState(null);
   const [favoriteStopIds, setFavoriteStopIds] = useState([]);
   const [favoriteStops, setFavoriteStops] = useState([]);
+  const [allStops, setAllStops] = useState([]);
+  const [showAllStops, setShowAllStops] = useState(false);
   const [nearbyStops, setNearbyStops] = useState([]);
   const [locationError, setLocationError] = useState(null);
   const [userLocation, setUserLocation] = useState(null);
@@ -139,6 +141,10 @@ export default function CyBusShell() {
   useEffect(() => {
     window.localStorage.setItem(FAVORITES_KEY, JSON.stringify(favoriteStopIds));
   }, [favoriteStopIds]);
+
+  useEffect(() => {
+    setAllStops([]);
+  }, [language]);
 
   const loadBootstrap = useCallback(async () => {
     setLoading(true);
@@ -208,6 +214,16 @@ export default function CyBusShell() {
       setFavoriteStops(data);
     });
   }, [favoriteStopIds, language]);
+
+  const loadAllStops = useCallback(async () => {
+    const data = await fetchJson("/api/stops", {
+      lang: language,
+      params: { all: 1 },
+    });
+    startTransition(() => {
+      setAllStops(data);
+    });
+  }, [language]);
 
   const searchStops = useCallback(async (query) => {
     if (!query || query.trim().length < 2) {
@@ -319,6 +335,15 @@ export default function CyBusShell() {
   }, [favoriteStopIds, language, loadFavoriteStops]);
 
   useEffect(() => {
+    if (!showAllStops || allStops.length > 0) {
+      return;
+    }
+    loadAllStops().catch((error) => {
+      console.error(error);
+    });
+  }, [allStops.length, loadAllStops, showAllStops]);
+
+  useEffect(() => {
     if (selectedRoute?.route_id) {
       loadRouteDetail(selectedRoute.route_id, false).catch((error) => {
         console.error(error);
@@ -419,6 +444,10 @@ export default function CyBusShell() {
     setMapAction({ type: "fitVehicles", token: Date.now() });
   }, []);
 
+  const toggleAllStops = useCallback(() => {
+    setShowAllStops((current) => !current);
+  }, []);
+
   const goHome = useCallback(() => {
     setSelectedRoute(null);
     setSelectedStop(null);
@@ -456,6 +485,7 @@ export default function CyBusShell() {
   }, [panel, panelOpen, selectedRoute, selectedStop, selectedStopTimetable]);
 
   const canGoBack = Boolean(selectedStopTimetable || selectedStop || selectedRoute || panel !== "nearby" || !panelOpen);
+  const showHeroCard = panel === "nearby" && !selectedRoute && !selectedStop && !selectedStopTimetable && !plannerResult;
 
   const openSelectedRoutePanel = useCallback(() => {
     setPanel("lines");
@@ -539,6 +569,8 @@ export default function CyBusShell() {
           routeDetail={selectedRoute}
           nearbyStops={nearbyStops}
           favoriteStops={favoriteStops}
+          allStops={allStops}
+          showAllStops={showAllStops}
           selectedStop={selectedStop}
           userLocation={userLocation}
           action={mapAction}
@@ -559,6 +591,10 @@ export default function CyBusShell() {
               {vehiclesState.vehicles?.length || 0} · {t.updated} {formatUpdatedAt(vehiclesState.updated_at)}
             </p>
           </div>
+          <button className="glass-panel menu-trigger map-toggle-button" onClick={toggleAllStops}>
+            <MapPinned size={18} />
+            {showAllStops ? t.hideAllStops : t.showAllStops}
+          </button>
         </div>
 
         {selectedRoute && (
@@ -630,44 +666,46 @@ export default function CyBusShell() {
           </div>
         </div>
 
-        <section className="hero-card">
-          <div className="title-row">
-            <div className="title-block">
-              <p className="eyebrow">{t.liveNow}</p>
-              <h1>{t.heroTitle}</h1>
-            </div>
-            <div className="badge">
-              <span className="badge-dot" />
-              {vehiclesState.status === "ok" ? t.liveVehicles : t.dataStatus}
-            </div>
-          </div>
-          <p className="panel-copy">{t.heroBody}</p>
-
-          <div className="stats-grid">
-            {liveStats.map((item) => (
-              <div key={item.label} className="stat-card">
-                <p className="stat-value">{item.value}</p>
-                <div className="stat-label">{item.label}</div>
+        {showHeroCard && (
+          <section className="hero-card">
+            <div className="title-row">
+              <div className="title-block">
+                <p className="eyebrow">{t.liveNow}</p>
+                <h1>{t.heroTitle}</h1>
               </div>
-            ))}
-          </div>
+              <div className="badge">
+                <span className="badge-dot" />
+                {vehiclesState.status === "ok" ? t.liveVehicles : t.dataStatus}
+              </div>
+            </div>
+            <p className="panel-copy">{t.heroBody}</p>
 
-          <div className="hero-actions">
-            <button
-              className="button button-primary"
-              onClick={() => {
-                setMapAction({ type: "fitVehicles", token: Date.now() });
-              }}
-            >
-              <MapPinned size={18} />
-              {t.trackBuses}
-            </button>
-            <button className="button button-secondary" onClick={() => requestNearbyStops().catch(console.error)}>
-              <LocateFixed size={18} />
-              {t.findNearby}
-            </button>
-          </div>
-        </section>
+            <div className="stats-grid">
+              {liveStats.map((item) => (
+                <div key={item.label} className="stat-card">
+                  <p className="stat-value">{item.value}</p>
+                  <div className="stat-label">{item.label}</div>
+                </div>
+              ))}
+            </div>
+
+            <div className="hero-actions">
+              <button
+                className="button button-primary"
+                onClick={() => {
+                  setMapAction({ type: "fitVehicles", token: Date.now() });
+                }}
+              >
+                <MapPinned size={18} />
+                {t.trackBuses}
+              </button>
+              <button className="button button-secondary" onClick={() => requestNearbyStops().catch(console.error)}>
+                <LocateFixed size={18} />
+                {t.findNearby}
+              </button>
+            </div>
+          </section>
+        )}
 
         <nav className="tab-bar">
           {PANELS.map((item) => {

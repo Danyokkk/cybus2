@@ -74,8 +74,40 @@ function buildVehicleMarker(vehicle) {
   return marker;
 }
 
-function buildStopCollection(routeDetail, nearbyStops, favoriteStops, selectedStop) {
+function buildStopPinImage() {
+  const canvas = document.createElement("canvas");
+  canvas.width = 44;
+  canvas.height = 56;
+  const ctx = canvas.getContext("2d");
+  if (!ctx) {
+    return null;
+  }
+
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = "#2EC5A2";
+  ctx.strokeStyle = "#FFFFFF";
+  ctx.lineWidth = 3;
+
+  ctx.beginPath();
+  ctx.moveTo(22, 52);
+  ctx.bezierCurveTo(18, 42, 8, 34, 8, 22);
+  ctx.arc(22, 22, 14, Math.PI, 0, false);
+  ctx.bezierCurveTo(36, 34, 26, 42, 22, 52);
+  ctx.closePath();
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.fillStyle = "rgba(255,255,255,0.95)";
+  ctx.arc(22, 22, 6.5, 0, Math.PI * 2);
+  ctx.fill();
+
+  return ctx.getImageData(0, 0, canvas.width, canvas.height);
+}
+
+function buildStopCollection(routeDetail, nearbyStops, favoriteStops, selectedStop, allStops = [], showAllStops = false) {
   const rank = {
+    all: 0,
     route: 1,
     nearby: 2,
     favorite: 3,
@@ -94,6 +126,11 @@ function buildStopCollection(routeDetail, nearbyStops, favoriteStops, selectedSt
     merged.set(stop.stop_id, { ...stop, kind });
   };
 
+  if (showAllStops) {
+    for (const stop of allStops || []) {
+      pushStop(stop, "all");
+    }
+  }
   for (const direction of routeDetail?.directions || []) {
     for (const stop of direction.stops || []) {
       pushStop(stop, "route");
@@ -181,6 +218,8 @@ export default function TransitMap({
   routeDetail,
   nearbyStops,
   favoriteStops,
+  allStops,
+  showAllStops,
   selectedStop,
   userLocation,
   action,
@@ -203,8 +242,8 @@ export default function TransitMap({
 
   const vehicleCollection = useMemo(() => buildVehicleCollection(vehicles || []), [vehicles]);
   const stopCollection = useMemo(
-    () => buildStopCollection(routeDetail, nearbyStops, favoriteStops, selectedStop),
-    [favoriteStops, nearbyStops, routeDetail, selectedStop]
+    () => buildStopCollection(routeDetail, nearbyStops, favoriteStops, selectedStop, allStops, showAllStops),
+    [allStops, favoriteStops, nearbyStops, routeDetail, selectedStop, showAllStops]
   );
   const routeCollection = useMemo(() => buildRouteCollection(routeDetail), [routeDetail]);
 
@@ -265,6 +304,11 @@ export default function TransitMap({
       readyRef.current = true;
       setMapReady(true);
 
+      const stopPinImage = buildStopPinImage();
+      if (stopPinImage && !map.hasImage("stop-pin")) {
+        map.addImage("stop-pin", stopPinImage, { pixelRatio: 2 });
+      }
+
       map.addSource("route-lines", {
         type: "geojson",
         data: EMPTY_COLLECTION,
@@ -299,6 +343,7 @@ export default function TransitMap({
         id: "focus-stops-glow",
         type: "circle",
         source: "focus-stops",
+        filter: ["!=", ["get", "kind"], "all"],
         paint: {
           "circle-radius": ["interpolate", ["linear"], ["zoom"], 8, 4, 14, 10],
           "circle-color": [
@@ -320,6 +365,7 @@ export default function TransitMap({
         id: "focus-stops-main",
         type: "circle",
         source: "focus-stops",
+        filter: ["!=", ["get", "kind"], "all"],
         paint: {
           "circle-radius": ["interpolate", ["linear"], ["zoom"], 8, 2.5, 14, 6],
           "circle-stroke-width": 1.5,
@@ -338,10 +384,23 @@ export default function TransitMap({
         },
       });
       map.addLayer({
+        id: "focus-stops-pin",
+        type: "symbol",
+        source: "focus-stops",
+        filter: ["==", ["get", "kind"], "all"],
+        layout: {
+          "icon-image": "stop-pin",
+          "icon-size": ["interpolate", ["linear"], ["zoom"], 8, 0.36, 14, 0.54],
+          "icon-allow-overlap": true,
+          "icon-ignore-placement": true,
+        },
+      });
+      map.addLayer({
         id: "focus-stops-labels",
         type: "symbol",
         source: "focus-stops",
-        minzoom: 14,
+        filter: ["!=", ["get", "kind"], "all"],
+        minzoom: 14.5,
         layout: {
           "text-field": ["coalesce", ["get", "name"], ["get", "code"]],
           "text-size": 10,
@@ -355,14 +414,16 @@ export default function TransitMap({
           "text-halo-width": 1,
         },
       });
-      map.on("click", "focus-stops-main", (event) => {
+      const onStopLayerClick = (event) => {
         const feature = event.features?.[0];
         if (feature) {
           handleStopClick(feature);
         }
-      });
+      };
+      map.on("click", "focus-stops-main", onStopLayerClick);
+      map.on("click", "focus-stops-pin", onStopLayerClick);
 
-      for (const layerId of ["focus-stops-main"]) {
+      for (const layerId of ["focus-stops-main", "focus-stops-pin"]) {
         map.on("mouseenter", layerId, () => {
           map.getCanvas().style.cursor = "pointer";
         });
@@ -424,12 +485,18 @@ export default function TransitMap({
     stopIndexRef.current = new Map(
       Array.from(
         new Map(
-          [...(favoriteStops || []), ...(nearbyStops || []), ...(selectedStop ? [selectedStop] : []), ...((routeDetail?.directions || []).flatMap((direction) => direction.stops || []))].map((stop) => [stop.stop_id, stop])
+          [
+            ...(showAllStops ? allStops || [] : []),
+            ...(favoriteStops || []),
+            ...(nearbyStops || []),
+            ...(selectedStop ? [selectedStop] : []),
+            ...((routeDetail?.directions || []).flatMap((direction) => direction.stops || [])),
+          ].map((stop) => [stop.stop_id, stop])
         ).values()
       ).map((stop) => [stop.stop_id, stop])
     );
     mapRef.current.getSource("focus-stops")?.setData(stopCollection);
-  }, [favoriteStops, mapReady, nearbyStops, routeDetail, selectedStop, stopCollection]);
+  }, [allStops, favoriteStops, mapReady, nearbyStops, routeDetail, selectedStop, showAllStops, stopCollection]);
 
   useEffect(() => {
     if (!mapReady || !mapRef.current) {

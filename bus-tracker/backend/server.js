@@ -1181,6 +1181,7 @@ app.get("/api/stops", ensureReady, (req, res) => {
   const lang = getLang(req);
   const ids = parseIds(req.query.ids);
   const q = String(req.query.q || "").trim().toLowerCase();
+  const fetchAll = String(req.query.all || "") === "1";
   const limit = Math.min(Number(req.query.limit || 30), 100);
 
   if (ids.length > 0) {
@@ -1204,7 +1205,8 @@ app.get("/api/stops", ensureReady, (req, res) => {
     });
   }
 
-  res.json(stops.slice(0, limit).map((stop) => decorateStop(stop, lang)));
+  const visibleStops = fetchAll ? stops : stops.slice(0, limit);
+  res.json(visibleStops.map((stop) => decorateStop(stop, lang)));
 });
 
 app.get("/api/stops/nearby", ensureReady, (req, res) => {
