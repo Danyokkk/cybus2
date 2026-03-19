@@ -390,7 +390,7 @@ export default function TransitMap({
         filter: ["==", ["get", "kind"], "all"],
         layout: {
           "icon-image": "stop-pin",
-          "icon-size": ["interpolate", ["linear"], ["zoom"], 8, 0.36, 14, 0.54],
+          "icon-size": ["interpolate", ["linear"], ["zoom"], 8, 0.82, 14, 0.98],
           "icon-allow-overlap": true,
           "icon-ignore-placement": true,
         },
@@ -540,6 +540,11 @@ export default function TransitMap({
 
     if (action.type === "fitVehicles") {
       fitMapToFeatureCollection(map, vehicleCollection, 9);
+      return;
+    }
+
+    if (action.type === "allStops") {
+      fitMapToFeatureCollection(map, stopCollection, 8.4);
       return;
     }
 

@@ -20,6 +20,12 @@ const LIVE_FEEDS = [
   "http://motionbuscard.org.cy:8328/Api/api/gtfs-realtime",
   "http://20.19.98.194:8328/Api/api/gtfs-realtime",
 ];
+const CYPRUS_BOUNDS = {
+  minLat: 34.45,
+  maxLat: 35.85,
+  minLon: 32.0,
+  maxLon: 34.95,
+};
 
 const OPERATORS = [
   {
@@ -840,6 +846,9 @@ async function pollRealtime() {
         if (!Number.isFinite(latitude) || !Number.isFinite(longitude)) {
           continue;
         }
+        if (!isWithinCyprus(latitude, longitude)) {
+          continue;
+        }
 
         const vehicle = {
           id: String(entity.vehicle.vehicle?.id || entity.id || rawTripId || `${latitude}-${longitude}`),
@@ -930,6 +939,17 @@ function buildRouteDetails(route, lang) {
 function parseCoordinate(value) {
   const parsed = Number(value);
   return Number.isFinite(parsed) ? parsed : null;
+}
+
+function isWithinCyprus(lat, lon) {
+  return (
+    Number.isFinite(lat) &&
+    Number.isFinite(lon) &&
+    lat >= CYPRUS_BOUNDS.minLat &&
+    lat <= CYPRUS_BOUNDS.maxLat &&
+    lon >= CYPRUS_BOUNDS.minLon &&
+    lon <= CYPRUS_BOUNDS.maxLon
+  );
 }
 
 function getCandidateStops(stopId, lat, lon, lang) {

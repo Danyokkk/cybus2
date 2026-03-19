@@ -344,6 +344,13 @@ export default function CyBusShell() {
   }, [allStops.length, loadAllStops, showAllStops]);
 
   useEffect(() => {
+    if (!showAllStops || allStops.length === 0) {
+      return;
+    }
+    setMapAction({ type: "allStops", token: Date.now() });
+  }, [allStops.length, showAllStops]);
+
+  useEffect(() => {
     if (selectedRoute?.route_id) {
       loadRouteDetail(selectedRoute.route_id, false).catch((error) => {
         console.error(error);
@@ -445,7 +452,11 @@ export default function CyBusShell() {
   }, []);
 
   const toggleAllStops = useCallback(() => {
-    setShowAllStops((current) => !current);
+    setShowAllStops((current) => {
+      const next = !current;
+      setMapAction({ type: next ? "allStops" : "fitVehicles", token: Date.now() });
+      return next;
+    });
   }, []);
 
   const goHome = useCallback(() => {
