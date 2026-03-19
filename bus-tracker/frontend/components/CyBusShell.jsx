@@ -14,10 +14,10 @@ import {
   Waves,
 } from "lucide-react";
 import {
+  useCallback,
   startTransition,
   useDeferredValue,
   useEffect,
-  useEffectEvent,
   useMemo,
   useState,
 } from "react";
@@ -135,7 +135,7 @@ export default function CyBusShell() {
     return () => media.removeEventListener("change", sync);
   }, []);
 
-  const loadBootstrap = useEffectEvent(async () => {
+  const loadBootstrap = useCallback(async () => {
     setLoading(true);
     try {
       const data = await fetchJson("/api/bootstrap", { lang: language });
@@ -145,9 +145,9 @@ export default function CyBusShell() {
     } finally {
       setLoading(false);
     }
-  });
+  }, [language]);
 
-  const pollVehicles = useEffectEvent(async () => {
+  const pollVehicles = useCallback(async () => {
     try {
       const data = await fetchJson("/api/vehicles", { lang: language });
       startTransition(() => {
@@ -158,9 +158,9 @@ export default function CyBusShell() {
         setVehiclesState((current) => ({ ...current, status: "error" }));
       });
     }
-  });
+  }, [language]);
 
-  const loadRouteDetail = useEffectEvent(async (routeId, focus = true) => {
+  const loadRouteDetail = useCallback(async (routeId, focus = true) => {
     if (!routeId) {
       return;
     }
@@ -173,9 +173,9 @@ export default function CyBusShell() {
         setMapAction({ type: "route", token: Date.now(), routeId: detail.route_id });
       }
     });
-  });
+  }, [language]);
 
-  const loadStopTimetable = useEffectEvent(async (stop, focus = true) => {
+  const loadStopTimetable = useCallback(async (stop, focus = true) => {
     if (!stop?.stop_id) {
       return;
     }
@@ -188,9 +188,9 @@ export default function CyBusShell() {
         setMapAction({ type: "stop", token: Date.now(), stopId: stop.stop_id });
       }
     });
-  });
+  }, [language]);
 
-  const loadFavoriteStops = useEffectEvent(async () => {
+  const loadFavoriteStops = useCallback(async () => {
     if (favoriteStopIds.length === 0) {
       setFavoriteStops([]);
       return;
@@ -202,22 +202,20 @@ export default function CyBusShell() {
     startTransition(() => {
       setFavoriteStops(data);
     });
-  });
+  }, [favoriteStopIds, language]);
 
-  const searchStops = useEffectEvent(async (query, setter) => {
+  const searchStops = useCallback(async (query) => {
     if (!query || query.trim().length < 2) {
-      setter([]);
-      return;
+      return [];
     }
 
-    const results = await fetchJson("/api/stops", {
+    return fetchJson("/api/stops", {
       lang: language,
       params: { q: query.trim(), limit: 8 },
     });
-    setter(results);
-  });
+  }, [language]);
 
-  const requestNearbyStops = useEffectEvent(async () => {
+  const requestNearbyStops = useCallback(async () => {
     if (!navigator.geolocation) {
       setLocationError(t.locateError);
       return null;
@@ -256,9 +254,9 @@ export default function CyBusShell() {
         { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 }
       );
     });
-  });
+  }, [language, t.locateError]);
 
-  const runPlanner = useEffectEvent(async () => {
+  const runPlanner = useCallback(async () => {
     if (!plannerToStop?.stop_id) {
       return;
     }
@@ -289,7 +287,7 @@ export default function CyBusShell() {
     } finally {
       setPlannerLoading(false);
     }
-  });
+  }, [language, plannerFromStop, plannerMode, plannerToStop, requestNearbyStops, userLocation]);
 
   useEffect(() => {
     loadBootstrap().catch((error) => {
@@ -333,18 +331,22 @@ export default function CyBusShell() {
 
   useEffect(() => {
     const timeout = window.setTimeout(() => {
-      searchStops(plannerMode === "stop" ? deferredPlannerFromQuery : "", setPlannerFromResults).catch((error) => {
-        console.error(error);
-      });
+      searchStops(plannerMode === "stop" ? deferredPlannerFromQuery : "")
+        .then((results) => setPlannerFromResults(results))
+        .catch((error) => {
+          console.error(error);
+        });
     }, 220);
     return () => window.clearTimeout(timeout);
   }, [deferredPlannerFromQuery, plannerMode, searchStops]);
 
   useEffect(() => {
     const timeout = window.setTimeout(() => {
-      searchStops(deferredPlannerToQuery, setPlannerToResults).catch((error) => {
-        console.error(error);
-      });
+      searchStops(deferredPlannerToQuery)
+        .then((results) => setPlannerToResults(results))
+        .catch((error) => {
+          console.error(error);
+        });
     }, 220);
     return () => window.clearTimeout(timeout);
   }, [deferredPlannerToQuery, searchStops]);
@@ -377,13 +379,13 @@ export default function CyBusShell() {
     });
   };
 
-  const handleVehicleSelect = useEffectEvent(async (vehicle) => {
+  const handleVehicleSelect = useCallback(async (vehicle) => {
     if (!vehicle?.route_id) {
       return;
     }
     await loadRouteDetail(vehicle.route_id, false);
     setMapAction({ type: "vehicle", token: Date.now(), vehicleId: vehicle.id });
-  });
+  }, [loadRouteDetail]);
 
   const isFavoriteStop = (stopId) => favoriteStopIds.includes(stopId);
 
