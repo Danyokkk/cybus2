@@ -1,0 +1,126 @@
+﻿table_name,field_name,language,translation,record_id
+routes,route_long_name,el,ΓΣΠ-Υπουργείο Οικονομικών,9990011
+routes,route_long_name,el,Υπουργείο Οικονομικών - Βουλή των Αντιπροσώπων -Ομήρου -  ΓΣΠ,9990012
+routes,route_long_name,el,ΓΣΠ - Υπουργείο Οικονομικών - Ομήρου - ΓΣΠ,9990999
+stops,stop_name,el,Τεχνική Σχολή Γ Λευκωσίας,332
+stops,stop_desc,el,ΤΕΧΝ.ΣΧΟΛΗ,332
+stops,stop_name,el,Στάδιο ΓΣΠ,7840
+stops,stop_desc,el,ΣτΓΣΠ,7840
+stops,stop_name,el,Λεωφόρος Αρχιεπισκόπου Μακαρίου Γ΄ - Αμάλδας,321
+stops,stop_desc,el,Μακ-Αμάλδα,321
+stops,stop_name,el,Λεωφ. Λεμεσού - Λύκειο Αρχιεπισκόπου Μακαρίου Γ,337
+stops,stop_desc,el,ΑΣΤΥΝΟΜΙΑ,337
+stops,stop_name,el,Λεωφ. Αρχιεπισκόπου Μακαρίου Γ΄- Θεοφάνη Θεοδότου,322
+stops,stop_desc,el,Μακ-Θεοδοτ,322
+stops,stop_name,el,Λεωφόρος Λεμεσου - Ελλησπόντου,339
+stops,stop_desc,el,Λεμ-Ελλησ,339
+stops,stop_name,el,Λεωφόρος Λεμεσου - Σαν Σουσί,335
+stops,stop_desc,el,Λεμ-ΣΣουσι,335
+stops,stop_name,el,Λεωφ. Λεμεσού - Πάρκο Κυκλοφοριακής Αγωγής,338
+stops,stop_desc,el, Κ.Αγωγής,338
+stops,stop_name,el,Λεωφ. Αρχιεπισκόπου Μακαρίου Γ΄ - John Kennedy,333
+stops,stop_desc,el,Μακ-Κένεντ,333
+stops,stop_name,el,Λεωφόρος Αρχιεπισκόπου Μακαρίου Γ΄ - Δημοφώντος,326
+stops,stop_desc,el,Μακ-Δημοφ,326
+stops,stop_name,el,Γιαννου Κρανιδιωτη - ΓΣΠ1,8036
+stops,stop_desc,el,ΓΚΓΣΠ1,8036
+stops,stop_name,el,Γιαννου Κρανιδιωτη - ΓΣΠ,8035
+stops,stop_desc,el,ΓΚΓΣΠ,8035
+stops,stop_name,el,Στάδιο ΓΣΠ 3,8033
+stops,stop_desc,el,ΓΣΠ3,8033
+stops,stop_name,el,Λεωφόρος Λεμεσου - Καλησπέρα,340
+stops,stop_desc,el,Λεμ-Καλησπ,340
+stops,stop_name,el,Υπουργείο Οικονομικών,3
+stops,stop_desc,el,ΥΠ.ΟΙΚΟΝ,3
+stops,stop_name,el,Γ.Λεβέντη - Ευαγόρου,7842
+stops,stop_desc,el,ΓΛεβΕυαγ,7842
+stops,stop_name,el,Κινύρα,53
+stops,stop_desc,el,Κινύρα,53
+stops,stop_name,el,Βουλή των Αντιπροσώπων,2702
+stops,stop_desc,el,ΒουτωνΑντ,2702
+stops,stop_name,el,Λεωφόρος Λεμεσου - Μελκονιάν,336
+stops,stop_desc,el,Λεμ-Μελκον,336
+stops,stop_name,el,Λεωφόρος Αρχιεπισκόπου Μακαρίου Γ΄ - Νάξου,325
+stops,stop_desc,el,Μακ-Ναξου,325
+stops,stop_name,el,Λεωφόρος Λεμεσου - Αλφα Τράπεζα,334
+stops,stop_desc,el,Λεμ-ΑλφαΤρ,334
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623211
+trips,trip_headsign,el, ΓΣΠ,16623212
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623213
+trips,trip_headsign,el, ΓΣΠ,16623214
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623215
+trips,trip_headsign,el, ΓΣΠ,16623216
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623217
+trips,trip_headsign,el, ΓΣΠ,16623218
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623219
+trips,trip_headsign,el, ΓΣΠ,16623220
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623221
+trips,trip_headsign,el, ΓΣΠ,16623222
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623223
+trips,trip_headsign,el, ΓΣΠ,16623224
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623225
+trips,trip_headsign,el, ΓΣΠ,16623226
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623227
+trips,trip_headsign,el, ΓΣΠ,16623228
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623229
+trips,trip_headsign,el, ΓΣΠ,16623230
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623231
+trips,trip_headsign,el, ΓΣΠ,16623232
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623233
+trips,trip_headsign,el, ΓΣΠ,16623234
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623235
+trips,trip_headsign,el, ΓΣΠ,16623236
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623237
+trips,trip_headsign,el, ΓΣΠ,16623238
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623239
+trips,trip_headsign,el, ΓΣΠ,16623240
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623241
+trips,trip_headsign,el, ΓΣΠ,16623242
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623243
+trips,trip_headsign,el, ΓΣΠ,16623244
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623245
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623246
+trips,trip_headsign,el, ΓΣΠ,16623247
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623248
+trips,trip_headsign,el, ΓΣΠ,16623249
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623250
+trips,trip_headsign,el, ΓΣΠ,16623251
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623252
+trips,trip_headsign,el, ΓΣΠ,16623253
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623254
+trips,trip_headsign,el, ΓΣΠ,16623255
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623256
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623257
+trips,trip_headsign,el, ΓΣΠ,16623258
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623259
+trips,trip_headsign,el, ΓΣΠ,16623260
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623261
+trips,trip_headsign,el, ΓΣΠ,16623262
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623263
+trips,trip_headsign,el, ΓΣΠ,16623264
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623265
+trips,trip_headsign,el, ΓΣΠ,16623266
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623267
+trips,trip_headsign,el, ΓΣΠ,16623268
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623269
+trips,trip_headsign,el, ΓΣΠ,16623270
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623271
+trips,trip_headsign,el, ΓΣΠ,16623272
+trips,trip_headsign,el, ΓΣΠ,16623273
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623274
+trips,trip_headsign,el, ΓΣΠ,16623275
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623276
+trips,trip_headsign,el, ΓΣΠ,16623277
+trips,trip_headsign,el, ΓΣΠ,16623278
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623279
+trips,trip_headsign,el, ΓΣΠ,16623280
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623281
+trips,trip_headsign,el, ΓΣΠ,16623282
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623283
+trips,trip_headsign,el, ΓΣΠ,16623284
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623285
+trips,trip_headsign,el, ΓΣΠ,16623286
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623287
+trips,trip_headsign,el, ΓΣΠ,16623288
+trips,trip_headsign,el,Υπουργείο Οικονομ,16623289
+trips,trip_headsign,el, ΓΣΠ,16623290

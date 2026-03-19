@@ -1,0 +1,16 @@
+{
+    "name": "CYPRUS BUS V2 by daan1k",
+    "short_name": "CYPRUS BUS V2",
+    "description": "Real-time bus tracking for Cyprus (V2)",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#0070f3",
+    "icons": [
+        {
+            "src": "/icon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        }
+    ]
+}

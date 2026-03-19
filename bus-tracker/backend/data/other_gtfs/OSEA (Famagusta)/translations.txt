@@ -1,0 +1,2029 @@
+﻿table_name,field_name,language,translation,record_id
+routes,route_long_name,el,Αγία Νάπα (Υδροπάρκο) - Κάβο Γκρέκο - Κόννος - Πρωταράς - Περνέρα - Παραλίμνι,40000011
+routes,route_long_name,el,Παραλίμνι - Περνέρα - Πρωταράς - Κόννος - Κάβο Γκρέκο - Αγία Νάπα (Υδροπάρκο),40010011
+routes,route_long_name,el,Λούνα Παρκ-Θάλασσα-Πλ. Αγ. Νάπας-Λεωφ. Νήσι-Μαρίνα-Υδροπάρκο-Τ. Ανθία-Μ. Κάσιαλου-Θάλασσα-Πλ. Αγ. Νάπας-Λούνα Παρκ,40020011
+routes,route_long_name,el,Σταθμός Πλ. Παρ.-1 Απριλίου (Β)-Γ. Παπαδ/λου-Λ. Κάππαρη-Λ. Πρωταρά-Εκκλ. Αγ. Βαρβάρας-Σταδίου-1 Απριλίου (Ν)-Στ. Πλ. Παρ,40030011
+routes,route_long_name,el,Δερύνεια (Πράσ. Γραμμή)- Φρέναρος- Λιοπέτρι- Υδροπάρκο- Αγ. Νάπα- Παραλίμνι- Γεν. Νοσοκομείο- Δερύνεια (Πρασ. Γραμμή),40040011
+routes,route_long_name,el,Δερύνεια (Πράσ. Γραμμή)- Γεν. Νοσοκομείο- Παραλίμνι- Αγ. Νάπα- Υδροπάρκο- Λιοπέτρι- Φρέναρος- Δερύνεια (Πρασ. Γραμμή),40050011
+routes,route_long_name,el,Ορμήδεια - Ξυλοφάγου - Λιοπέτρι - Σωτήρα - Δερύνεια - Γεν. Νοσοκομείο Αμμοχώστου - Παραλίμνι,40060011
+routes,route_long_name,el,Παραλίμνι - Γεν. Νοσοκομείο Αμμοχώστου - Δερύνεια - Σωτήρα - Λιοπέτρι - Ξυλοφάγου - Ορμήδεια,40060012
+routes,route_long_name,el,Ξυλοτύμπου - Δασάκι Άχνας - Αυγόρου - Φρέναρος - Δερύνεια - Γενικό Νοσοκομείο Αμμοχώστου - Παραλίμνι,40070011
+routes,route_long_name,el,Παραλίμνι - Γενικό Νοσοκομείο Αμμοχώστου - Δερύνεια - Φρέναρος - Αυγόρου - Δασάκι Άχνας - Ξυλοτύμπου,40070012
+routes,route_long_name,el,Α.Η.Κ. Δεκέλεια - Ορμήδεια - Ξυλοφάγου - Λιοπέτρι - Σωτήρα - Παραλίμνι - Πρωταράς - Κόννος,40080011
+routes,route_long_name,el,Κόννος - Πρωταράς - Παραλίμνι - Σωτήρα - Λιοπέτρι - Ξυλοφάγου - Ορμήδεια - Α.Η.Κ. Δεκέλεια,40080012
+routes,route_long_name,el,Α.Η.Κ. Δεκέλεια - Ξυλοτύμπου - Ορμήδεια - Ξυλοφάγου - Αγία Νάπα,40090011
+routes,route_long_name,el,Αγία Νάπα - Ξυλοφάγου - Ορμήδεια - Ξυλοτύμπου - Α.Η.Κ. Δεκέλεια,40090012
+routes,route_long_name,el,Δασάκι Άχνας - Αυγόρου - Λιοπέτρι - Αγία Νάπα,40100011
+routes,route_long_name,el,Αγία Νάπα - Λιοπέτρι - Αυγόρου - Δασάκι Άχνας,40100012
+routes,route_long_name,el,Ξυλοτύμπου - Δασάκι Άχνας - Αυγόρου - Φρέναρος - Δερύνεια - Παραλίμνι - Πρωταράς - Κόννος,40110011
+routes,route_long_name,el,Κόννος - Πρωταράς - Κάππαρης - Παραλίμνι - Δερύνεια - Φρέναρος - Αυγόρου - Δασάκι Άχνας - Ξυλοτύμπου,40110012
+routes,route_long_name,el,Στροβίλια (Πράσινη Γραμμή) - Βρυσούλλες - Φρέναρος - Δερύνεια - Νοσοκομείο Αμμοχώστου - Παραλίμνι - Πρωταράς - Κόννος,40120011
+routes,route_long_name,el,Κόννος - Πρωταράς - Παραλίμνι - Νοσοκομείο Αμμοχώστου - Δερύνεια - Φρέναρος - Βρυσούλλες - Στροβίλια (Πράσινη Γραμμή),40120012
+routes,route_long_name,el,Στροβίλια (Πράσινη Γραμμή) - Βρυσούλλες - Φρέναρος - Σωτήρα - Αγία Νάπα,40130011
+routes,route_long_name,el,Αγία Νάπα - Σωτήρα - Φρέναρος - Βρυσούλλες - Στροβίλια (Πράσινη Γραμμή),40130012
+routes,route_long_name,el,Δερύνεια - Σωτήρα - Αγία Νάπα,40140011
+routes,route_long_name,el,Αγία Νάπα - Σωτήρα - Δερύνεια,40140012
+routes,route_long_name,el,Παραλίμνι-Κάππαρης-Πρωταράς-Κόννος-Αγ. Νάπα-Παραλία Αγ. Θέκλας-Ξυλοφάγου-Ορμήδεια-Λάρνακα-Νέο Νοσοκομείο-Metropolis Mall,40150011
+routes,route_long_name,el,Metropolis Mall-Νέο Νοσοκομείο-Λάρνακα-Ορμήδεια-Ξυλοφάγου-Παραλία Αγ. Θέκλας-Αγ. Νάπα-Κόννος-Πρωταράς-Κάππαρης-Παραλίμνι,40150012
+routes,route_long_name,el,Παραλίμνι-Νοσοκ. Αμμ/στου-Δερύνεια-Φρέναρος- Βρυσούλλες-Αυγόρου-Δασάκι-Ξυλοτύμπου-Λάρνακα-Νέο Νοσοκομείο-Metropolis Mall,40160011
+routes,route_long_name,el,Metropolis Mall-Νέο Νοσοκομείο-Λάρνακα-Ξυλοτύμπου-Δασάκι-Αυγόρου-Βρυσούλλες-Φρέναρος-Δερύνεια-Νοσοκομείο-Παραλίμνι,40160012
+routes,route_long_name,el,Παραλίμνι-Νοσοκομείο Αμμ/στου-Δερύνεια-Σωτήρα-Λιοπέτρι-Ξυλοφάγου-Δεκέλεια-Λάρνακα-Νέο Νοσοκομείο-Metropolis Mall,40170011
+routes,route_long_name,el,Metropolis Mall-Νέο Νοσοκομείο-Λάρνακα-Δεκέλεια-Ξυλοφάγου-Λιοπέτρι-Σωτήρα-Δερύνεια-Νοσοκομείο Αμμ/στου-Παραλίμνι,40170012
+routes,route_long_name,el,Γεν. Νοσοκομείο - Λύκειο Παραλιμνίου - Κάππαρης - Παραλίμνι - Αγ. Νάπα - Υδροπάρκο - Παραλία Αγ. Θέκλας,40180011
+routes,route_long_name,el,Παραλία Αγ. Θέκλας - Υδροπάρκο - Αγ. Νάπα - Παραλίμνι - Κάππαρης - Λύκειο Παραλιμνίου,40180012
+routes,route_long_name,el,Κυκλική Γραμμή Παραλίμνι - Περνέρα - Κάππαρης,40190011
+routes,route_long_name,el,Παραλίμνι - Κάππαρης - Περνέρα - Πρωταράς - Κόννος,40200011
+routes,route_long_name,el,Κόννος - Πρωταράς - Περνέρα - Κάππαρης - Παραλίμνι,40200012
+routes,route_long_name,el,Παραλίμνι - Περνέρα - Πρωταράς - Κόννος,40210011
+routes,route_long_name,el,Κόννος - Πρωταράς - Περνέρα - Παραλίμνι,40210012
+routes,route_long_name,el,Σταθμός Αγ. Νάπας-Λεωφ. Νήσι-Ξεν. Μαρίνα-Λεωφ. Κρυού Νερού-Πλατεία Αγ. Νάπας-Λιμανάκι Αγ. Νάπας-Σταθμός Αγ. Νάπας,40220011
+routes,route_long_name,el,Α.Η.Κ. Δεκέλεια - Ξυλοφάγου - Αγία Νάπα,40230011
+routes,route_long_name,el,Αγία Νάπα - Ξυλοφάγου - Α.Η.Κ. Δεκέλεια,40230012
+routes,route_long_name,el,Ξυλοτύμπου - Ορμήδεια - Ξυλοφάγου - Αγία Νάπα,40240011
+routes,route_long_name,el,Αγία Νάπα - Ξυλοφάγου - Ορμήδεια - Ξυλοτύμπου,40240012
+routes,route_long_name,el,Ξυλοφάγου - Αγία Νάπα,40250011
+routes,route_long_name,el,Αγία Νάπα - Ξυλοφάγου,40250012
+routes,route_long_name,el,Ξυλοφάγου - Λιοπέτρι - Σωτήρα - Παραλίμνι - Γενικό Νοσοκομείο Αμμοχώστου,40260011
+routes,route_long_name,el,Παραλίμνι - Σωτήρα - Λιοπέτρι - Ξυλοφάγου,40260012
+routes,route_long_name,el,Παραλίμνι -  Νοσοκομείο Αμμ/στου - Δερύνεια - Φρέναρος - Βρυσούλλες - Ξυλοτύμπου - Λάρνακα - Νέο Νοσοκομείο,40270011
+routes,route_long_name,el,Παραλίμνι-Νοσοκομείο Αμμ/στου-Δερύνεια-Σωτήρα-Λιοπέτρι-Ξυλοφάγου-Δεκέλεια-Λάρνακα-Νέο Νοσοκομείο-Metropolis Mall,40280011
+routes,route_long_name,el,Ξυλοτύμπου - Δασάκι Άχνας - Αυγόρου - Λιοπέτρι - Φρέναρος - Δερύνεια - Γενικό Νοσοκομείο Αμμοχώστου - Παραλίμνι,40290011
+routes,route_long_name,el,Παραλίμνι - Γενικό Νοσοκομείο Αμμοχώστου - Δερύνεια - Φρέναρος - Λιοπέτρι - Αυγόρου - Δασάκι Άχνας - Ξυλοτύμπου,40290012
+routes,route_long_name,el,Παραλίμνι - Δερύνεια - Φρέναρος - Βρυσούλλες - Αυγόρου,40300012
+routes,route_long_name,el,Βρυσούλλες - Φρέναρος - Δερύνεια - Παραλίμνι - Αγία Νάπα,40310011
+routes,route_long_name,el,Αυγόρου - Φρέναρος - Σωτήρα - Αγία Νάπα,40320011
+stops,stop_name,el,Αγίας Θέκλας - 6η Στάση,5879
+stops,stop_desc,el,ΑγΘε-6ηΣτ,5879
+stops,stop_name,el,Λεωφ. Ακροπολεως - Ιθάκης,6650
+stops,stop_desc,el,ΛεΑκ-Ιθ,6650
+stops,stop_name,el,Ελευθερίας - Λεωφ. Αμμοχώστου,5770
+stops,stop_desc,el,Ελ-ΛεΑμ,5770
+stops,stop_name,el,Λεωφ. Πρωταρά - Κάβο Γκρέκο - 8η Στάση,5617
+stops,stop_desc,el,Πρ-ΚΓκ-8Σ,5617
+stops,stop_name,el,Λεωφ. Κρύου Νερού - 1η Στάση,5605
+stops,stop_desc,el,ΚΝ-1Σ,5605
+stops,stop_name,el,Καρυών - Ρήγα Φεραίου,7288
+stops,stop_desc,el,Κα-ΡηΦε,7288
+stops,stop_name,el,Λεωφ. Αμμοχώστου - Θέτιδος,6556
+stops,stop_desc,el,ΛεΑμ-Θε,6556
+stops,stop_name,el,Ξενοδοχείο Princess 2,6417
+stops,stop_desc,el,ΞενοδPrinc,6417
+stops,stop_name,el,28 Οκτωβρίου - 9 Ιουλίου,5919
+stops,stop_desc,el,28Οκ-9Ιο,5919
+stops,stop_name,el,Αμμοχώστου - Δημητρίου Χάματσου,5914
+stops,stop_desc,el,Αμ-ΔηΧα,5914
+stops,stop_name,el,Νέο Νοσοκομείο 1,6327
+stops,stop_desc,el,ΝεοΝοσοκ,6327
+stops,stop_name,el,Λεωφ. Κρύου Νερού - Ξενοδοχείο Marina 2,5602
+stops,stop_desc,el,ΚΝ-ΞεMa,5602
+stops,stop_name,el,Γιασουμή Κιλέ - Διονυσίου Σολωμού 2,5792
+stops,stop_desc,el,ΓιΚι-ΔιΣο,5792
+stops,stop_name,el,Αποστόλου Βαρνάβα - Ρηγαίνης,5759
+stops,stop_desc,el,ΑπΒα-Ρη,5759
+stops,stop_name,el,Εκκλησία Αγίου Γεωργίου 2,5906
+stops,stop_desc,el,ΕκκΑγιΓεω,5906
+stops,stop_name,el,Σταδίου - Αποστόλου Πέτρου,5807
+stops,stop_desc,el,Στ-ΑπΠε,5807
+stops,stop_name,el,Μιχαλάκη Καραολή - Πάμπου Τραγκουλά,5762
+stops,stop_desc,el,ΜιΚα-ΠαΤρ,5762
+stops,stop_name,el,Περνέρας - Ηφαίστου,5611
+stops,stop_desc,el,Περ-Ηφα,5611
+stops,stop_name,el,Νίκου Θεοφάνους - Χαμπή Μιχαηλίδη,5965
+stops,stop_desc,el,ΝιΘε-ΧαΜι,5965
+stops,stop_name,el,Στάδιο Αναγέννησης,5802
+stops,stop_desc,el,ΣταδιΑναγε,5802
+stops,stop_name,el,Λεωφ. Αρχιεπ. Μακαρίου Γ´ - Μιλτιάδους,6162
+stops,stop_desc,el,ΑρΜαΓ-Μι,6162
+stops,stop_name,el,Λεωφ. Λάρνακας - Δεκέλειας - 4η Στάση,6920
+stops,stop_desc,el,Λα-Δε-4Σ,6920
+stops,stop_name,el,Βρυσουδιών - 2η Στάση,5694
+stops,stop_desc,el,Βρ-2ηΣτ,5694
+stops,stop_name,el,1 Απριλίου - Ανδρέα Κάρυου,5930
+stops,stop_desc,el,1Απ-ΑνΚα,5930
+stops,stop_name,el,Δημόσιο Νηπιαγωγείο Αγ. Νάπας,5895
+stops,stop_desc,el,ΔηΝηΑγΝα,5895
+stops,stop_name,el,Δρόμος Παραλίμνι - Αγία Νάπα - 9η Στάση,5745
+stops,stop_desc,el,ΔρΠα-ΑΝ-9Σ,5745
+stops,stop_name,el,Ευαγγέλου Φλωράκη 1,7997
+stops,stop_desc,el,ΕυαγΦλωρακ,7997
+stops,stop_name,el,Δρόμος Ξυλοτύμβου - Δασάκι Άχνας,7071
+stops,stop_desc,el,ΔρΞυ-ΔαΑχ,7071
+stops,stop_name,el,Στάδιο Γ.Σ.Ζ. 1,6324
+stops,stop_desc,el,ΣταδιΓ.Σ.Ζ,6324
+stops,stop_name,el,Τεχνική και Γεωργική Σχολή Αμμοχώστου 1,5903
+stops,stop_desc,el,ΤεκαΓεΣχΑμ,5903
+stops,stop_name,el,Κόκκινες - Μελίνας Μερκούρη,5668
+stops,stop_desc,el,Κο-ΜεΜε,5668
+stops,stop_name,el,Ξενοδοχείο Princess 1,6429
+stops,stop_desc,el,ΞενοδPrinc,6429
+stops,stop_name,el,Λεωφ. Κάππαρη - 1η Στάση,5715
+stops,stop_desc,el,ΛεΚα-1ηΣτ,5715
+stops,stop_name,el,Τουριστικη Αγίας Θέκλας - 3η Στάση,5873
+stops,stop_desc,el,ΤοΑΘε-3Σ,5873
+stops,stop_name,el,Λεωφ. Πρωταρά - Ανταίου,5687
+stops,stop_desc,el,ΛεΠρ-Αν,5687
+stops,stop_name,el,Πυροσβεστικός Σταθμός Ορόκλινης 2,6427
+stops,stop_desc,el,ΠυρΣταΟρο,6427
+stops,stop_name,el,Εκκλησία Αρχ. Μιχαήλ και Αγ. Μαρίνας 2,5943
+stops,stop_desc,el,ΕκΑΜικΑΜα,5943
+stops,stop_name,el,Αφροδίτης - Αθηνάς,5613
+stops,stop_desc,el,Αφρ-Αθη,5613
+stops,stop_name,el,Κόννου - Ξενοδοχείο Grecian Park 2,5639
+stops,stop_desc,el,Κο-ΞεGrPa,5639
+stops,stop_name,el,Α´ Δημοτικό Σχολείο Αυγόρου 2,5908
+stops,stop_desc,el,ΑΔηΣχΑυ,5908
+stops,stop_name,el,Τεύκρου Ανθία - 2η Στάση,5889
+stops,stop_desc,el,ΤεΑν-2ηΣτ,5889
+stops,stop_name,el,Κόννου - Κίρκης 1,5636
+stops,stop_desc,el,Κον-Κιρ,5636
+stops,stop_name,el,Λεωφ. 1 Απριλίου - Τάσου Μάρκου 1,7276
+stops,stop_desc,el,1Απ-ΤΜα,7276
+stops,stop_name,el,Αχερίτου - Βάσου Σεργίου,5786
+stops,stop_desc,el,Αχ-ΒαΣε,5786
+stops,stop_name,el,Λεωφ. Νησί - Γιούρι Γκαγκάριν,5850
+stops,stop_desc,el,ΛεΝη-ΓιΓκ,5850
+stops,stop_name,el,Δημοκρατίας - Παλλέση,5959
+stops,stop_desc,el,Δημ-Παλ,5959
+stops,stop_name,el,Παραλία Αγία Τριάδα 2,5692
+stops,stop_desc,el,ΠαρΑγιΤρι,5692
+stops,stop_name,el,Παραλιμνίου 2,5812
+stops,stop_desc,el,Παραλιμνιο,5812
+stops,stop_name,el,Λεωφ. Ακροπόλεως - Lordos - Sandy - Golden Bay,6656
+stops,stop_desc,el,Ακ-Lo-S-Go,6656
+stops,stop_name,el,Α´ Δημοτικό Σχολείο Αυγόρου 1,5909
+stops,stop_desc,el,ΑΔηΣχΑυ,5909
+stops,stop_name,el,Ζαχαρία Σπύρου - Σταύρου Νεοφύτου,5968
+stops,stop_desc,el,ΖαΣπ-ΣτΝε,5968
+stops,stop_name,el,Δημαρχείο Ξυλοτύμβου 2,5935
+stops,stop_desc,el,ΔημαρΞυλοτ,5935
+stops,stop_name,el,Μεγ. Αλεξάνδρου - Μπουμπουλίνας,5707
+stops,stop_desc,el,ΜεΑλ-Μπ,5707
+stops,stop_name,el,Αποστ. Ανδρέα - Αγ. Θεοδώρου 1,5818
+stops,stop_desc,el,ΑπΑν-ΑγΘε,5818
+stops,stop_name,el,Αποστόλου Βαρνάβα - Υδραγωγείου,5758
+stops,stop_desc,el,ΑπΒα-Υδ,5758
+stops,stop_name,el,Αθλητικό Κέντρο Αγίας Νάπας,8021
+stops,stop_desc,el,ΑθλΚεΑγΝαπ,8021
+stops,stop_name,el,Λεωφ. Νησί - Νεόφυτου Πούλλου,5855
+stops,stop_desc,el,ΛεΝη-ΝεΠο,5855
+stops,stop_name,el,Κάβο Γκρέκο - 1η Στάση,5658
+stops,stop_desc,el,ΟΚΓκ-1Σ,5658
+stops,stop_name,el,Επαρχ. Δικαστήριο Αμμοχώστου 1,8001
+stops,stop_desc,el,ΕπαΔικαΑμμ,8001
+stops,stop_name,el,Λεωφ. Γρηγόρη Αυξεντίου - Φονιικούδες 1,6734
+stops,stop_desc,el,ΛεΓρΑυ-Φο,6734
+stops,stop_name,el,Λεωφ. Ακροπόλεως - Ξενοδοχείο Lordos,6665
+stops,stop_desc,el,ΛεΑκ-ΞεLo,6665
+stops,stop_name,el,Αγίας Θέκλας - 2η Στάση,5864
+stops,stop_desc,el,ΑγΘε-2ηΣτ,5864
+stops,stop_name,el,Τεύκρου Ανθία - Κατασπηλιών 2,5892
+stops,stop_desc,el,ΤεΑν-Κα,5892
+stops,stop_name,el,Εκκλησία Αγίου Γεωργίου 1,5907
+stops,stop_desc,el,ΕκκΑγιΓεω,5907
+stops,stop_name,el,Κοινοτικό Συμβούλιο Αχερίτου 1,5789
+stops,stop_desc,el,ΚοιΣυμΑχε,5789
+stops,stop_name,el,1η Στάση Α.Η.Κ. Δεκέλεια,5951
+stops,stop_desc,el,1ηΣτΑ.Δε,5951
+stops,stop_name,el,Αχυρώνας Λιοπετρίου 1,5923
+stops,stop_desc,el,ΑχυρωΛιοπε,5923
+stops,stop_name,el,Λεωφ. Πρωταρά - Κάβο Γκρέκο - 21η Στάση,5653
+stops,stop_desc,el,Πρ-ΚΓκ-2Σ,5653
+stops,stop_name,el,Λεωφ. 1 Απριλίου - Σταδίου,7275
+stops,stop_desc,el,Λε1Απ-Στ,7275
+stops,stop_name,el,Λεωφ. Νησί - Ισαάκ και Σολωμού,5853
+stops,stop_desc,el,Ν-ΙκΣο,5853
+stops,stop_name,el,Κυριάκου Μάτση - Τζων Κένvεντυ,5814
+stops,stop_desc,el,ΚυΜα-ΤζΚε,5814
+stops,stop_name,el,Δρόμος Παραλίμνι - Αγία Νάπα - 8η Στάση,5741
+stops,stop_desc,el,ΔρΠα-ΑΝ-8Σ,5741
+stops,stop_name,el,Αναστάση Μανώλη - Γρηγόρη Αυξεντίου,5963
+stops,stop_desc,el,ΑνΜα-ΓρΑυ,5963
+stops,stop_name,el,Διυλιστήρια 2,6554
+stops,stop_desc,el,Διυλιστηρι,6554
+stops,stop_name,el,Λιμανάκι Αγίας Νάπας 1,5899
+stops,stop_desc,el,ΛιμΑγιΝαπ,5899
+stops,stop_name,el,Λεωφ. Ακροπολεως - Λεωφ. Μεσαορίας,6447
+stops,stop_desc,el,ΛεΑκ-ΛεΜε,6447
+stops,stop_name,el,Κτηνοτροφική Περιοχή Άχνας 2,7427
+stops,stop_desc,el,ΚτηνΠερΑχν,7427
+stops,stop_name,el,Λεωφ. Νησί - Αγίας Μαύρης 1,5851
+stops,stop_desc,el,ΛεΝη-ΑγΜα,5851
+stops,stop_name,el,Κώστα Ηλία - Ανδρέα Μάντολες 1,5791
+stops,stop_desc,el,ΚωΗλ-ΑνΜα,5791
+stops,stop_name,el,Λεωφ. Γ. Γρίβα Διγενή - Λεωφ. Κων. Παλαιολόγου 2,6539
+stops,stop_desc,el,ΓΓΔι-ΚΠα,6539
+stops,stop_name,el,Λεωφ. Πρωταρά - Κάβο Γκρέκο - 26η Στάση,5657
+stops,stop_desc,el,Πρ-ΚΓκ-2Σ,5657
+stops,stop_name,el,Λεωφ. Πρωταρά - Κάβο Γκρέκο - 23η Στάση,5655
+stops,stop_desc,el,Πρ-ΚΓκ-2Σ,5655
+stops,stop_name,el,Κόννου - Κίρκης 2,5637
+stops,stop_desc,el,Κον-Κιρ,5637
+stops,stop_name,el,Λεωφ. Γρίβα Διγενή - Δαιδάλου,5757
+stops,stop_desc,el,ΛεΓρΔι-Δα,5757
+stops,stop_name,el,Ξάνθου Σαμάρα - Σαλαμίνος,5912
+stops,stop_desc,el,ΞαΣα-Σα,5912
+stops,stop_name,el,Σταδίου - 1η Στάση,5674
+stops,stop_desc,el,Στ-1ηΣτ,5674
+stops,stop_name,el,Παραλία Νήσι Μπέι 2,5859
+stops,stop_desc,el,ΠαρNisBay,5859
+stops,stop_name,el,Παραλία Δασάκι Πύλας 1,6657
+stops,stop_desc,el,ΠαρΔασΠυλ,6657
+stops,stop_name,el,Λεωφ. Αμμοχώστου - Δημη. Χριστοδούλου 1,5840
+stops,stop_desc,el,ΛεΑμ-ΔηΧρ,5840
+stops,stop_name,el,Παραλία Μακρόνησος 1,5863
+stops,stop_desc,el,ΠαραλΜακρο,5863
+stops,stop_name,el,Κόκκινες - Ιωαννίνων,5666
+stops,stop_desc,el,Κοκ-Ιωα,5666
+stops,stop_name,el,Πλατεία Ελευθερίας,5797
+stops,stop_desc,el,ΠλατεΕλευθ,5797
+stops,stop_name,el,Λεωφ. Πρωταρά - 5η Στάση,5689
+stops,stop_desc,el,ΛεΠρ-5ηΣτ,5689
+stops,stop_name,el,Βρυσουδιών - 4η Στάση,5698
+stops,stop_desc,el,Βρ-4ηΣτ,5698
+stops,stop_name,el,Αρχιεπισκόπου Παϊσίου,6325
+stops,stop_desc,el,ΑρχιεΠαισι,6325
+stops,stop_name,el,Λεωφ. Αρχιεπ. Μακαρίου Γ´ - Φιλιου Τσιγαριδη 1,6597
+stops,stop_desc,el,ΑρΜαΓ-ΦιΤσ,6597
+stops,stop_name,el,Λεωφ. Γρηγόρη Αυξεντίου - Φονιικούδες 2,6733
+stops,stop_desc,el,ΛεΓρΑυ-Φο,6733
+stops,stop_name,el,Εκκλησία Αγίου Γεωργίου 1,6326
+stops,stop_desc,el,ΕκκΑγιΓεω,6326
+stops,stop_name,el,Λεωφ. Γεώργ. Γρίβα Διγενή - Λεωφ. 1 Απριλίου,6168
+stops,stop_desc,el,ΓεΓΔι-1Απ,6168
+stops,stop_name,el,Λεωφ. Κρύου Νερού - Μελισσιών,5606
+stops,stop_desc,el,ΛεΚρΝε-Με,5606
+stops,stop_name,el,Καρυών - Ξάνθου Σαμάρα,7289
+stops,stop_desc,el,Κα-ΞαΣα,7289
+stops,stop_name,el,Λύκειο Παραλιμνίου 1,5729
+stops,stop_desc,el,ΛυκειΠαραλ,5729
+stops,stop_name,el,Εθνογραφικό Μουσείο Αυγόρου 2,7286
+stops,stop_desc,el,ΕθνΜουΑυγ,7286
+stops,stop_name,el,Λεωφ. Πρωταρά - Κάβο Γκρέκο - Διονύσου,5620
+stops,stop_desc,el,Πρ-ΚΓκ-Δι,5620
+stops,stop_name,el,Λεωφ. Περνέρας - Οδυσσέως,7260
+stops,stop_desc,el,ΛεΠε-Οδ,7260
+stops,stop_name,el,Αμερικάνικη Ακαδημία 2,6330
+stops,stop_desc,el,ΑμεριΑκαδη,6330
+stops,stop_name,el,Δημοτικός Κήπος 2,6894
+stops,stop_desc,el,ΔημοτΚηπος,6894
+stops,stop_name,el,Λεωφ. Περνέρας - 3η Στάση,5614
+stops,stop_desc,el,ΛεΠε-3ηΣτ,5614
+stops,stop_name,el,Εκκλησία Αγίας Βαρβάρας 1,5685
+stops,stop_desc,el,ΕκκΑγιΒαρ,5685
+stops,stop_name,el,Δρόμος Παραλίμνι - Αγία Νάπα - 4η Στάση,5880
+stops,stop_desc,el,ΔρΠα-ΑΝ-4Σ,5880
+stops,stop_name,el,Β´ Δημοτικό Σχολείο Αυγόρου 2,5904
+stops,stop_desc,el,ΒΔηΣχΑυ,5904
+stops,stop_name,el,Δημοτική Βιβλιοθήκη 1,6172
+stops,stop_desc,el,ΔημοτΒιβλι,6172
+stops,stop_name,el,Ανδρέα Καρκαβίτσα - Βάτταινας,5954
+stops,stop_desc,el,ΑνΚα-Βα,5954
+stops,stop_name,el,Περνέρας - Παραλία Ποτάμι,5612
+stops,stop_desc,el,Πε-ΠαΠο,5612
+stops,stop_name,el,Λεωφ. Λάρνακας - Δεκέλειας - 2η Στάση,6921
+stops,stop_desc,el,Λα-Δε-2Σ,6921
+stops,stop_name,el,Βάτταινας -  Δημ. Χριστοδούλου 2,5956
+stops,stop_desc,el,Βα-ΔηΧρ,5956
+stops,stop_name,el,Σταδίου - Λουκή Ακρίτα,5806
+stops,stop_desc,el,Στ-ΛοΑκ,5806
+stops,stop_name,el,Αγίας Θέκλας - Υδροπάρκο 1,5867
+stops,stop_desc,el,ΥδρΑγιΝαπ,5867
+stops,stop_name,el,Μεγ. Αλεξάνδρου - Άγγελου Σικελιανού,5709
+stops,stop_desc,el,ΜεΑλ-ΑγΣι,5709
+stops,stop_name,el,Παραλία Κ.Ο.Τ. 1,6658
+stops,stop_desc,el,ΠαραλΚ.Ο.Τ,6658
+stops,stop_name,el,Κάβο Γκρέκο 2,5649
+stops,stop_desc,el,ΚαβοΓκρεκ,5649
+stops,stop_name,el,Λεωφ. Πρωταρά - Κάβο Γκρέκο - 16η Στάση,5633
+stops,stop_desc,el,Πρ-ΚΓκ-1Σ,5633
+stops,stop_name,el,Τεύκρου Ανθία - Ισαάκ και Σολωμού 2,5890
+stops,stop_desc,el,ΤεΑ-ΙκΣο,5890
+stops,stop_name,el,Λεωφ. Αμμοχώστου - Θύρας,6552
+stops,stop_desc,el,ΛεΑμ-Θυ,6552
+stops,stop_name,el,Λεωφ. Φώτη Πίττα - Πάνου Ιωάννου,5778
+stops,stop_desc,el,ΦΠ-ΠΙω,5778
+stops,stop_name,el,Ζαχαρία Σπύρου - Κυριάκου Σάββα,5969
+stops,stop_desc,el,ΖαΣπ-ΚυΣα,5969
+stops,stop_name,el,Λεωφ. 1 Απριλίου - 1 Στάση,5739
+stops,stop_desc,el,1Απ-1Σ,5739
+stops,stop_name,el,Πυροσβεστική 2,6395
+stops,stop_desc,el,Πυροσβεστι,6395
+stops,stop_name,el,Λεωφ. 1 Απριλίου - 2η Στάση,5746
+stops,stop_desc,el,1Απ-2Σ,5746
+stops,stop_name,el,Κυκλικός Κόμβος Παραλιμνίου - Δερυνειας 2,8016
+stops,stop_desc,el,ΚυκΚΠαρΔερ,8016
+stops,stop_name,el,Δρόμος Παραλίμνι - Αγία Νάπα - 1η Στάση,5679
+stops,stop_desc,el,ΔρΠα-ΑΝ-1Σ,5679
+stops,stop_name,el,Ελευθερίας - Αφροδίτης,5843
+stops,stop_desc,el,Ελε-Αφρ,5843
+stops,stop_name,el,Τουριστικη Αγίας Θέκλας - 7η Στάση,5868
+stops,stop_desc,el,ΤοΑΘε-7Σ,5868
+stops,stop_name,el,Λεωφ. Πρωταρά - Κάβο Γκρέκο - 22η Στάση,5650
+stops,stop_desc,el,Πρ-ΚΓκ-2Σ,5650
+stops,stop_name,el,Αχερίτου - Σωτήρη Σωτηρίου,5787
+stops,stop_desc,el,Αχ-ΣωΣω,5787
+stops,stop_name,el,Δημοτικό Κολυμβητήριο Δερύνειας 2,7282
+stops,stop_desc,el,ΔημΚολΔερ,7282
+stops,stop_name,el,1η Στάση Βιομηχ. Ζώνη Φρενάρους 1,8003
+stops,stop_desc,el,1ηΒιομΖΦρε,8003
+stops,stop_name,el,Αρχιεπ. Μακαρίου Γ´ - 1η Στάση,5765
+stops,stop_desc,el,ΑρΜαΓ-1Σ,5765
+stops,stop_name,el,Παραλιμνίου - Γρηγόρη Αυξεντίου 1,5810
+stops,stop_desc,el,Πα-ΓρΑυ,5810
+stops,stop_name,el,Λεωφ. Πρωταρά - 6η Στάση,5690
+stops,stop_desc,el,ΛεΠρ-6ηΣτ,5690
+stops,stop_name,el,Λεωφ. Αρχιεπ. Μακαρίου Γ´ - Γόλγων,6161
+stops,stop_desc,el,ΑρΜαΓ-Γο,6161
+stops,stop_name,el,Λεωφ. Αμμοχώστου - Καλλησκαλα 2,6423
+stops,stop_desc,el,ΛεΑμ-Κα,6423
+stops,stop_name,el,Αμμοχώστου - Χαράλαμπου Μούσκου,5915
+stops,stop_desc,el,Αμ-ΧαΜο,5915
+stops,stop_name,el,Λεωφ. Νησί - Ασπροβούνου,5856
+stops,stop_desc,el,ΛεΝη-Ασ,5856
+stops,stop_name,el,Λεωφ. Αρχιεπ. Μακαρίου Γ´ - Φιλιου Τσιγαριδη 2,6497
+stops,stop_desc,el,ΑρΜαΓ-ΦιΤσ,6497
+stops,stop_name,el,Λεωφ. Κάππαρη - 6η Στάση,5720
+stops,stop_desc,el,ΛεΚα-6ηΣτ,5720
+stops,stop_name,el,Πρωταρά - Παραλία Sunrise,5623
+stops,stop_desc,el,Πρ-ΠαSu,5623
+stops,stop_name,el,Μοναστήρι Αγίας Νάπας 1,5847
+stops,stop_desc,el,ΠλαΑγιΝαπ,5847
+stops,stop_name,el,Παραλία Λάντα 2,5861
+stops,stop_desc,el,ΠαραλΛαντα,5861
+stops,stop_name,el,Μιχάλη Βραχίμη - Ποταμού 1,5977
+stops,stop_desc,el,ΜιΒρ-Πο,5977
+stops,stop_name,el,Λεωφ. Γ. Γρίβα Διγενή - Εκκλησία Αγ. Γεωργίου 1,6367
+stops,stop_desc,el,ΓΓΔι-ΕκΑΓε,6367
+stops,stop_name,el,Γρίβα Διγενή - Κυκλικός Κόμβος Άχνας,5946
+stops,stop_desc,el,ΓΔι-ΚυΚοΑ,5946
+stops,stop_name,el,Αστυνομική Διεύθυνση Αμμοχώστου 1,7995
+stops,stop_desc,el,ΑστυΔιεΑμμ,7995
+stops,stop_name,el,Τάσσου Παπαδόπουλου - Αριστοτέλη Βαλαωρίτη,6595
+stops,stop_desc,el,ΤαΠα-ΑρΒα,6595
+stops,stop_name,el,Γρίβα Διγενή - Νικολάου Μιχαήλ,7424
+stops,stop_desc,el,ΓρΔι-ΝικΜι,7424
+stops,stop_name,el,Λεωφ. Γρίβα Διγενή - Θεσσαλονίκης,5680
+stops,stop_desc,el,ΛεΓρΔι-Θε,5680
+stops,stop_name,el,Παραλιακό Πάρκο Πύλας 1,6653
+stops,stop_desc,el,ΠαρΠαρΠυλ,6653
+stops,stop_name,el,Λύκειο Παραλιμνίου 2,5753
+stops,stop_desc,el,ΛυκειΠαραλ,5753
+stops,stop_name,el,Λεωφ. Πρωταρά - 3η Στάση,5702
+stops,stop_desc,el,ΛεΠρ-3ηΣτ,5702
+stops,stop_name,el,Λεωφ. Μεγ. Αλεξάνδρου - Ευθ. Ευθυμίου,5973
+stops,stop_desc,el,ΜΑλ-ΕΕυ,5973
+stops,stop_name,el,Παραλία Αγία Θέκλα 2,5878
+stops,stop_desc,el,ΠαρΑγιΘεκ,5878
+stops,stop_name,el,Αγίας Θέκλας - Κωνσταντίνου Παλαιολόγου,5794
+stops,stop_desc,el,ΑγΘε-ΚωΠα,5794
+stops,stop_name,el,Λεωφ. Κρύου Νερού - Ξενοδοχείο Marina 1 ,5603
+stops,stop_desc,el,ΚΝ-ΞεMa,5603
+stops,stop_name,el,Λεωφ. 1 Απριλίου - Λεωφ. Γεωργίου Γρίβα Διγενή,7280
+stops,stop_desc,el,1Απ-ΓεΓΔι,7280
+stops,stop_name,el,Στροβίλια 1,5783
+stops,stop_desc,el,Στροβιλια,5783
+stops,stop_name,el,Λεωφ. Αμμοχώστου - Γαλαξία 1,6425
+stops,stop_desc,el,ΛεΑμ-Γα,6425
+stops,stop_name,el,Νέο Νοσοκομείο 2,6164
+stops,stop_desc,el,ΝεοΝοσοκ,6164
+stops,stop_name,el,Λεωφ. Γ. Γρίβα Διγενή - Εκκλησία Αγ. Γεωργίου 2,6393
+stops,stop_desc,el,ΓΓΔι-ΕκΑΓε,6393
+stops,stop_name,el,Παραλία Κόννου 2,5640
+stops,stop_desc,el,ΠαραλΚοννο,5640
+stops,stop_name,el,Τεχνική και Γεωργική Σχολή Αμμοχώστου 2,5902
+stops,stop_desc,el,ΤεκαΓεΣχΑμ,5902
+stops,stop_name,el,Παραλιμνίου 1,5811
+stops,stop_desc,el,Παραλιμνιο,5811
+stops,stop_name,el,Παραλία Λάντα 1,5860
+stops,stop_desc,el,ΠαραλΛαντα,5860
+stops,stop_name,el,Αστυνομικός Σταθμός Αγίας Νάπας,7268
+stops,stop_desc,el,ΑσΣτΑγΝα,7268
+stops,stop_name,el,Τουριστικη Αγίας Θέκλας - 4η Στάση,5874
+stops,stop_desc,el,ΤοΑΘε-4Σ,5874
+stops,stop_name,el,Λεωφ. Πρωταρά - 6η Στάση,5688
+stops,stop_desc,el,ΛεΠρ-6ηΣτ,5688
+stops,stop_name,el,Πυροσβεστική 1,6540
+stops,stop_desc,el,Πυροσβεστι,6540
+stops,stop_name,el,Ελευθερίας - Δαιδάλου,5844
+stops,stop_desc,el,Ελε-Δαι,5844
+stops,stop_name,el,Παραλιακό Πάρκο Πύλας 2,6667
+stops,stop_desc,el,ΠαρΠαρΠυλ,6667
+stops,stop_name,el,Γιωρκή Παπαδοπούλου - Πάρνηθος 2,5713
+stops,stop_desc,el,ΓιΠα-Πα,5713
+stops,stop_name,el,Ανεξαρτησίας - Μπελογιάννη,5960
+stops,stop_desc,el,Ανε-Μπε,5960
+stops,stop_name,el,Λεωφ. Πρωταρά - Κάβο Γκρέκο - Προφήτη Ηλία,5621
+stops,stop_desc,el,Πρ-ΚΓκ-ΠρΗ,5621
+stops,stop_name,el,Πλατεία Δάσους Άχνας 2,5942
+stops,stop_desc,el,ΠλαΔασΑχν,5942
+stops,stop_name,el,Αρχιεπ. Μακαρίου Γ´ - Προμηθέως,5768
+stops,stop_desc,el,ΑρΜαΓ-Πρ,5768
+stops,stop_name,el,Ελευθερίας - Ανδρέα Καζή,5964
+stops,stop_desc,el,Ελ-ΑνΚα,5964
+stops,stop_name,el,Δρόμος Παραλίμνι - Αγία Νάπα - 10η Στάση,5740
+stops,stop_desc,el,ΔρΠα-ΑΝ-1Σ,5740
+stops,stop_name,el,Λεωφ. Πρωταρά - Κάβο Γκρέκο - 24η Στάση,5654
+stops,stop_desc,el,Πρ-ΚΓκ-2Σ,5654
+stops,stop_name,el,Πλατεία Λιοπετρίου 2,7533
+stops,stop_desc,el,ΠλατεΛιοπε,7533
+stops,stop_name,el,Πινιάς - Λεωφ. Περνέρας 1,5608
+stops,stop_desc,el,ΛεΠε-Πι,5608
+stops,stop_name,el,Λεωφ. Αρχιεπ. Μακαρίου Γ´ - Νιγρίτης,6596
+stops,stop_desc,el,ΑρΜαΓ-Νι,6596
+stops,stop_name,el,Κάβο Γκρέκο 1,5648
+stops,stop_desc,el,ΚαβοΓκρεκ,5648
+stops,stop_name,el,Επαρχ. Δικαστήριο Αμμοχώστου 2,8002
+stops,stop_desc,el,ΕπαΔικαΑμμ,8002
+stops,stop_name,el,Μοναστήρι Αγίας Νάπας 2,5848
+stops,stop_desc,el,ΠλαΑγιΝαπ,5848
+stops,stop_name,el,Λεωφ. Αρχιεπ. Μακαρίου Γ´ - Σαλαμίνος,5947
+stops,stop_desc,el,ΑρΜαΓ-Σα,5947
+stops,stop_name,el,Εκκλησία Αρχ. Μιχαήλ και Αγ. Μαρίνας 1,5944
+stops,stop_desc,el,ΕκΑΜικΑΜα,5944
+stops,stop_name,el,Ελευθερίας - Νικόδημου Μυλωνά,5777
+stops,stop_desc,el,Ελ-ΝιΜυ,5777
+stops,stop_name,el,Μιχαλάκη Καραολή - Νίκου Καζαντζάκη,5763
+stops,stop_desc,el,ΜιΚα-ΝιΚα,5763
+stops,stop_name,el,Λεωφ. Νησί - Βαθειάς Γωνιάς,5854
+stops,stop_desc,el,ΛεΝη-ΒαΓω,5854
+stops,stop_name,el,Χρίστου Σαμάρα 2,5924
+stops,stop_desc,el,ΧριστΣαμαρ,5924
+stops,stop_name,el,Κώστα Ηλία - Ανδρέα Μάντολες 2,5790
+stops,stop_desc,el,ΚωΗλ-ΑνΜα,5790
+stops,stop_name,el,Λεωφ. Αρχιεπ. Μακαρίου Γ´ - Γεωργίου Γεωργιάδη,6904
+stops,stop_desc,el,ΑρΜαΓ-ΓεΓε,6904
+stops,stop_name,el,Λεωφ. Αμμοχώστου - Κατίνας Παξινού,6555
+stops,stop_desc,el,ΛεΑμ-ΚαΠα,6555
+stops,stop_name,el,Δερύνεια (Πράσινη Γραμμή) 1,5837
+stops,stop_desc,el,ΔερΠρΓρα,5837
+stops,stop_name,el,Λεωφ. Γεώργ. Γρίβα Διγενή - Χριστ. Ιακωβίδου,6895
+stops,stop_desc,el,ΓεΓΔι-ΧρΙα,6895
+stops,stop_name,el,Μεγ. Αλεξάνδρου - Ψαρών,5708
+stops,stop_desc,el,ΜεΑλ-Ψα,5708
+stops,stop_name,el,Νίκου Θεοφάνους - Γεωργίου Καραϊσκάκη,5967
+stops,stop_desc,el,ΝιΘε-ΓεΚα,5967
+stops,stop_name,el,Καρυών - Παναγιώτη Παφίτη,7287
+stops,stop_desc,el,Κα-ΠαΠα,7287
+stops,stop_name,el,Ευαγγέλου Φλωράκη 2,7998
+stops,stop_desc,el,ΕυαγΦλωρακ,7998
+stops,stop_name,el,Λεωφ. Πρωταρά - Κάβο Γκρέκο - 15η Στάση,5634
+stops,stop_desc,el,Πρ-ΚΓκ-1Σ,5634
+stops,stop_name,el,Βρυσουδιών - 1η Στάση,5693
+stops,stop_desc,el,Βρ-1ηΣτ,5693
+stops,stop_name,el,Μόδεστου Παντελή - Αγίων Αναργύρων 1,7531
+stops,stop_desc,el,ΜοΠα-AγΑνα,7531
+stops,stop_name,el,Σπύρου Κυπριανού - Κόκκινες 1,5670
+stops,stop_desc,el,ΣπΚυ-Κο,5670
+stops,stop_name,el,Λεωφ. Κάππαρη - 5η Στάση,5719
+stops,stop_desc,el,ΛεΚα-5ηΣτ,5719
+stops,stop_name,el,Δρόμος Παραλίμνι - Αγία Νάπα - 6η Στάση,5742
+stops,stop_desc,el,ΔρΠα-ΑΝ-6Σ,5742
+stops,stop_name,el,Δρόμος Παραλίμνι - Αγία Νάπα - 7η Στάση,5744
+stops,stop_desc,el,ΔρΠα-ΑΝ-7Σ,5744
+stops,stop_name,el,Νίκου Θεοφάνους - Ιωάννη Καποδίστρια,5966
+stops,stop_desc,el,ΝιΘε-ΙωΚα,5966
+stops,stop_name,el,Λεωφ. Αρχιεπ. Μακαρίου Γ´ - Ανδρέα Σουρουκλή,5936
+stops,stop_desc,el,ΑρΜαΓ-ΑνΣο,5936
+stops,stop_name,el,Β´ Δημοτικό Σχολείο Παραλιμνίου 2,5705
+stops,stop_desc,el,ΒΔηΣχΠα,5705
+stops,stop_name,el,Αχυρώνας Λιοπετρίου 2,5920
+stops,stop_desc,el,ΑχυρωΛιοπε,5920
+stops,stop_name,el,Αρχιεπ. Μακαρίου Γ´ - Αρχ. Μιχαήλ,5779
+stops,stop_desc,el,ΑρΜαΓ-ΑΜι,5779
+stops,stop_name,el,4η Στάση Α.Η.Κ. Δεκέλεια,5952
+stops,stop_desc,el,4ηΣτΑ.Δε,5952
+stops,stop_name,el,Λεωφ. 1 Απριλίου - Αλικαρνασσού,5751
+stops,stop_desc,el,Λε1Απ-Αλ,5751
+stops,stop_name,el,Ελευθερίας - Αγίου Στυλιανού,5841
+stops,stop_desc,el,Ελ-ΑγΣτ,5841
+stops,stop_name,el,Δρόμος Παραλίμνι - Αγία Νάπα - 2η Στάση,5881
+stops,stop_desc,el,ΔρΠα-ΑΝ-2Σ,5881
+stops,stop_name,el,Λεωφ. 1 Απριλίου - Χειμάρας,5750
+stops,stop_desc,el,Λε1Απ-Χε,5750
+stops,stop_name,el,Κυκλικός Κόμβος Παραλιμνίου - Δερυνειας 1,8017
+stops,stop_desc,el,ΚυκΚΠαρΔερ,8017
+stops,stop_name,el,Κάβο Γκρέκο - 2η Στάση,5677
+stops,stop_desc,el,ΟΚΓκ-2Σ,5677
+stops,stop_name,el,Λεωφ. Περνέρας - Περνέρας 1,7263
+stops,stop_desc,el,ΛεΠε-Πε,7263
+stops,stop_name,el,Λεωφ. Μεγ. Αλεξάνδρου - Αγίας Τριάδος,5972
+stops,stop_desc,el,ΜΑλ-ΑΤρ,5972
+stops,stop_name,el,Χρίστου Σαμάρα 1,5925
+stops,stop_desc,el,ΧριστΣαμαρ,5925
+stops,stop_name,el,Λεωφ. Νησί - Σώτου Χατζηπροκοπίου,5857
+stops,stop_desc,el,ΛεΝη-ΣωΧα,5857
+stops,stop_name,el,Μόδεστου Παντελή - Διονυσίου Σολωμού 1,5921
+stops,stop_desc,el,ΜοΠα-ΔιΣο,5921
+stops,stop_name,el,Γιασουμή Κιλέ - Διονυσίου Σολωμού 1,5793
+stops,stop_desc,el,ΓιΚι-ΔιΣο,5793
+stops,stop_name,el,Λεωφ. Κάππαρη - 2η Στάση,5716
+stops,stop_desc,el,ΛεΚα-2ηΣτ,5716
+stops,stop_name,el,Λεωφ. Γεώργ. Γρίβα Διγενή - Λεωφ. Θεσσαλονίκης,6371
+stops,stop_desc,el,ΓεΓΔι-Θε,6371
+stops,stop_name,el,Λεωφ. Περνέρας - Λαπήθου,7261
+stops,stop_desc,el,ΛεΠε-Λα,7261
+stops,stop_name,el,Φώτη Πίττα - Πέτρου Πεσκέση,5773
+stops,stop_desc,el,ΦωΠι-ΠεΠε,5773
+stops,stop_name,el,Παραλία Κ.Ο.Τ. 2,6910
+stops,stop_desc,el,ΠαραλΚ.Ο.Τ,6910
+stops,stop_name,el,Αγίας Θέκλας - 1η Στάση,5865
+stops,stop_desc,el,ΑγΘε-1ηΣτ,5865
+stops,stop_name,el,Γιωρκή Παπαδοπούλου - Απόλλωνος,5711
+stops,stop_desc,el,ΓιΠα-Απ,5711
+stops,stop_name,el,Λεωφ. Πρωταρά - Κάβο Γκρέκο - 7η Στάση,5618
+stops,stop_desc,el,Πρ-ΚΓκ-7Σ,5618
+stops,stop_name,el,Ξένιον Εκπαιδευτικό Κέντρο 1,7278
+stops,stop_desc,el,ΞενΕκπΚεν,7278
+stops,stop_name,el,Αστυνομική Διεύθυνση Αμμοχώστου 2,5728
+stops,stop_desc,el,ΑστυΔιεΑμμ,5728
+stops,stop_name,el,Βάτταινας - Αρτέμιδος 1,5971
+stops,stop_desc,el,Βατ-Αρτ,5971
+stops,stop_name,el,Μαρίνα Αγίας Νάπας 2,7291
+stops,stop_desc,el,ΜαρΑγιΝαπ,7291
+stops,stop_name,el,Αρχιεπ. Μακαρίου Γ´ - Αλακάτης,5766
+stops,stop_desc,el,ΑρΜαΓ-Αλ,5766
+stops,stop_name,el,Ναυτικός Όμιλος Λάρνακας,6553
+stops,stop_desc,el,ΝαυΟμιΛαρ,6553
+stops,stop_name,el,Δημοκρατίας - Μετοχίου,5958
+stops,stop_desc,el,Δημ-Μετ,5958
+stops,stop_name,el,Τουριστικη Αγίας Θέκλας - 2η Στάση,5876
+stops,stop_desc,el,ΤοΑΘε-2Σ,5876
+stops,stop_name,el,Ξάνθου Σαμάρα - Χρίστου Τσιάρτα,5913
+stops,stop_desc,el,ΞαΣα-ΧρΤσ,5913
+stops,stop_name,el,Γ´ Δημοτικό Σχολείο Δερύνειας 1,5803
+stops,stop_desc,el,ΓΔηΣχΔε,5803
+stops,stop_name,el,Λεωφ. Πρωταρά - Κάβο Γκρέκο - Βυζακιάς,5632
+stops,stop_desc,el,Πρ-ΚΓκ-Βυ,5632
+stops,stop_name,el,2η Στάση Βιομηχ. Ζώνη Φρενάρους 1,8004
+stops,stop_desc,el,2ηΒιομΖΦρε,8004
+stops,stop_name,el,Βρεττανικές Βάσεις (πλησίον αυτοκινητόδρομου),5934
+stops,stop_desc,el,ΒρΒαπλαυ,5934
+stops,stop_name,el,Γενικό Νοσοκομείο Αμμοχώστου,5771
+stops,stop_desc,el,ΓενΝοσΑμμ,5771
+stops,stop_name,el,Μεγ. Αλεξάνδρου - Ιφιγενείας,5710
+stops,stop_desc,el,ΜεΑλ-Ιφ,5710
+stops,stop_name,el,Παραλία Κόννου 1,5647
+stops,stop_desc,el,ΠαραλΚοννο,5647
+stops,stop_name,el,Λεωφ. Περνέρας - Ελλήνων,7264
+stops,stop_desc,el,ΛεΠε-Ελ,7264
+stops,stop_name,el,Λεωφ. Πρωταρά - 2η Στάση,5703
+stops,stop_desc,el,ΛεΠρ-2ηΣτ,5703
+stops,stop_name,el,Λιμανάκι Παραλιμνίου 1,5699
+stops,stop_desc,el,ΛιμανΠαραλ,5699
+stops,stop_name,el,Λεωφ. Αρχιεπ. Μακαρίου Γ´ - Χρίστου Σαμάρα,5948
+stops,stop_desc,el,ΑρΜαΓ-ΧρΣα,5948
+stops,stop_name,el,Μαρίνα Αγίας Νάπας 1,7290
+stops,stop_desc,el,ΜαρΑγιΝαπ,7290
+stops,stop_name,el,Λεωφ. Κρύου Νερού - 2η Στάση 2,7530
+stops,stop_desc,el,ΚΝ-2Σ,7530
+stops,stop_name,el,1 Απριλίου - Θεσσαλονίκης,5929
+stops,stop_desc,el,1Απ-Θε,5929
+stops,stop_name,el,Παραλία Αγία Τριάδα 1,5691
+stops,stop_desc,el,ΠαρΑγιΤρι,5691
+stops,stop_name,el,Κυριάκου Μάτση - Αγίου Αντωνίου,5816
+stops,stop_desc,el,ΚυΜα-ΑγΑν,5816
+stops,stop_name,el,Λεωφ. Ακροπολεως - Λευκάδος,6669
+stops,stop_desc,el,ΛεΑκ-Λε,6669
+stops,stop_name,el,Αρχιεπ. Μακαρίου Γ´ - Χριστ. Κάρωνα,5819
+stops,stop_desc,el,ΑρΜαΓ-ΧρΚα,5819
+stops,stop_name,el,Πινιάς - Λεωφ. Περνέρας 2,5607
+stops,stop_desc,el,ΛεΠε-Πι,5607
+stops,stop_name,el,Λεωφ. Πρωταρά - Κάβο Γκρέκο - Σύμης,5631
+stops,stop_desc,el,Πρ-ΚΓκ-Σ,5631
+stops,stop_name,el,Λεωφ. Αμμοχώστου - Δημη. Χριστοδούλου 2,5839
+stops,stop_desc,el,ΛεΑμ-ΔηΧρ,5839
+stops,stop_name,el,Κτηνοτροφική Περιοχή Άχνας 1,7426
+stops,stop_desc,el,ΚτηνΠερΑχν,7426
+stops,stop_name,el,2η Στάση Βιομηχ. Ζώνη Φρενάρους 2,8005
+stops,stop_desc,el,2ηΒιομΖΦρε,8005
+stops,stop_name,el,Γ´ Δημοτικό Σχολείο Παραλιμνίου,5733
+stops,stop_desc,el,ΓΔηΣχΠα,5733
+stops,stop_name,el,Αχυρώνος - Κωνσταντίνου Κανάρη,5918
+stops,stop_desc,el,Αχ-ΚωΚα,5918
+stops,stop_name,el,2η Στάση Α.Η.Κ. Δεκέλεια,5950
+stops,stop_desc,el,2ηΣτΑ.Δε,5950
+stops,stop_name,el,Δημαρχείο Παραλιμνίου,8010
+stops,stop_desc,el,ΔημαΠαρ,8010
+stops,stop_name,el,Αμμοχώστου 1,5798
+stops,stop_desc,el,Αμμοχωστου,5798
+stops,stop_name,el,Πρωταρά - Κόλπος Fig Tree,5624
+stops,stop_desc,el,Πρ-ΚοFiTr,5624
+stops,stop_name,el,Τεύκρου Ανθία - 6η Στάση,5885
+stops,stop_desc,el,ΤεΑν-6ηΣτ,5885
+stops,stop_name,el,Ανεξαρτησίας - Θεόδ. Κολοκοτρώνη,5961
+stops,stop_desc,el,Αν-ΘεΚο,5961
+stops,stop_name,el,Λεωφ. Πρωταρά - Κάβο Γκρέκο - 20η Στάση,5651
+stops,stop_desc,el,Πρ-ΚΓκ-2Σ,5651
+stops,stop_name,el,Ελευθερίας - Κυριάκου Μάτση,5846
+stops,stop_desc,el,Ελ-ΚυΜα,5846
+stops,stop_name,el,Σταδίου - Θεοδ. Κολοκοτρώνη,5808
+stops,stop_desc,el,Στ-ΘεΚο,5808
+stops,stop_name,el,Οδόφραγμα Στροβίλια 2,5780
+stops,stop_desc,el,ΟδοφρΣτροβ,5780
+stops,stop_name,el,Χαράλαμπου Μούσκου - Κυκλικός Κόμβος Άχνας,5945
+stops,stop_desc,el,ΧαΜο-ΚυΚοΑ,5945
+stops,stop_name,el,Εκκλησία Αποστόλου Βαρνάβα 2,5800
+stops,stop_desc,el,ΕκκΑποΒαρ,5800
+stops,stop_name,el,Σωκράτους - Χρίστου Σαμάρα,5917
+stops,stop_desc,el,Σω-ΧρΣα,5917
+stops,stop_name,el,Ευαγόρα Παλληκαρίδη - Κασσάνδρου,5883
+stops,stop_desc,el,ΕυΠα-Κα,5883
+stops,stop_name,el,Στροβίλια 2,5782
+stops,stop_desc,el,Στροβιλια,5782
+stops,stop_name,el,Λεωφ. Κρύου Νερού - 6η Στάση,5662
+stops,stop_desc,el,ΚΝ-6Σ,5662
+stops,stop_name,el,Σωκράτους - Γεωργίου Κάρυου,5916
+stops,stop_desc,el,Σω-ΓεΚα,5916
+stops,stop_name,el,Δήμητρας - Θερμοπυλών,5735
+stops,stop_desc,el,Δημ-Θερ,5735
+stops,stop_name,el,Βρυσούλλες - Στροβίλια 1,5784
+stops,stop_desc,el,Βρυ-Στρ,5784
+stops,stop_name,el,Πρωταρά - Παραλία Βρυσί,5622
+stops,stop_desc,el,Πρ-ΠαΒρ,5622
+stops,stop_name,el,Τουριστικη Αγίας Θέκλας - 10η Στάση,5869
+stops,stop_desc,el,ΤοΑΘε-1Σ,5869
+stops,stop_name,el,Κόννου - Ήρας 1,5635
+stops,stop_desc,el,Κον-Ηρα,5635
+stops,stop_name,el,Δρόμος Παραλίμνι - Αγία Νάπα - 5η Στάση,5743
+stops,stop_desc,el,ΔρΠα-ΑΝ-5Σ,5743
+stops,stop_name,el,Παναγίας - Γιωργαλλή 2,5974
+stops,stop_desc,el,Παν-Γιω,5974
+stops,stop_name,el,Λιμανάκι Παραλιμνίου 2,5700
+stops,stop_desc,el,ΛιμανΠαραλ,5700
+stops,stop_name,el,Λεωφ. Πρωταρά - Κάβο Γκρέκο - Δάφνης,5629
+stops,stop_desc,el,Πρ-ΚΓκ-Δα,5629
+stops,stop_name,el,Βάτταινας - Αρτέμιδος 2,5970
+stops,stop_desc,el,Βατ-Αρτ,5970
+stops,stop_name,el,Λεωφ. Περνέρας - Υμηττού,7265
+stops,stop_desc,el,ΛεΠε-Υμ,7265
+stops,stop_name,el,Λεωφ. Πρωταρά - Ψύχαρη,5701
+stops,stop_desc,el,ΛεΠρ-Ψυ,5701
+stops,stop_name,el,Πλατεία Δάσους Άχνας 1,5941
+stops,stop_desc,el,ΠλαΔασΑχν,5941
+stops,stop_name,el,Διονυσίου Σολωμού - Λεωφ. Κρύου Νερού,5665
+stops,stop_desc,el,ΔιΣο-ΚΝ,5665
+stops,stop_name,el,Δημαρχείο Ξυλοτύμβου 1,5949
+stops,stop_desc,el,ΔημαρΞυλοτ,5949
+stops,stop_name,el,Βρυσούλλες - Στροβίλια 2,5785
+stops,stop_desc,el,Βρυ-Στρ,5785
+stops,stop_name,el,Ανδρέα Καρκαβίτσα - Ειρήνης,5955
+stops,stop_desc,el,ΑνΚα-Ει,5955
+stops,stop_name,el,Αγίας Τριάδος - 1 Απριλίου,5772
+stops,stop_desc,el,ΑγΤρ-1Απ,5772
+stops,stop_name,el,Σταδίου - 3η Στάση,5678
+stops,stop_desc,el,Στ-3ηΣτ,5678
+stops,stop_name,el,Ελευθερίας - Ιπποκράτους,5842
+stops,stop_desc,el,Ελε-Ιππ,5842
+stops,stop_name,el,Δρόμος Παραλίμνι - Αγία Νάπα - 3η Στάση,5896
+stops,stop_desc,el,ΔρΠα-ΑΝ-3Σ,5896
+stops,stop_name,el,Λεωφ. Κρύου Νερού - 2η Στάση 1,5604
+stops,stop_desc,el,ΚΝ-2Σ,5604
+stops,stop_name,el,Λεωφ. Νησί - Καταλύμματα,5849
+stops,stop_desc,el,ΛεΝη-Κα,5849
+stops,stop_name,el,1 Απριλίου - Δημοκρατίας,5796
+stops,stop_desc,el,1Απ-Δη,5796
+stops,stop_name,el,Βάτταινας -  Δημ. Χριστοδούλου 1,5957
+stops,stop_desc,el,Βα-ΔηΧρ,5957
+stops,stop_name,el,Στάδιο Δασάκι Άχνας 2,5939
+stops,stop_desc,el,ΣταΔασΑχν,5939
+stops,stop_name,el,Τεύκρου Ανθία - 4η Στάση,5887
+stops,stop_desc,el,ΤεΑν-4ηΣτ,5887
+stops,stop_name,el,Ολυμπιακό Κολυμβητήριο,6882
+stops,stop_desc,el,ΟλυμπΚολυμ,6882
+stops,stop_name,el,Λεωφ. Γρίβα Διγενή - Κωνσταντινουπόλεως 1,5682
+stops,stop_desc,el,ΛεΓρΔι-Κω,5682
+stops,stop_name,el,Θαλάσσιες Σπηλιές 2,7267
+stops,stop_desc,el,ΘαλασΣπηλι,7267
+stops,stop_name,el,Αγίας Θέκλας - Υδροπάρκο 2,5901
+stops,stop_desc,el,ΥδρΑγιΝαπ,5901
+stops,stop_name,el,Λεωφ. Αμμοχώστου - Ελευθερίου Ιακώβου,5838
+stops,stop_desc,el,ΛεΑμ-ΕλΙα,5838
+stops,stop_name,el,Γιωρκή Παπαδοπούλου - Χρίστου Τσιάρτα,5754
+stops,stop_desc,el,ΓιΠα-ΧρΤσ,5754
+stops,stop_name,el,Αρχιεπ. Μακαρίου Γ´ - 2η Στάση,5764
+stops,stop_desc,el,ΑρΜαΓ-2Σ,5764
+stops,stop_name,el,Φώτη Πίττα - Ακροπόλεως,5774
+stops,stop_desc,el,ΦωΠι-Ακ,5774
+stops,stop_name,el,Κάβο Γκρέκο - 3η Στάση,5676
+stops,stop_desc,el,ΟΚΓκ-ΑσΑΝ,5676
+stops,stop_name,el,Β´ Δημοτικό Σχολείο Αυγόρου 1,5905
+stops,stop_desc,el,ΒΔηΣχΑυ,5905
+stops,stop_name,el,Μιχαήλ Κουτσόφτα - Μπουμπουλίνας,5927
+stops,stop_desc,el,ΜιΚο-Μπ,5927
+stops,stop_name,el,Λεωφ. Ακροπολεως - Καντάρας,6435
+stops,stop_desc,el,ΛεΑκ-Κα,6435
+stops,stop_name,el,Τουριστικη Αγίας Θέκλας - 8η Στάση,5871
+stops,stop_desc,el,ΤοΑΘε-8Σ,5871
+stops,stop_name,el,Κόννου - Ξενοδοχείο Grecian Park 1,5638
+stops,stop_desc,el,Κο-ΞεGrPa,5638
+stops,stop_name,el,Βρεφοπαιδοκομικός Σταθμός Ξυλοτύμβου,5933
+stops,stop_desc,el,ΒρεΣταΞυλ,5933
+stops,stop_name,el,Γιωρκή Παπαδοπούλου - Πάρνηθος 1,5714
+stops,stop_desc,el,ΓιΠα-Πα,5714
+stops,stop_name,el,Καρυών - Μάρκου Δράκου 2,7284
+stops,stop_desc,el,Κα-ΜαΔρ,7284
+stops,stop_name,el,Λεωφ. Πρωταρά - 4η Στάση,5686
+stops,stop_desc,el,ΛεΠρ-4ηΣτ,5686
+stops,stop_name,el,Δερύνεια (Πράσινη Γραμμή) 2,7529
+stops,stop_desc,el,ΔερΠρΓρα,7529
+stops,stop_name,el,Δημοτικό Κολυμβητήριο Δερύνειας 1,7281
+stops,stop_desc,el,ΔημΚολΔερ,7281
+stops,stop_name,el,Β´ Δημοτικό Σχολείο Παραλιμνίου 1,5706
+stops,stop_desc,el,ΒΔηΣχΠα,5706
+stops,stop_name,el,Κοινοτικό Στάδιο Λιοπετρίου,5928
+stops,stop_desc,el,ΚοιΣταΛιο,5928
+stops,stop_name,el,Λεωφ. Ακροπόλεως - Ξενοδοχεία Sandy - Golden Bay,6663
+stops,stop_desc,el,Ακ-ΞεS-GoB,6663
+stops,stop_name,el,Λεωφ. Περνέρας - Περνέρας 2,7262
+stops,stop_desc,el,ΛεΠε-Πε,7262
+stops,stop_name,el,Τουριστικη Αγίας Θέκλας - 1η Στάση,5875
+stops,stop_desc,el,ΤοΑΘε-1Σ,5875
+stops,stop_name,el,Λεωφ. Αμμοχώστου - Αθηνών 2,6431
+stops,stop_desc,el,ΛεΑμ-Αθ,6431
+stops,stop_name,el,Λεωφ. Περνέρας - Αφροδίτης,7259
+stops,stop_desc,el,ΛεΠε-Αφ,7259
+stops,stop_name,el,Λεωφ. Αρχιεπ. Μακαρίου Γ´ - Κωστάκη Παντελίδη,5937
+stops,stop_desc,el,ΑρΜαΓ-ΚωΠα,5937
+stops,stop_name,el,Δημοκρατίας - Ανεξαρτησίας,5882
+stops,stop_desc,el,Δημ-Ανε,5882
+stops,stop_name,el,Παραλία Μακρόνησος 2,5862
+stops,stop_desc,el,ΠαραλΜακρο,5862
+stops,stop_name,el,Λεωφ. Αρχιεπ. Μακαρίου Γ´ - Κλεοβ. Παπακυριάκου,6599
+stops,stop_desc,el,ΑρΜαΓ-ΚλΠα,6599
+stops,stop_name,el,Σπύρου Κυπριανού - Κωστή Παλαμά,5672
+stops,stop_desc,el,ΣπΚυ-ΚωΠα,5672
+stops,stop_name,el,Τουριστικη Αγίας Θέκλας - 6η Στάση,5872
+stops,stop_desc,el,ΤοΑΘε-6Σ,5872
+stops,stop_name,el,Λεωφ. 1 Απριλίου - Μαρίας Συγκλητικής,5731
+stops,stop_desc,el,1Απ-ΜαΣυ,5731
+stops,stop_name,el,Γρίβα Διγενή - Φωτη Πίττα,7425
+stops,stop_desc,el,ΓρΔι-ΦωτΠι,7425
+stops,stop_name,el,Λεωφ. Κάππαρη - 4η Στάση,5717
+stops,stop_desc,el,ΛεΚα-4ηΣτ,5717
+stops,stop_name,el,Κυριάκου Μάτση - Κωνσταντινουπόλεως,5817
+stops,stop_desc,el,ΚυΜα-Κω,5817
+stops,stop_name,el,Λεωφ. Αμμοχώστου - Γαλαξία 2,6420
+stops,stop_desc,el,ΛεΑμ-Γα,6420
+stops,stop_name,el,Εθνογραφικό Μουσείο Αυγόρου 1,7285
+stops,stop_desc,el,ΕθνΜουΑυγ,7285
+stops,stop_name,el,Λεωφ. Πρωταρά - Κάβο Γκρέκο - 11η Στάση,5627
+stops,stop_desc,el,Πρ-ΚΓκ-1Σ,5627
+stops,stop_name,el,Κοινοτικό Συμβούλιο Αχερίτου 2,5788
+stops,stop_desc,el,ΚοιΣυμΑχε,5788
+stops,stop_name,el,Λεωφ. Κρύου Νερού - 4η Στάση,5664
+stops,stop_desc,el,ΚΝ-4Σ,5664
+stops,stop_name,el,Λεωφ. Νησί - Αγίας Μαύρης 2,5852
+stops,stop_desc,el,ΛεΝη-ΑγΜα,5852
+stops,stop_name,el,Λιμανάκι Αγίας Νάπας 2,5900
+stops,stop_desc,el,ΛιμΑγιΝαπ,5900
+stops,stop_name,el,Μιχαήλ Καραολή - Πετράκη Γιάλλουρου 2,5931
+stops,stop_desc,el,ΜιΚα-ΠεΓι,5931
+stops,stop_name,el,Δημοτική Βιβλιοθήκη 2,6372
+stops,stop_desc,el,ΔημοτΒιβλι,6372
+stops,stop_name,el,Λεωφ. Νησί - Μακρονήσου,7996
+stops,stop_desc,el,ΛεΝησ-Μακρ,7996
+stops,stop_name,el,Μόδεστου Παντελή - Αγίων Αναργύρων 2,7532
+stops,stop_desc,el,ΜοΠα-AγΑνα,7532
+stops,stop_name,el,1η Στάση Συνοικισμός Αυγόρου,5910
+stops,stop_desc,el,1ηΣτΣυΑυ,5910
+stops,stop_name,el,Αγίας Θέκλας - Αποστόλου Ανδρέα,5795
+stops,stop_desc,el,ΑγΘε-ΑπΑν,5795
+stops,stop_name,el,Λεωφ. Γ. Γρίβα Διγενή - Λεωφ. Κων. Παλαιολόγου 1,6394
+stops,stop_desc,el,ΓΓΔι-ΚΠα,6394
+stops,stop_name,el,Ξενοδοχείο Palm Beach,6450
+stops,stop_desc,el,ΞενPalBea,6450
+stops,stop_name,el,3η Στάση Α.Η.Κ. Δεκέλεια,5953
+stops,stop_desc,el,3ηΣτΑ.Δε,5953
+stops,stop_name,el,Αρχιεπ. Μακαρίου Γ´ - Σταδίου,5769
+stops,stop_desc,el,ΑρΜαΓ-Στ,5769
+stops,stop_name,el,Αγίας Τριάδος - Μεσαορίας,5830
+stops,stop_desc,el,ΑγΤρ-Με,5830
+stops,stop_name,el,Τάσσου Παπαδόπουλου - Αντιόπης,6601
+stops,stop_desc,el,ΤαΠα-Αν,6601
+stops,stop_name,el,Σταδίου - Βασίλη Μιχαηλίδη,5805
+stops,stop_desc,el,Στ-ΒαΜι,5805
+stops,stop_name,el,Δημοτικός Κήπος 1,6537
+stops,stop_desc,el,ΔημοτΚηπος,6537
+stops,stop_name,el,Παραλία Αγία Θέκλα 1,5877
+stops,stop_desc,el,ΠαρΑγιΘεκ,5877
+stops,stop_name,el,Εκκλησία Αποστόλου Βαρνάβα 2,5801
+stops,stop_desc,el,ΕκκΑποΒαρ,5801
+stops,stop_name,el,Γιωρκή Παπαδοπούλου - Επαρχ. Δικαστήριο Αμμοχώστου,8000
+stops,stop_desc,el,ΓιΠα-ΕπΔικ,8000
+stops,stop_name,el,Γ´ Δημοτικό Σχολείο Δερύνειας 2,5804
+stops,stop_desc,el,ΓΔηΣχΔε,5804
+stops,stop_name,el,Αγίας Θέκλας - 4η Στάση,5866
+stops,stop_desc,el,ΑγΘε-4ηΣτ,5866
+stops,stop_name,el,Λεωφ. Πρωταρά - Κάβο Γκρέκο - 25η Στάση,5656
+stops,stop_desc,el,Πρ-ΚΓκ-2Σ,5656
+stops,stop_name,el,Αποστ. Ανδρέα - Αγ. Θεοδώρου 2,5813
+stops,stop_desc,el,ΑπΑν-ΑγΘε,5813
+stops,stop_name,el,Παραλία Λούμα 2,5696
+stops,stop_desc,el,ΠαραλΛουμα,5696
+stops,stop_name,el,Παναγίας - Γιωργαλλή 1,5975
+stops,stop_desc,el,Παν-Γιω,5975
+stops,stop_name,el,Λεωφ. Λάρνακας - Δεκέλειας - 1η Στάση,6922
+stops,stop_desc,el,Λα-Δε-1Σ,6922
+stops,stop_name,el,Λεωφ. Ακροπολεως - Παραλία Γιάνναθες,6671
+stops,stop_desc,el,ΛεΑκ-ΠαΓι,6671
+stops,stop_name,el,Παραλία Λούμα 1,5695
+stops,stop_desc,el,ΠαραλΛουμα,5695
+stops,stop_name,el,Καρυών - Μάρκου Δράκου 1,7283
+stops,stop_desc,el,Κα-ΜαΔρ,7283
+stops,stop_name,el,Αρχιεπ. Μακαρίου Γ´ - Αναγεννήσεως,5767
+stops,stop_desc,el,ΑρΜαΓ-Αν,5767
+stops,stop_name,el,Λεωφ. Γεώργ. Γρίβα Διγενή - Αγίας Λαύρας,6169
+stops,stop_desc,el,ΓεΓΔι-ΑΛα,6169
+stops,stop_name,el,Στάδιο Γ.Σ.Ζ. 2,6288
+stops,stop_desc,el,ΣταδιΓ.Σ.Ζ,6288
+stops,stop_name,el,Κυριάκου Μάτση - Αρχιεπ. Μακαρίου Γ´,5815
+stops,stop_desc,el,ΚυΜ-ΑρΜαΓ,5815
+stops,stop_name,el,Ξένιον Εκπαιδευτικό Κέντρο 2,7279
+stops,stop_desc,el,ΞενΕκπΚεν,7279
+stops,stop_name,el,Αναστάση Μανώλη - Ερμού,5962
+stops,stop_desc,el,ΑνΜα-Ερ,5962
+stops,stop_name,el,Λεωφ. Κάππαρη - 3η Στάση,5718
+stops,stop_desc,el,ΛεΚα-3ηΣτ,5718
+stops,stop_name,el,Παραλία Δασάκι Πύλας 2,6661
+stops,stop_desc,el,ΠαρΔασΠυλ,6661
+stops,stop_name,el,Παλιό Νοσοκομείο,6102
+stops,stop_desc,el,ΠαλιοΝοσοκ,6102
+stops,stop_name,el,Παραλιμνίου - Γρηγόρη Αυξεντίου 2,5809
+stops,stop_desc,el,Πα-ΓρΑυ,5809
+stops,stop_name,el,Λεωφ. Πρωταρά - Κάβο Γκρέκο - Αμοργού,5630
+stops,stop_desc,el,Πρ-ΚΓκ-Αμ,5630
+stops,stop_name,el,Πυροσβεστικός Σταθμός Ορόκλινης 1,6418
+stops,stop_desc,el,ΠυρΣταΟρο,6418
+stops,stop_name,el,Παραλία Άμμος του Καμπούρη 2,5663
+stops,stop_desc,el,ΠαΑμτοΚα,5663
+stops,stop_name,el,Λεωφ. Πρωταρά - Κάβο Γκρέκο - 19η Στάση,5652
+stops,stop_desc,el,Πρ-ΚΓκ-1Σ,5652
+stops,stop_name,el,Διυλιστήρια 1,6557
+stops,stop_desc,el,Διυλιστηρι,6557
+stops,stop_name,el,Οδόφραγμα Στροβίλια 1,5781
+stops,stop_desc,el,ΟδοφρΣτροβ,5781
+stops,stop_name,el,Μιχαήλ Καραολή - Πετράκη Γιάλλουρου 1,5932
+stops,stop_desc,el,ΜιΚα-ΠεΓι,5932
+stops,stop_name,el,Νέος Κεντρικός Σταθμός Αμμοχώστου,7994
+stops,stop_desc,el,ΝΚεΣταΑμμ,7994
+stops,stop_name,el,Λεωφ. Αμμοχώστου - Δάφνης,6694
+stops,stop_desc,el,ΛεΑμ-Δα,6694
+stops,stop_name,el,Λεωφ. Πρωταρά - Κάβο Γκρέκο - 10η Στάση,5619
+stops,stop_desc,el,Πρ-ΚΓκ-1Σ,5619
+stops,stop_name,el,Κόννου - Ήρας 2,7999
+stops,stop_desc,el,Κον-Ηρα,7999
+stops,stop_name,el,Λεωφ. Αμμοχώστου - Αθηνών 1,6414
+stops,stop_desc,el,ΛεΑμ-Αθ,6414
+stops,stop_name,el,Μόδεστου Παντελή - Διονυσίου Σολωμού 2,5922
+stops,stop_desc,el,ΜοΠα-ΔιΣο,5922
+stops,stop_name,el,Γιωρκή Παπαδοπούλου - Μεγ. Αλεξάνδρου,5712
+stops,stop_desc,el,ΓιΠα-ΜεΑλ,5712
+stops,stop_name,el,Μall Μετρόπολης,7255
+stops,stop_desc,el,Μετρόπολης,7255
+stops,stop_name,el,Γρίβα Διγενή - Γρηγόρη Αυξεντίου,5940
+stops,stop_desc,el,ΓρΔι-ΓρΑυ,5940
+stops,stop_name,el,Σταθμός Πλατείας Παραλιμνίου,5683
+stops,stop_desc,el,ΣταΠλατΑμμ,5683
+stops,stop_name,el,Θαλάσσιες Σπηλιές 1,7266
+stops,stop_desc,el,ΘαλασΣπηλι,7266
+stops,stop_name,el,Λεωφ. 1 Απριλίου - Αγίου Νεκταρίου,5732
+stops,stop_desc,el,1Απ-ΑΝε,5732
+stops,stop_name,el,Παραλία Νήσι Μπέι 1,5858
+stops,stop_desc,el,ΠαρNisBay,5858
+stops,stop_name,el,Ελευθερίας - Γρηγόρη Αυξεντίου,5845
+stops,stop_desc,el,Ελ-ΓρΑυ,5845
+stops,stop_name,el,Τουριστικη Αγίας Θέκλας - 5η Στάση,5870
+stops,stop_desc,el,ΤοΑΘε-5Σ,5870
+stops,stop_name,el,2η Στάση Συνοικισμός Αυγόρου,5911
+stops,stop_desc,el,2ηΣτΣυΑυ,5911
+stops,stop_name,el,Μιχάλη Βραχίμη - Ποταμού 2,5976
+stops,stop_desc,el,ΜιΒρ-Πο,5976
+stops,stop_name,el,Εκκλησία Αγίας Βαρβάρας 2,5684
+stops,stop_desc,el,ΕκκΑγιΒαρ,5684
+stops,stop_name,el,Βρυσουδιών - 3η Στάση,5697
+stops,stop_desc,el,Βρ-3ηΣτ,5697
+stops,stop_name,el,Στάδιο Δασάκι Άχνας 1,5938
+stops,stop_desc,el,ΣταΔασΑχν,5938
+stops,stop_name,el,Λεωφ. Πρωταρά - Κάβο Γκρέκο - 14η Στάση,5625
+stops,stop_desc,el,Πρ-ΚΓκ-1Σ,5625
+stops,stop_name,el,Πλατεία Λιοπετρίου 1,5926
+stops,stop_desc,el,ΠλατεΛιοπε,5926
+stops,stop_name,el,Παγκύπριο Λύκειο,6345
+stops,stop_desc,el,ΠαγκυΛυκει,6345
+stops,stop_name,el,1η Στάση Βιομηχ. Ζώνη Φρενάρους 2,8006
+stops,stop_desc,el,1ηΒιομΖΦρε,8006
+stops,stop_name,el,Λεωφ. Αμμοχώστου - Καλλησκαλα 1,6421
+stops,stop_desc,el,ΛεΑμ-Κα,6421
+stops,stop_name,el,Αμμοχώστου 2,5799
+stops,stop_desc,el,Αμμοχωστου,5799
+stops,stop_name,el,Λεωφ. Πρωταρά - 1η Στάση,5704
+stops,stop_desc,el,ΛεΠρ-1ηΣτ,5704
+stops,stop_desc,el,ΣωΧαΈξΑυ,5884
+stops,stop_name,el,Λεωφ. 1 Απριλίου - Τάσου Μάρκου 2,7277
+stops,stop_desc,el,1Απ-ΤΜα,7277
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638021
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638022
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638023
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16638024
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638025
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638026
+trips,trip_headsign,el,ΞΥΛΟΤΥΜΠΟΥ,16638027
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638028
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638029
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638030
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638031
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638032
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638033
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16638034
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638035
+trips,trip_headsign,el,ΠΑΡΑΛΙΑ ΑΓ. ΘΕΚΛΑ,16638036
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638037
+trips,trip_headsign,el,ΣΤ. ΠΛΑΤ. ΠΑΡΑΛΙΜ,16638038
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638039
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638040
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638041
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638042
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638043
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638044
+trips,trip_headsign,el,ΞΥΛΟΦΑΓΟΥ,16638045
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638046
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638047
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638048
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638049
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638050
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16638051
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638052
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638053
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638054
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638055
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638056
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638057
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638058
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638059
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638060
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638061
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638062
+trips,trip_headsign,el,ΓΕΝΙΚΟ ΝΟΣΟΚΟΜΕΙΟ,16638063
+trips,trip_headsign,el,ΞΥΛΟΦΑΓΟΥ,16638064
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638065
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638066
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638067
+trips,trip_headsign,el,ΔΥΤ. ΚΥΚΛ. ΓΡΑΜΜΗ,16638068
+trips,trip_headsign,el,ΔΥΤ. ΚΥΚΛ. ΓΡΑΜΜΗ,16638069
+trips,trip_headsign,el,ΔΥΤ. ΚΥΚΛ. ΓΡΑΜΜΗ,16638070
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638071
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638072
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638073
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638074
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638075
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638076
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16638077
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638078
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638079
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638080
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638081
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638082
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16638083
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638084
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638085
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638086
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16638087
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638088
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638089
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638090
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638091
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638092
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638093
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638094
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638095
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638096
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638097
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16638098
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638099
+trips,trip_headsign,el,ΣΤ. ΠΛΑΤ. ΠΑΡΑΛΙΜ,16638100
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638101
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638102
+trips,trip_headsign,el,ΑΝΑΤ. ΚΥΚΛ ΓΡΑΜΜΗ,16638103
+trips,trip_headsign,el,ΑΝΑΤ. ΚΥΚΛ ΓΡΑΜΜΗ,16638104
+trips,trip_headsign,el,ΑΝΑΤ. ΚΥΚΛ ΓΡΑΜΜΗ,16638105
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638106
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638107
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638108
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638109
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638110
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638111
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638112
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638113
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638114
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638115
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638116
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638117
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638118
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638119
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638120
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638121
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638122
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638123
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638124
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638125
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638126
+trips,trip_headsign,el,ΣΤ. ΠΛΑΤ. ΠΑΡΑΛΙΜ,16638127
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638128
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638129
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638130
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638131
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638132
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638133
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638134
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638135
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638136
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638137
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638138
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638139
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638140
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638141
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638142
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638143
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638144
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16638145
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638146
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16638147
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638148
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638149
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638150
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638151
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638152
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638153
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638154
+trips,trip_headsign,el,ΣΤ. ΠΛΑΤ. ΠΑΡΑΛΙΜ,16638155
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638156
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638157
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638158
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638159
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638160
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638161
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638162
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638163
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638164
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638165
+trips,trip_headsign,el,ΣΤ. ΠΛΑΤ. ΠΑΡΑΛΙΜ,16638166
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638167
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638168
+trips,trip_headsign,el,ΞΥΛΟΦΑΓΟΥ,16638169
+trips,trip_headsign,el,ΞΥΛΟΤΥΜΠΟΥ,16638170
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638171
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638172
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638173
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638174
+trips,trip_headsign,el,ΑΝΑΤ. ΚΥΚΛ ΓΡΑΜΜΗ,16638175
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638176
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638177
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638178
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638179
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638180
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638181
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638182
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638183
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638184
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638185
+trips,trip_headsign,el,ΞΥΛΟΤΥΜΠΟΥ,16638186
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638187
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638188
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638189
+trips,trip_headsign,el,Α.Κ. ΑΓΙΑΣ ΝΑΠΑΣ,16638190
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638191
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638192
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638193
+trips,trip_headsign,el,ΞΥΛΟΦΑΓΟΥ,16638194
+trips,trip_headsign,el,ΔΥΤ. ΚΥΚΛ. ΓΡΑΜΜΗ,16638195
+trips,trip_headsign,el,ΔΥΤ. ΚΥΚΛ. ΓΡΑΜΜΗ,16638196
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16638197
+trips,trip_headsign,el,ΑΥΓΟΡΟΥ,16638198
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638199
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638200
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638201
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638202
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638203
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638204
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638205
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638206
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638207
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638208
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638209
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638210
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638211
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16638212
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16638213
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16638214
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638215
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638216
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16638217
+trips,trip_headsign,el,ΞΥΛΟΤΥΜΠΟΥ,16638218
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16638219
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638220
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638221
+trips,trip_headsign,el,ΑΝΑΤ. ΚΥΚΛ ΓΡΑΜΜΗ,16638222
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638223
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638224
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16638225
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16638226
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638227
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638228
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638229
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638230
+trips,trip_headsign,el,ΣΤ. ΠΛΑΤ. ΠΑΡΑΛΙΜ,16638231
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638232
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16638233
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638234
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638235
+trips,trip_headsign,el,ΞΥΛΟΤΥΜΠΟΥ,16638236
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638237
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638238
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638239
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638240
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638241
+trips,trip_headsign,el,ΣΤ. ΠΛΑΤ. ΠΑΡΑΛΙΜ,16638242
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638243
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638244
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638245
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16638246
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638247
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638248
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16638249
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638250
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638251
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16638252
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638253
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638254
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638255
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638256
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638257
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16638258
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638259
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638260
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638261
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638262
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638263
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16638264
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638265
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638266
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638267
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638268
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638269
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638270
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638271
+trips,trip_headsign,el,ΞΥΛΟΤΥΜΠΟΥ,16638272
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638273
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638274
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638275
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638276
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638277
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16638278
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638279
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638280
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638281
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638282
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638283
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638284
+trips,trip_headsign,el,ΣΤ. ΠΛΑΤ. ΠΑΡΑΛΙΜ,16638285
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638286
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638287
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638288
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638289
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638290
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638291
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638292
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638293
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638294
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638295
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638296
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638297
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638298
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638299
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638300
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638301
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638302
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638303
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638304
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638305
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638306
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638307
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16638308
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638309
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16638310
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638311
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638312
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638313
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638314
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638315
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638316
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638317
+trips,trip_headsign,el,ΞΥΛΟΤΥΜΠΟΥ,16638318
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638319
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638320
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638321
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16638322
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638323
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16638324
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638325
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638326
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638327
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638328
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16638329
+trips,trip_headsign,el,ΠΑΡΑΛΙΑ ΑΓ. ΘΕΚΛΑ,16638330
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638331
+trips,trip_headsign,el,ΣΤ. ΠΛΑΤ. ΠΑΡΑΛΙΜ,16638332
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638333
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638334
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638335
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638336
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638337
+trips,trip_headsign,el,ΞΥΛΟΦΑΓΟΥ,16638338
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638339
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638340
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638341
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638342
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16638343
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638344
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638345
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638346
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638347
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638348
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638349
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638350
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638351
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638352
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638353
+trips,trip_headsign,el,ΔΥΤ. ΚΥΚΛ. ΓΡΑΜΜΗ,16638354
+trips,trip_headsign,el,ΔΥΤ. ΚΥΚΛ. ΓΡΑΜΜΗ,16638355
+trips,trip_headsign,el,ΔΥΤ. ΚΥΚΛ. ΓΡΑΜΜΗ,16638356
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638357
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638358
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638359
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638360
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638361
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638362
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638363
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638364
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16638365
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638366
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638367
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638368
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638369
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638370
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638371
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638372
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638373
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638374
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638375
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638376
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638377
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638378
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638379
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638380
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638381
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16638382
+trips,trip_headsign,el,ΑΝΑΤ. ΚΥΚΛ ΓΡΑΜΜΗ,16638383
+trips,trip_headsign,el,ΑΝΑΤ. ΚΥΚΛ ΓΡΑΜΜΗ,16638384
+trips,trip_headsign,el,ΑΝΑΤ. ΚΥΚΛ ΓΡΑΜΜΗ,16638385
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638386
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638387
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638388
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638389
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638390
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638391
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638392
+trips,trip_headsign,el,ΣΤ. ΠΛΑΤ. ΠΑΡΑΛΙΜ,16638393
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638394
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638395
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638396
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638397
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638398
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638399
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638400
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638401
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638402
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638403
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638404
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638405
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638406
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638407
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16638408
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638409
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638410
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638411
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638412
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638413
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638414
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638415
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638416
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638417
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16638418
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638419
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638420
+trips,trip_headsign,el,ΣΤ. ΠΛΑΤ. ΠΑΡΑΛΙΜ,16638421
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638422
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638423
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638424
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16638425
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638426
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638427
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638428
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638429
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638430
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638431
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638432
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638433
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638434
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638435
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638436
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638437
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638438
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638439
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638440
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638441
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638442
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638443
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638444
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638445
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638446
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638447
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638448
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638449
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638450
+trips,trip_headsign,el,ΑΝΑΤ. ΚΥΚΛ ΓΡΑΜΜΗ,16638451
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638452
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638453
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638454
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638455
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638456
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638457
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638458
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638459
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638460
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638461
+trips,trip_headsign,el,ΔΥΤ. ΚΥΚΛ. ΓΡΑΜΜΗ,16638462
+trips,trip_headsign,el,ΔΥΤ. ΚΥΚΛ. ΓΡΑΜΜΗ,16638463
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638464
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16638465
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638466
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16638467
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638468
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638469
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638470
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638471
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638472
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638473
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638474
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638475
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638476
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638477
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638478
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638479
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16638480
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16638481
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638482
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638483
+trips,trip_headsign,el,ΞΥΛΟΤΥΜΠΟΥ,16638484
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16638485
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638486
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16638487
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16638488
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638489
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638490
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638491
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638492
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16638493
+trips,trip_headsign,el,ΑΝΑΤ. ΚΥΚΛ ΓΡΑΜΜΗ,16638494
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638495
+trips,trip_headsign,el,ΣΤ. ΠΛΑΤ. ΠΑΡΑΛΙΜ,16638496
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16638497
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638498
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638499
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638500
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638501
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16638502
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638503
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638504
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638505
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638506
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638507
+trips,trip_headsign,el,ΣΤ. ΠΛΑΤ. ΠΑΡΑΛΙΜ,16638508
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638509
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638510
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16638511
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638512
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638513
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16638514
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638515
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638516
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16638517
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638518
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638519
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638520
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638521
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638522
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638523
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638524
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638525
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16638526
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638527
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16638528
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638529
+trips,trip_headsign,el,ΞΥΛΟΤΥΜΠΟΥ,16638530
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638531
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638532
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638533
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638534
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638535
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638536
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638537
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638538
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638539
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16638540
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638541
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638542
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638543
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638544
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638545
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638546
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638547
+trips,trip_headsign,el,ΣΤ. ΠΛΑΤ. ΠΑΡΑΛΙΜ,16638548
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638549
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638550
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638551
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638552
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638553
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638554
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638555
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638556
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638557
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638558
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638559
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638560
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638561
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638562
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638563
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638564
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638565
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638566
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638567
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638568
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638569
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638570
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638571
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16638572
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638573
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638574
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638575
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638576
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638577
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638578
+trips,trip_headsign,el,ΞΥΛΟΤΥΜΠΟΥ,16638579
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638580
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638581
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638582
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16638583
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638584
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638585
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16638586
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638587
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16638588
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638589
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16638590
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638591
+trips,trip_headsign,el,ΠΑΡΑΛΙΑ ΑΓ. ΘΕΚΛΑ,16638592
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638593
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638594
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638595
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638596
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638597
+trips,trip_headsign,el,ΞΥΛΟΦΑΓΟΥ,16638598
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638599
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638600
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638601
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638602
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638603
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638604
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16638605
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638606
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638607
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638608
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638609
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638610
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638611
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638612
+trips,trip_headsign,el,ΔΥΤ. ΚΥΚΛ. ΓΡΑΜΜΗ,16638613
+trips,trip_headsign,el,ΔΥΤ. ΚΥΚΛ. ΓΡΑΜΜΗ,16638614
+trips,trip_headsign,el,ΔΥΤ. ΚΥΚΛ. ΓΡΑΜΜΗ,16638615
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638616
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638617
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638618
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638619
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638620
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638621
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638622
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16638623
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638624
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638625
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638626
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638627
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638628
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638629
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638630
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638631
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638632
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638633
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638634
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638635
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638636
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638637
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638638
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638639
+trips,trip_headsign,el,ΑΝΑΤ. ΚΥΚΛ ΓΡΑΜΜΗ,16638640
+trips,trip_headsign,el,ΑΝΑΤ. ΚΥΚΛ ΓΡΑΜΜΗ,16638641
+trips,trip_headsign,el,ΑΝΑΤ. ΚΥΚΛ ΓΡΑΜΜΗ,16638642
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638643
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638644
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638645
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638646
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638647
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16638648
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638649
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638650
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638651
+trips,trip_headsign,el,ΣΤ. ΠΛΑΤ. ΠΑΡΑΛΙΜ,16638652
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638653
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638654
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638655
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638656
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638657
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638658
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638659
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638660
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638661
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638662
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638663
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638664
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638665
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638666
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16638667
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638668
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638669
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638670
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638671
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638672
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638673
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638674
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638675
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638676
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638677
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638678
+trips,trip_headsign,el,ΣΤ. ΠΛΑΤ. ΠΑΡΑΛΙΜ,16638679
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638680
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638681
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638682
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16638683
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638684
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638685
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638686
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638687
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638688
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638689
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638690
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638691
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638692
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638693
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638694
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638695
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638696
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638697
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638698
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638699
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638700
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638701
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638702
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638703
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638704
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638705
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638706
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638707
+trips,trip_headsign,el,ΑΝΑΤ. ΚΥΚΛ ΓΡΑΜΜΗ,16638708
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638709
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638710
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638711
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638712
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638713
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638714
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638715
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638716
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638717
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638718
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638719
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638720
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638721
+trips,trip_headsign,el,ΔΥΤ. ΚΥΚΛ. ΓΡΑΜΜΗ,16638722
+trips,trip_headsign,el,ΔΥΤ. ΚΥΚΛ. ΓΡΑΜΜΗ,16638723
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16638724
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16638725
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638726
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638727
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638728
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638729
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638730
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638731
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638732
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638733
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638734
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638735
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16638736
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16638737
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638738
+trips,trip_headsign,el,ΞΥΛΟΤΥΜΠΟΥ,16638739
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638740
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638741
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638742
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16638743
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16638744
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638745
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638746
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638747
+trips,trip_headsign,el,ΑΝΑΤ. ΚΥΚΛ ΓΡΑΜΜΗ,16638748
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638749
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638750
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638751
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638752
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16638753
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638754
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16638755
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638756
+trips,trip_headsign,el,ΣΤ. ΠΛΑΤ. ΠΑΡΑΛΙΜ,16638757
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638758
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16638759
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638760
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638761
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638762
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638763
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638764
+trips,trip_headsign,el,ΣΤ. ΠΛΑΤ. ΠΑΡΑΛΙΜ,16638765
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638766
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16638767
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638768
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638769
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638770
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16638771
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16638772
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638773
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638774
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638775
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16638776
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638777
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638778
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638779
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638780
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16638781
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638782
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16638783
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638784
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638785
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638786
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16638787
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16638788
+trips,trip_headsign,el,ΞΥΛΟΤΥΜΠΟΥ,16638789
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638790
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638791
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638792
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638793
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638794
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638795
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638796
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638797
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638798
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16638799
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638800
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638801
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638802
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638803
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16638804
+trips,trip_headsign,el,ΣΤ. ΠΛΑΤ. ΠΑΡΑΛΙΜ,16638805
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638806
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638807
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638808
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638809
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638810
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638811
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638812
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638813
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638814
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638815
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16638816
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638817
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638818
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638819
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638820
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638821
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638822
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638823
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16638824
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638825
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16638826
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638827
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638828
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16638829
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16638830
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638831
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16638832
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16966942
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16966943
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16966944
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16966945
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16966946
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16966947
+trips,trip_headsign,el,ΞΥΛΟΤΥΜΠΟΥ,16966948
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16966949
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16966950
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16966951
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16966952
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16966953
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16966954
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16966955
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16966956
+trips,trip_headsign,el,ΠΑΡΑΛΙΑ ΑΓ. ΘΕΚΛΑ,16966957
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16966958
+trips,trip_headsign,el,ΣΤ. ΠΛΑΤ. ΠΑΡΑΛΙΜ,16966959
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16966960
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16966961
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16966962
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16966963
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16966964
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16966965
+trips,trip_headsign,el,ΞΥΛΟΦΑΓΟΥ,16966966
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16966967
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16966968
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16966969
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16966970
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16966971
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16966972
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16966973
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16966974
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16966975
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16966976
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16966977
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16966978
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16966979
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16966980
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16966981
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16966982
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16966983
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16966984
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16966985
+trips,trip_headsign,el,ΓΕΝΙΚΟ ΝΟΣΟΚΟΜΕΙΟ,16966986
+trips,trip_headsign,el,ΞΥΛΟΦΑΓΟΥ,16966987
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16966988
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16966989
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16966990
+trips,trip_headsign,el,ΔΥΤ. ΚΥΚΛ. ΓΡΑΜΜΗ,16966991
+trips,trip_headsign,el,ΔΥΤ. ΚΥΚΛ. ΓΡΑΜΜΗ,16966992
+trips,trip_headsign,el,ΔΥΤ. ΚΥΚΛ. ΓΡΑΜΜΗ,16966993
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16966994
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16966995
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16966996
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16966997
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16966998
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16966999
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16967000
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967001
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967002
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967003
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967004
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16967005
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16967006
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967007
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967008
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16967009
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16967010
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16967011
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16967012
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16967013
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16967014
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16967015
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16967016
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16967017
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967018
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967019
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16967020
+trips,trip_headsign,el,ΣΤ. ΠΛΑΤ. ΠΑΡΑΛΙΜ,16967021
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16967022
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16967023
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16967024
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967025
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967026
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967027
+trips,trip_headsign,el,ΑΝΑΤ. ΚΥΚΛ ΓΡΑΜΜΗ,16967028
+trips,trip_headsign,el,ΑΝΑΤ. ΚΥΚΛ ΓΡΑΜΜΗ,16967029
+trips,trip_headsign,el,ΑΝΑΤ. ΚΥΚΛ ΓΡΑΜΜΗ,16967030
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16967031
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16967032
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16967033
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16967034
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16967035
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967036
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16967037
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967038
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967039
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967040
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967041
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967042
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967043
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967044
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16967045
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16967046
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967047
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967048
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16967049
+trips,trip_headsign,el,ΣΤ. ΠΛΑΤ. ΠΑΡΑΛΙΜ,16967050
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16967051
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16967052
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967053
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967054
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967055
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967056
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16967057
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16967058
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967059
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967060
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967061
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16967062
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16967063
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967064
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967065
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16967066
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16967067
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16967068
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16967069
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16967070
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967071
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16967072
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16967073
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16967074
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967075
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16967076
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16967077
+trips,trip_headsign,el,ΣΤ. ΠΛΑΤ. ΠΑΡΑΛΙΜ,16967078
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967079
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967080
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967081
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967082
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16967083
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967084
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16967085
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967086
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967087
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16967088
+trips,trip_headsign,el,ΣΤ. ΠΛΑΤ. ΠΑΡΑΛΙΜ,16967089
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967090
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967091
+trips,trip_headsign,el,ΞΥΛΟΦΑΓΟΥ,16967092
+trips,trip_headsign,el,ΞΥΛΟΤΥΜΠΟΥ,16967093
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16967094
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967095
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967096
+trips,trip_headsign,el,ΑΝΑΤ. ΚΥΚΛ ΓΡΑΜΜΗ,16967097
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16967098
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16967099
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16967100
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967101
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967102
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16967103
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16967104
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967105
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16967106
+trips,trip_headsign,el,ΞΥΛΟΤΥΜΠΟΥ,16967107
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967108
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967109
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16967110
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967111
+trips,trip_headsign,el,Α.Κ. ΑΓΙΑΣ ΝΑΠΑΣ,16967112
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16967113
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16967114
+trips,trip_headsign,el,ΞΥΛΟΦΑΓΟΥ,16967115
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16967116
+trips,trip_headsign,el,ΑΥΓΟΡΟΥ,16967117
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967118
+trips,trip_headsign,el,ΔΥΤ. ΚΥΚΛ. ΓΡΑΜΜΗ,16967119
+trips,trip_headsign,el,ΔΥΤ. ΚΥΚΛ. ΓΡΑΜΜΗ,16967120
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967121
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16967122
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16967123
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16967124
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16967125
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967126
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967127
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967128
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967129
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967130
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16967131
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16967132
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16967133
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16967134
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16967135
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16967136
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16967137
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16967138
+trips,trip_headsign,el,ΞΥΛΟΤΥΜΠΟΥ,16967139
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16967140
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967141
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967142
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16967143
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967144
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967145
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16967146
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16967147
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967148
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16967149
+trips,trip_headsign,el,ΑΝΑΤ. ΚΥΚΛ ΓΡΑΜΜΗ,16967150
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16967151
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16967152
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16967153
+trips,trip_headsign,el,ΣΤ. ΠΛΑΤ. ΠΑΡΑΛΙΜ,16967154
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16967155
+trips,trip_headsign,el,ΞΥΛΟΤΥΜΠΟΥ,16967156
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16967157
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967158
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967159
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967160
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967161
+trips,trip_headsign,el,ΣΤ. ΠΛΑΤ. ΠΑΡΑΛΙΜ,16967162
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967163
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967164
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16967165
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16967166
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967167
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16967168
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16967169
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967170
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16967171
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16967172
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16967173
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967174
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967175
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16967176
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16967177
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967178
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16967179
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16967180
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16967181
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967182
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16967183
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16967184
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967185
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16967186
+trips,trip_headsign,el,ΔΑΣΑΚΙ ΑΧΝΑΣ,16967187
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16967188
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16967189
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967190
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16967191
+trips,trip_headsign,el,ΚΟΝΝΟΣ,16967192
+trips,trip_headsign,el,ΞΥΛΟΤΥΜΠΟΥ,16967193
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16967194
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16967195
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16967196
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16967197
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16967198
+trips,trip_headsign,el,ΣΤ. ΑΜΜΟΧΩΣΤΟΥ,16967199
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967200
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967201
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16967202
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967203
+trips,trip_headsign,el,ΛΑΡΝΑΚΑ,16967204
+trips,trip_headsign,el,ΣΤ. ΠΛΑΤ. ΠΑΡΑΛΙΜ,16967205
+trips,trip_headsign,el,ΚΥΚΛΙΚΗ ΓΡΑΜΜΗ,16967206
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967207
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967208
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967209
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967210
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967211
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967212
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967213
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967214
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967215
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967216
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967217
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967218
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16967219
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16967220
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16967221
+trips,trip_headsign,el,ΔΕΡΥΝΕΙΑ,16967222
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967223
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967224
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967225
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967226
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967227
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967228
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16967229
+trips,trip_headsign,el,ΣΤΡΟΒΙΛΙΑ,16967230
+trips,trip_headsign,el,ΑΓ. ΝΑΠΑ(Υ/ΠΑΡΚΟ),16967231
+trips,trip_headsign,el,ΑΓΙΑ ΝΑΠΑ,16967232
+trips,trip_headsign,el,Α.Η.Κ. ΔΕΚΕΛΕΙΑ,16967233
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967234
+trips,trip_headsign,el,ΠΑΡΑΛΙΜΝΙ,16967235
