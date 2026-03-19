@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useEffectEvent, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import maplibregl from "maplibre-gl";
 
 const INITIAL_VIEW = {
@@ -36,6 +36,35 @@ function buildVehicleCollection(vehicles) {
       },
     })),
   };
+}
+
+function buildVehicleMarker(vehicle) {
+  const marker = document.createElement("button");
+  marker.type = "button";
+  marker.className = "bus-marker";
+  marker.setAttribute("aria-label", `${vehicle.route_short_name} ${vehicle.headsign}`);
+
+  const badge = document.createElement("span");
+  badge.className = "bus-marker-badge";
+  badge.textContent = vehicle.route_short_name || "?";
+  badge.style.background = `#${vehicle.color || "2EC5A2"}`;
+  badge.style.color = `#${vehicle.text_color || "FFFFFF"}`;
+
+  const bus = document.createElement("span");
+  bus.className = "bus-marker-body";
+  bus.style.background = `#${vehicle.color || "2EC5A2"}`;
+  bus.style.color = `#${vehicle.text_color || "FFFFFF"}`;
+  bus.style.transform = `rotate(${vehicle.bearing || 0}deg)`;
+
+  const windows = document.createElement("span");
+  windows.className = "bus-marker-windows";
+
+  const nose = document.createElement("span");
+  nose.className = "bus-marker-nose";
+
+  bus.append(windows, nose);
+  marker.append(badge, bus);
+  return marker;
 }
 
 function buildStopCollection(routeDetail, nearbyStops, favoriteStops, selectedStop) {
@@ -156,6 +185,7 @@ export default function TransitMap({
   const mapRef = useRef(null);
   const popupRef = useRef(null);
   const readyRef = useRef(false);
+  const vehicleMarkersRef = useRef(new Map());
   const vehicleIndexRef = useRef(new Map());
   const stopIndexRef = useRef(new Map());
   const userMarkerRef = useRef(null);
@@ -168,7 +198,7 @@ export default function TransitMap({
   );
   const routeCollection = useMemo(() => buildRouteCollection(routeDetail), [routeDetail]);
 
-  const openPopup = useEffectEvent((lngLat, html) => {
+  const openPopup = useCallback((lngLat, html) => {
     if (!mapRef.current) {
       return;
     }
@@ -177,10 +207,9 @@ export default function TransitMap({
       .setLngLat(lngLat)
       .setHTML(html)
       .addTo(mapRef.current);
-  });
+  }, []);
 
-  const handleVehicleClick = useEffectEvent((feature) => {
-    const vehicle = vehicleIndexRef.current.get(feature.properties.id);
+  const handleVehicleClick = useCallback((vehicle) => {
     if (!vehicle) {
       return;
     }
@@ -189,9 +218,9 @@ export default function TransitMap({
       [vehicle.lon, vehicle.lat],
       `<div><strong>${escapeHtml(vehicle.route_short_name)}</strong><br/>${escapeHtml(vehicle.headsign)}</div>`
     );
-  });
+  }, [onVehicleSelect, openPopup]);
 
-  const handleStopClick = useEffectEvent((feature) => {
+  const handleStopClick = useCallback((feature) => {
     const stop = stopIndexRef.current.get(feature.properties.id);
     if (!stop) {
       return;
@@ -201,7 +230,7 @@ export default function TransitMap({
       [stop.lon, stop.lat],
       `<div><strong>${escapeHtml(stop.name)}</strong><br/>${escapeHtml(stop.operator_name || "")}</div>`
     );
-  });
+  }, [onStopSelect, openPopup]);
 
   useEffect(() => {
     if (!containerRef.current || mapRef.current) {
@@ -210,7 +239,7 @@ export default function TransitMap({
 
     const map = new maplibregl.Map({
       container: containerRef.current,
-      style: "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
+      style: "https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json",
       center: INITIAL_VIEW.center,
       zoom: INITIAL_VIEW.zoom,
       pitch: 0,
@@ -316,74 +345,6 @@ export default function TransitMap({
         },
       });
 
-      map.addSource("vehicles", {
-        type: "geojson",
-        data: vehicleCollection,
-      });
-      map.addLayer({
-        id: "vehicles-badge-shadow",
-        type: "circle",
-        source: "vehicles",
-        paint: {
-          "circle-color": ["get", "color"],
-          "circle-radius": ["interpolate", ["linear"], ["zoom"], 7, 10, 14, 16],
-          "circle-opacity": 0.18,
-          "circle-blur": 0.8,
-          "circle-translate": [0, -20],
-        },
-      });
-      map.addLayer({
-        id: "vehicles-badge",
-        type: "circle",
-        source: "vehicles",
-        paint: {
-          "circle-color": ["get", "color"],
-          "circle-radius": ["interpolate", ["linear"], ["zoom"], 7, 9, 14, 14],
-          "circle-stroke-color": "#FFFFFF",
-          "circle-stroke-width": 2,
-          "circle-translate": [0, -20],
-        },
-      });
-      map.addLayer({
-        id: "vehicles-badge-label",
-        type: "symbol",
-        source: "vehicles",
-        layout: {
-          "text-field": ["get", "routeShortName"],
-          "text-size": ["interpolate", ["linear"], ["zoom"], 7, 11, 14, 16],
-          "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-          "text-allow-overlap": true,
-          "text-ignore-placement": true,
-          "text-translate": [0, -20],
-        },
-        paint: {
-          "text-color": "#FFFFFF",
-        },
-      });
-      map.addLayer({
-        id: "vehicles-icon",
-        type: "symbol",
-        source: "vehicles",
-        layout: {
-          "text-field": "🚌",
-          "text-size": ["interpolate", ["linear"], ["zoom"], 7, 20, 14, 28],
-          "text-rotate": ["get", "bearing"],
-          "text-allow-overlap": true,
-          "text-ignore-placement": true,
-        },
-        paint: {
-          "text-color": "#FFFFFF",
-          "text-halo-color": "rgba(255,255,255,0.92)",
-          "text-halo-width": 0.6,
-        },
-      });
-
-      map.on("click", "vehicles-icon", (event) => {
-        const feature = event.features?.[0];
-        if (feature) {
-          handleVehicleClick(feature);
-        }
-      });
       map.on("click", "focus-stops-main", (event) => {
         const feature = event.features?.[0];
         if (feature) {
@@ -391,7 +352,7 @@ export default function TransitMap({
         }
       });
 
-      for (const layerId of ["vehicles-icon", "focus-stops-main"]) {
+      for (const layerId of ["focus-stops-main"]) {
         map.on("mouseenter", layerId, () => {
           map.getCanvas().style.cursor = "pointer";
         });
@@ -406,19 +367,44 @@ export default function TransitMap({
     return () => {
       popupRef.current?.remove();
       userMarkerRef.current?.remove();
+      for (const marker of vehicleMarkersRef.current.values()) {
+        marker.remove();
+      }
+      vehicleMarkersRef.current.clear();
       map.remove();
       readyRef.current = false;
       mapRef.current = null;
     };
-  }, [handleStopClick, handleVehicleClick, routeCollection, stopCollection, vehicleCollection]);
+  }, [handleStopClick, routeCollection, stopCollection]);
 
   useEffect(() => {
     if (!readyRef.current || !mapRef.current) {
       return;
     }
     vehicleIndexRef.current = new Map((vehicles || []).map((vehicle) => [vehicle.id, vehicle]));
-    mapRef.current.getSource("vehicles")?.setData(vehicleCollection);
-  }, [vehicleCollection, vehicles]);
+
+    for (const marker of vehicleMarkersRef.current.values()) {
+      marker.remove();
+    }
+    vehicleMarkersRef.current.clear();
+
+    for (const vehicle of vehicles || []) {
+      const element = buildVehicleMarker(vehicle);
+      element.addEventListener("click", (event) => {
+        event.stopPropagation();
+        handleVehicleClick(vehicle);
+      });
+
+      const marker = new maplibregl.Marker({
+        element,
+        anchor: "center",
+      })
+        .setLngLat([vehicle.lon, vehicle.lat])
+        .addTo(mapRef.current);
+
+      vehicleMarkersRef.current.set(vehicle.id, marker);
+    }
+  }, [handleVehicleClick, vehicles]);
 
   useEffect(() => {
     if (!readyRef.current || !mapRef.current) {

@@ -2,8 +2,6 @@ import "./globals.css";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { Fredoka, Nunito } from "next/font/google";
 import { LanguageProvider } from "../context/LanguageContext";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Analytics } from "@vercel/analytics/react";
 
 const headingFont = Fredoka({
   subsets: ["latin", "greek"],
@@ -39,11 +37,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${headingFont.variable} ${bodyFont.variable}`} suppressHydrationWarning>
-        <LanguageProvider>
-          {children}
-          <SpeedInsights />
-          <Analytics />
-        </LanguageProvider>
+        <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>
   );
