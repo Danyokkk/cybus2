@@ -65,8 +65,8 @@ function buildVehicleMarker(vehicle) {
   marker.setAttribute("aria-label", `${vehicle.route_short_name} ${vehicle.headsign}`);
 
   const baseColor = `#${vehicle.color || "E24B4B"}`;
-  const darker = adjustHexColor(baseColor, -0.28);
-  const fillColor = adjustHexColor(baseColor, -0.32);
+  const darker = adjustHexColor(baseColor, -0.12);
+  const fillColor = adjustHexColor(baseColor, -0.06);
 
   const badge = document.createElement("span");
   badge.className = "bus-marker-badge";

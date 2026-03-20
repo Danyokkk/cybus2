@@ -120,6 +120,7 @@ export default function CyBusShell() {
   const [plannerToStop, setPlannerToStop] = useState(null);
   const [plannerResult, setPlannerResult] = useState(null);
   const [plannerLoading, setPlannerLoading] = useState(false);
+  const [now, setNow] = useState(() => Date.now());
 
   const deferredRouteQuery = useDeferredValue(routeQuery);
   const deferredPlannerFromQuery = useDeferredValue(plannerFromQuery);
@@ -139,6 +140,13 @@ export default function CyBusShell() {
     } catch {
       window.localStorage.removeItem(FAVORITES_KEY);
     }
+  }, []);
+
+  useEffect(() => {
+    const interval = window.setInterval(() => {
+      setNow(Date.now());
+    }, 30000);
+    return () => window.clearInterval(interval);
   }, []);
 
   useEffect(() => {
@@ -561,6 +569,38 @@ export default function CyBusShell() {
   }, []);
 
   const isFavoriteStop = (stopId) => favoriteStopIds.includes(stopId);
+  const parseMinutesAway = (value) => {
+    if (value === null || value === undefined) {
+      return null;
+    }
+    const numeric = Number(String(value).replace(/[^\d.-]/g, ""));
+    return Number.isFinite(numeric) ? numeric : null;
+  };
+  const isArrivalUpcoming = useCallback((arrival) => {
+    const minutes = parseMinutesAway(arrival.minutes_away);
+    if (minutes !== null) {
+      return minutes > 0;
+    }
+    if (!arrival.arrival_time) {
+      return true;
+    }
+    const parts = String(arrival.arrival_time).split(":");
+    if (parts.length < 2) {
+      return true;
+    }
+    let hours = Number(parts[0]);
+    const minutesPart = Number(parts[1]);
+    if (!Number.isFinite(hours) || !Number.isFinite(minutesPart)) {
+      return true;
+    }
+    const arrivalDate = new Date(now);
+    if (hours >= 24) {
+      hours -= 24;
+      arrivalDate.setDate(arrivalDate.getDate() + 1);
+    }
+    arrivalDate.setHours(hours, minutesPart, 0, 0);
+    return arrivalDate.getTime() > now;
+  }, [now]);
 
   const renderSelectedStop = selectedStopTimetable ? (
     <section className="selection-card">
@@ -588,10 +628,10 @@ export default function CyBusShell() {
         ))}
       </div>
       <div className="arrivals-list">
-        {selectedStopTimetable.arrivals.length === 0 ? (
+        {selectedStopTimetable.arrivals.filter(isArrivalUpcoming).length === 0 ? (
           <p className="muted">{t.noArrivals}</p>
         ) : (
-          selectedStopTimetable.arrivals.map((arrival) => (
+          selectedStopTimetable.arrivals.filter(isArrivalUpcoming).map((arrival) => (
             <div key={`${arrival.trip_id}-${arrival.arrival_time}`} className="arrival-row">
               <span className="route-pill" style={buildRouteColors(arrival)}>
                 {arrival.route_short_name}
