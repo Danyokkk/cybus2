@@ -71,7 +71,7 @@ function buildVehicleMarker(vehicle) {
   const badge = document.createElement("span");
   badge.className = "bus-marker-badge";
   badge.textContent = vehicle.route_short_name || "?";
-  badge.style.background = baseColor;
+  badge.style.background = darker;
   badge.style.color = `#${vehicle.text_color || "FFFFFF"}`;
 
   const bus = document.createElement("span");

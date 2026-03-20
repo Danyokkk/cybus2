@@ -651,95 +651,98 @@ export default function CyBusShell() {
       </section>
 
       <aside className={`glass-panel app-panel ${panelOpen ? "open" : ""}`}>
-        <div className="panel-topbar">
-          <div>
-            <p className="eyebrow">{t.appTitle}</p>
-            <strong>{t.openPanels}</strong>
+        <div className="panel-header">
+          <div className="panel-topbar">
+            <div>
+              <p className="eyebrow">{t.appTitle}</p>
+              <strong>{t.openPanels}</strong>
+            </div>
+            <div className="panel-actions">
+              <button
+                className="icon-button"
+                onClick={goBack}
+                aria-label={t.back}
+                title={t.back}
+                disabled={!canGoBack}
+              >
+                <ArrowLeft size={18} />
+              </button>
+              <button className="icon-button" onClick={goHome} aria-label={t.home} title={t.home}>
+                <House size={18} />
+              </button>
+              <button className="icon-button" onClick={() => setPanelOpen(false)} aria-label={t.panelClose} title={t.panelClose}>
+                <X size={18} />
+              </button>
+            </div>
           </div>
-          <div className="panel-actions">
-            <button
-              className="icon-button"
-              onClick={goBack}
-              aria-label={t.back}
-              title={t.back}
-              disabled={!canGoBack}
-            >
-              <ArrowLeft size={18} />
-            </button>
-            <button className="icon-button" onClick={goHome} aria-label={t.home} title={t.home}>
-              <House size={18} />
-            </button>
-            <button className="icon-button" onClick={() => setPanelOpen(false)} aria-label={t.panelClose} title={t.panelClose}>
-              <X size={18} />
-            </button>
-          </div>
+
+          <nav className="tab-bar">
+            {PANELS.map((item) => {
+              const Icon = item.icon;
+              return (
+                <button
+                  key={item.id}
+                  className={`tab-button ${panel === item.id ? "active" : ""}`}
+                  onClick={() => {
+                    setPanel(item.id);
+                    setPanelOpen(true);
+                  }}
+                >
+                  <Icon size={16} style={{ marginRight: 8, verticalAlign: "text-bottom" }} />
+                  {t[item.id]}
+                </button>
+              );
+            })}
+          </nav>
         </div>
 
-        {showHeroCard && (
-          <section className="hero-card">
-            <div className="title-row">
-              <div className="title-block">
-                <p className="eyebrow">{t.liveNow}</p>
-                <h1>{t.heroTitle}</h1>
-              </div>
-              <div className="badge">
-                <span className="badge-dot" />
-                {vehiclesState.status === "ok" ? t.liveVehicles : t.dataStatus}
-              </div>
-            </div>
-            <p className="panel-copy">{t.heroBody}</p>
-
-            <div className="stats-grid">
-              {liveStats.map((item) => (
-                <div key={item.label} className="stat-card">
-                  <p className="stat-value">{item.value}</p>
-                  <div className="stat-label">{item.label}</div>
+        <div className="panel-body scroll-area">
+          {showHeroCard && (
+            <section className="hero-card">
+              <div className="title-row">
+                <div className="title-block">
+                  <p className="eyebrow">{t.liveNow}</p>
+                  <h1>{t.heroTitle}</h1>
                 </div>
-              ))}
-            </div>
+                <div className="badge">
+                  <span className="badge-dot" />
+                  {vehiclesState.status === "ok" ? t.liveVehicles : t.dataStatus}
+                </div>
+              </div>
+              <p className="panel-copy">{t.heroBody}</p>
 
-            <div className="hero-actions">
-              <button
-                className="button button-primary"
-                onClick={() => {
-                  setMapAction({ type: "fitVehicles", token: Date.now() });
-                }}
-              >
-                <MapPinned size={18} />
-                {t.trackBuses}
-              </button>
-              <button className="button button-secondary" onClick={() => requestNearbyStops().catch(console.error)}>
-                <LocateFixed size={18} />
-                {t.findNearby}
-              </button>
-            </div>
-          </section>
-        )}
+              <div className="stats-grid">
+                {liveStats.map((item) => (
+                  <div key={item.label} className="stat-card">
+                    <p className="stat-value">{item.value}</p>
+                    <div className="stat-label">{item.label}</div>
+                  </div>
+                ))}
+              </div>
 
-        <nav className="tab-bar">
-          {PANELS.map((item) => {
-            const Icon = item.icon;
-            return (
-              <button
-                key={item.id}
-                className={`tab-button ${panel === item.id ? "active" : ""}`}
-                onClick={() => {
-                  setPanel(item.id);
-                  setPanelOpen(true);
-                }}
-              >
-                <Icon size={16} style={{ marginRight: 8, verticalAlign: "text-bottom" }} />
-                {t[item.id]}
-              </button>
-            );
-          })}
-        </nav>
+              <div className="hero-actions">
+                <button
+                  className="button button-primary"
+                  onClick={() => {
+                    setMapAction({ type: "fitVehicles", token: Date.now() });
+                  }}
+                >
+                  <MapPinned size={18} />
+                  {t.trackBuses}
+                </button>
+                <button className="button button-secondary" onClick={() => requestNearbyStops().catch(console.error)}>
+                  <LocateFixed size={18} />
+                  {t.findNearby}
+                </button>
+              </div>
+            </section>
+          )}
 
-        {renderSelectedStop}
+          {renderSelectedStop}
 
-        <div className="panel-section scroll-area">
-          {panel === "nearby" && (
-            <>
+          <div className="panel-section">
+            {panel === "nearby" && (
+              <>
               <div className="section-header">
                 <div className="title-block">
                   <h2>{t.nearby}</h2>
@@ -1082,6 +1085,7 @@ export default function CyBusShell() {
               </section>
             </>
           )}
+          </div>
         </div>
       </aside>
     </main>
