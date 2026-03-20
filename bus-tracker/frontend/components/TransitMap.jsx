@@ -65,8 +65,8 @@ function buildVehicleMarker(vehicle) {
   marker.setAttribute("aria-label", `${vehicle.route_short_name} ${vehicle.headsign}`);
 
   const baseColor = `#${vehicle.color || "E24B4B"}`;
-  const darker = adjustHexColor(baseColor, -0.2);
-  const fillColor = adjustHexColor(baseColor, -0.12);
+  const darker = adjustHexColor(baseColor, -0.28);
+  const fillColor = adjustHexColor(baseColor, -0.32);
 
   const badge = document.createElement("span");
   badge.className = "bus-marker-badge";
@@ -91,7 +91,7 @@ function buildVehicleMarker(vehicle) {
   chassis.setAttribute("rx", "10");
   chassis.setAttribute("fill", fillColor);
   chassis.setAttribute("stroke", "#FFFFFF");
-  chassis.setAttribute("stroke-width", "4");
+  chassis.setAttribute("stroke-width", "4.6");
 
   const windshield = document.createElementNS("http://www.w3.org/2000/svg", "path");
   windshield.setAttribute("d", "M10 15 Q25 10 40 15 L40 30 Q25 35 10 30 Z");
@@ -233,11 +233,12 @@ function buildRouteCollection(routeDetail) {
   return { type: "FeatureCollection", features };
 }
 
-function fitMapToFeatureCollection(map, collection, fallbackZoom = 13) {
+function fitMapToFeatureCollection(map, collection, fallbackZoom = 13, options = {}) {
   if (!collection?.features?.length) {
     return;
   }
 
+  const { padding = 72, maxZoom = 14.5 } = options;
   const bounds = new maplibregl.LngLatBounds();
   for (const feature of collection.features) {
     if (feature.geometry.type === "Point") {
@@ -256,9 +257,9 @@ function fitMapToFeatureCollection(map, collection, fallbackZoom = 13) {
   }
 
   map.fitBounds(bounds, {
-    padding: 72,
+    padding,
     duration: 900,
-    maxZoom: 14.5,
+    maxZoom,
   });
 }
 
@@ -602,6 +603,15 @@ export default function TransitMap({
         fitMapToFeatureCollection(map, routeCollection, 12);
       } else {
         fitMapToFeatureCollection(map, stopCollection, 13);
+      }
+      return;
+    }
+
+    if (action.type === "routeSoft") {
+      if (routeCollection.features.length) {
+        fitMapToFeatureCollection(map, routeCollection, 9.8, { maxZoom: 11.4, padding: 96 });
+      } else {
+        fitMapToFeatureCollection(map, stopCollection, 10.2, { maxZoom: 11.4, padding: 96 });
       }
       return;
     }

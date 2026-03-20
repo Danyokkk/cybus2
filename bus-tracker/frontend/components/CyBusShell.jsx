@@ -100,7 +100,7 @@ export default function CyBusShell() {
   const [selectedRoute, setSelectedRoute] = useState(null);
   const [selectedStop, setSelectedStop] = useState(null);
   const [selectedStopTimetable, setSelectedStopTimetable] = useState(null);
-  const [focusedVehicleId, setFocusedVehicleId] = useState(null);
+  const [focusedRoute, setFocusedRoute] = useState(null);
   const [favoriteStopIds, setFavoriteStopIds] = useState([]);
   const [favoriteStops, setFavoriteStops] = useState([]);
   const [allStops, setAllStops] = useState([]);
@@ -180,12 +180,12 @@ export default function CyBusShell() {
     }
     const resolvedOptions =
       typeof options === "boolean" ? { focus: options } : options || {};
-    const { focus = true, openPanel = true, clearVehicle = openPanel } = resolvedOptions;
+    const { focus = true, openPanel = true, clearFocus = openPanel } = resolvedOptions;
     const detail = await fetchJson(`/api/routes/${routeId}`, { lang: language });
     startTransition(() => {
       setSelectedRoute(detail);
-      if (clearVehicle) {
-        setFocusedVehicleId(null);
+      if (clearFocus) {
+        setFocusedRoute(null);
       }
       if (openPanel) {
         setPanel("lines");
@@ -372,11 +372,11 @@ export default function CyBusShell() {
     }
 
     lastLanguageRef.current = language;
-    loadRouteDetail(selectedRoute.route_id, {
-      focus: false,
-      openPanel: panelOpen,
-      clearVehicle: false,
-    }).catch((error) => {
+      loadRouteDetail(selectedRoute.route_id, {
+        focus: false,
+        openPanel: panelOpen,
+        clearFocus: false,
+      }).catch((error) => {
       console.error(error);
     });
   }, [language, panelOpen, selectedRoute?.route_id, loadRouteDetail]);
@@ -433,12 +433,14 @@ export default function CyBusShell() {
 
   const visibleVehicles = useMemo(() => {
     const list = vehiclesState.vehicles || [];
-    if (!focusedVehicleId) {
+    if (!focusedRoute) {
       return list;
     }
-    const match = list.find((vehicle) => vehicle.id === focusedVehicleId);
-    return match ? [match] : list;
-  }, [focusedVehicleId, vehiclesState.vehicles]);
+    const filtered = focusedRoute.shortName
+      ? list.filter((vehicle) => vehicle.route_short_name === focusedRoute.shortName)
+      : list.filter((vehicle) => vehicle.route_id === focusedRoute.routeId);
+    return filtered.length ? filtered : list;
+  }, [focusedRoute, vehiclesState.vehicles]);
 
   const liveStats = useMemo(
     () => [
@@ -459,24 +461,27 @@ export default function CyBusShell() {
   };
 
   useEffect(() => {
-    if (!focusedVehicleId) {
+    if (!focusedRoute) {
       return;
     }
-    const exists = (vehiclesState.vehicles || []).some((vehicle) => vehicle.id === focusedVehicleId);
+    const list = vehiclesState.vehicles || [];
+    const exists = focusedRoute.shortName
+      ? list.some((vehicle) => vehicle.route_short_name === focusedRoute.shortName)
+      : list.some((vehicle) => vehicle.route_id === focusedRoute.routeId);
     if (!exists) {
-      setFocusedVehicleId(null);
+      setFocusedRoute(null);
     }
-  }, [focusedVehicleId, vehiclesState.vehicles]);
+  }, [focusedRoute, vehiclesState.vehicles]);
 
   const handleVehicleSelect = useCallback(async (vehicle) => {
     if (!vehicle?.route_id) {
       return;
     }
-    setFocusedVehicleId(vehicle.id);
+    setFocusedRoute({ routeId: vehicle.route_id, shortName: vehicle.route_short_name || null });
     setSelectedStop(null);
     setSelectedStopTimetable(null);
-    await loadRouteDetail(vehicle.route_id, { focus: false, openPanel: false, clearVehicle: false });
-    setMapAction({ type: "vehicle", token: Date.now(), vehicleId: vehicle.id });
+    await loadRouteDetail(vehicle.route_id, { focus: false, openPanel: false, clearFocus: false });
+    setMapAction({ type: "routeSoft", token: Date.now() });
   }, [loadRouteDetail]);
 
   const handleMapVehicleSelect = useCallback((vehicle) => {
@@ -488,7 +493,10 @@ export default function CyBusShell() {
   }, [loadStopTimetable]);
 
   const showAllBuses = useCallback(() => {
-    setFocusedVehicleId(null);
+    setSelectedRoute(null);
+    setSelectedStop(null);
+    setSelectedStopTimetable(null);
+    setFocusedRoute(null);
     setMapAction({ type: "fitVehicles", token: Date.now() });
   }, []);
 
@@ -504,7 +512,7 @@ export default function CyBusShell() {
     setSelectedRoute(null);
     setSelectedStop(null);
     setSelectedStopTimetable(null);
-    setFocusedVehicleId(null);
+    setFocusedRoute(null);
     setPanel("nearby");
     setPanelOpen(true);
     setPlannerResult(null);
@@ -523,7 +531,7 @@ export default function CyBusShell() {
 
     if (selectedRoute) {
       setSelectedRoute(null);
-      setFocusedVehicleId(null);
+      setFocusedRoute(null);
       setMapAction({ type: "fitVehicles", token: Date.now() });
       return;
     }
