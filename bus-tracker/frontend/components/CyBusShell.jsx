@@ -171,15 +171,20 @@ export default function CyBusShell() {
     }
   }, [language]);
 
-  const loadRouteDetail = useCallback(async (routeId, focus = true) => {
+  const loadRouteDetail = useCallback(async (routeId, options) => {
     if (!routeId) {
       return;
     }
+    const resolvedOptions =
+      typeof options === "boolean" ? { focus: options } : options || {};
+    const { focus = true, openPanel = true } = resolvedOptions;
     const detail = await fetchJson(`/api/routes/${routeId}`, { lang: language });
     startTransition(() => {
       setSelectedRoute(detail);
-      setPanel("lines");
-      setPanelOpen(true);
+      if (openPanel) {
+        setPanel("lines");
+        setPanelOpen(true);
+      }
       if (focus) {
         setMapAction({ type: "route", token: Date.now(), routeId: detail.route_id });
       }
@@ -352,7 +357,7 @@ export default function CyBusShell() {
 
   useEffect(() => {
     if (selectedRoute?.route_id) {
-      loadRouteDetail(selectedRoute.route_id, false).catch((error) => {
+      loadRouteDetail(selectedRoute.route_id, { focus: false, openPanel: true }).catch((error) => {
         console.error(error);
       });
     }
@@ -430,7 +435,7 @@ export default function CyBusShell() {
     if (!vehicle?.route_id) {
       return;
     }
-    await loadRouteDetail(vehicle.route_id, false);
+    await loadRouteDetail(vehicle.route_id, { focus: false, openPanel: false });
     setMapAction({ type: "vehicle", token: Date.now(), vehicleId: vehicle.id });
   }, [loadRouteDetail]);
 

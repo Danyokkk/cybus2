@@ -64,9 +64,9 @@ function buildVehicleMarker(vehicle) {
   marker.className = "bus-marker";
   marker.setAttribute("aria-label", `${vehicle.route_short_name} ${vehicle.headsign}`);
 
-  const baseColor = `#${vehicle.color || "2EC5A2"}`;
-  const darker = adjustHexColor(baseColor, -0.18);
-  const darkest = adjustHexColor(baseColor, -0.32);
+  const baseColor = `#${vehicle.color || "E24B4B"}`;
+  const darker = adjustHexColor(baseColor, -0.2);
+  const fillColor = adjustHexColor(baseColor, -0.12);
 
   const badge = document.createElement("span");
   badge.className = "bus-marker-badge";
@@ -74,20 +74,52 @@ function buildVehicleMarker(vehicle) {
   badge.style.background = darker;
   badge.style.color = `#${vehicle.text_color || "FFFFFF"}`;
 
-  const bus = document.createElement("span");
-  bus.className = "bus-marker-body";
-  bus.style.background = `linear-gradient(180deg, ${darker} 0%, ${baseColor} 55%, ${darkest} 100%)`;
-  bus.style.color = `#${vehicle.text_color || "FFFFFF"}`;
-  bus.style.transform = `rotate(${vehicle.bearing || 0}deg)`;
+  const wrapper = document.createElement("div");
+  wrapper.className = "rotated-bus-wrapper";
+  wrapper.style.transform = `rotate(${vehicle.bearing || 0}deg) scale(1)`;
 
-  const windows = document.createElement("span");
-  windows.className = "bus-marker-windows";
+  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  svg.setAttribute("viewBox", "0 0 50 100");
+  svg.setAttribute("class", "bus-marker-svg");
+  svg.setAttribute("aria-hidden", "true");
 
-  const nose = document.createElement("span");
-  nose.className = "bus-marker-nose";
+  const chassis = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+  chassis.setAttribute("x", "5");
+  chassis.setAttribute("y", "5");
+  chassis.setAttribute("width", "40");
+  chassis.setAttribute("height", "90");
+  chassis.setAttribute("rx", "10");
+  chassis.setAttribute("fill", fillColor);
+  chassis.setAttribute("stroke", "#FFFFFF");
+  chassis.setAttribute("stroke-width", "4");
 
-  bus.append(windows, nose);
-  marker.append(badge, bus);
+  const windshield = document.createElementNS("http://www.w3.org/2000/svg", "path");
+  windshield.setAttribute("d", "M10 15 Q25 10 40 15 L40 30 Q25 35 10 30 Z");
+  windshield.setAttribute("fill", "rgba(0,0,0,0.8)");
+
+  const roof = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+  roof.setAttribute("x", "15");
+  roof.setAttribute("y", "45");
+  roof.setAttribute("width", "20");
+  roof.setAttribute("height", "25");
+  roof.setAttribute("rx", "3");
+  roof.setAttribute("fill", "rgba(255,255,255,0.2)");
+
+  const lightLeft = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+  lightLeft.setAttribute("cx", "15");
+  lightLeft.setAttribute("cy", "10");
+  lightLeft.setAttribute("r", "3");
+  lightLeft.setAttribute("fill", "#FFFB00");
+
+  const lightRight = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+  lightRight.setAttribute("cx", "35");
+  lightRight.setAttribute("cy", "10");
+  lightRight.setAttribute("r", "3");
+  lightRight.setAttribute("fill", "#FFFB00");
+
+  svg.append(chassis, windshield, roof, lightLeft, lightRight);
+  wrapper.appendChild(svg);
+  marker.append(badge, wrapper);
   return marker;
 }
 
