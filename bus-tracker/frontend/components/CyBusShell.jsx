@@ -431,8 +431,6 @@ export default function CyBusShell() {
       return;
     }
     await loadRouteDetail(vehicle.route_id, false);
-    setPanel("lines");
-    setPanelOpen(false);
     setMapAction({ type: "vehicle", token: Date.now(), vehicleId: vehicle.id });
   }, [loadRouteDetail]);
 

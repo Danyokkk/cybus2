@@ -359,12 +359,14 @@ button {
   gap: 0.6rem;
   overflow-x: auto;
   padding-bottom: 0.15rem;
+  margin-top: 0.2rem;
   position: sticky;
-  top: 4.3rem;
-  z-index: 3;
+  top: 5.2rem;
+  z-index: 4;
   background: linear-gradient(180deg, rgba(247, 251, 255, 0.98), rgba(247, 251, 255, 0.84));
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 10px 26px rgba(49, 88, 126, 0.14);
   scrollbar-width: none;
 }
 
@@ -723,12 +725,12 @@ button {
 
 .bus-marker-body {
   position: relative;
-  width: 1.08rem;
-  height: 1.72rem;
-  border-radius: 0.38rem;
+  width: 1.12rem;
+  height: 1.78rem;
+  border-radius: 0.22rem;
   border: 1.5px solid rgba(255, 255, 255, 0.92);
   box-shadow:
-    0 10px 18px rgba(27, 53, 78, 0.2),
+    0 12px 22px rgba(20, 36, 58, 0.22),
     inset 0 -2px 0 rgba(0, 0, 0, 0.08),
     inset 0 1px 0 rgba(255, 255, 255, 0.24);
   transform-origin: center center;
@@ -913,7 +915,7 @@ button {
   }
 
   .tab-bar {
-    top: 3.95rem;
+    top: 4.6rem;
   }
 
   .arrival-row {

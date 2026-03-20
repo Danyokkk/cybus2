@@ -24,6 +24,19 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
+function adjustHexColor(hex, amount) {
+  const clean = String(hex || "").replace("#", "").trim();
+  if (!/^[0-9a-fA-F]{6}$/.test(clean)) {
+    return hex;
+  }
+  const num = parseInt(clean, 16);
+  const adjust = (value) => Math.max(0, Math.min(255, Math.round(value + 255 * amount)));
+  const r = adjust((num >> 16) & 0xff);
+  const g = adjust((num >> 8) & 0xff);
+  const b = adjust(num & 0xff);
+  return `#${[r, g, b].map((value) => value.toString(16).padStart(2, "0")).join("")}`;
+}
+
 function buildVehicleCollection(vehicles) {
   return {
     type: "FeatureCollection",
@@ -51,15 +64,19 @@ function buildVehicleMarker(vehicle) {
   marker.className = "bus-marker";
   marker.setAttribute("aria-label", `${vehicle.route_short_name} ${vehicle.headsign}`);
 
+  const baseColor = `#${vehicle.color || "2EC5A2"}`;
+  const darker = adjustHexColor(baseColor, -0.18);
+  const darkest = adjustHexColor(baseColor, -0.32);
+
   const badge = document.createElement("span");
   badge.className = "bus-marker-badge";
   badge.textContent = vehicle.route_short_name || "?";
-  badge.style.background = `#${vehicle.color || "2EC5A2"}`;
+  badge.style.background = baseColor;
   badge.style.color = `#${vehicle.text_color || "FFFFFF"}`;
 
   const bus = document.createElement("span");
   bus.className = "bus-marker-body";
-  bus.style.background = `#${vehicle.color || "2EC5A2"}`;
+  bus.style.background = `linear-gradient(180deg, ${darker} 0%, ${baseColor} 55%, ${darkest} 100%)`;
   bus.style.color = `#${vehicle.text_color || "FFFFFF"}`;
   bus.style.transform = `rotate(${vehicle.bearing || 0}deg)`;
 
@@ -390,7 +407,7 @@ export default function TransitMap({
         filter: ["==", ["get", "kind"], "all"],
         layout: {
           "icon-image": "stop-pin",
-          "icon-size": ["interpolate", ["linear"], ["zoom"], 8, 0.82, 14, 0.98],
+          "icon-size": ["interpolate", ["linear"], ["zoom"], 8, 0.9, 14, 1.08],
           "icon-allow-overlap": true,
           "icon-ignore-placement": true,
         },
